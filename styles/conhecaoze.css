@@ -1,0 +1,249 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    
+    }
+    
+    #bootstrap-overrides{
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        /* font-weight: 100; */
+        background-color: #614be0;
+        color: white;
+    }
+    
+    #bootstrap-overrides-zericardo{
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        background-color: #614be0;
+        color: white;
+        background-image: url('images/FOTOTRATADA.jpg');
+        background-size: cover;
+    }
+    
+    
+    /* The side navigation menu */
+    .sidenav {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+      
+      /* The navigation menu links */
+      .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      .sidenav a:hover {
+        color: #f1f1f1;
+      }
+      
+      /* Position and style the close button (top right corner) */
+      .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+      }
+      
+      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+      #main {
+        transition: margin-left .5s;
+        padding: 20px;
+        margin-left: 70px;
+      }
+    
+    
+      
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+      }
+    
+     /* NAV AND HAMBURGER */
+    
+    nav{
+        /* top: 50%; */
+        /* -webkit-transform: translateY(-50%); */
+        /* transform: translateY(-50%); */
+        /* -webkit-transform: rotate(-90deg) translateY(-50%); */
+        /* transform: rotate(-90deg) translateY(-100%); */
+        /* white-space: nowrap; */
+        /* -webkit-transform-origin: center center; */
+        /* transform-origin: center center; */
+        /* left: -210px; */
+        /* margin-top: -10px; */
+        /* ///// */
+        /* display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: center;
+        -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+        -webkit-transform: rotate(180deg)     translateX(-100%)
+        translateX(-100%);
+    
+            transform: rotate(180deg);
+        -webkit-transform-origin: center center;
+            transform-origin: center center;
+        list-style-type: none;
+        width: 64px;
+        height: 100%; */
+        width:100vh;    
+        height:60px;
+        position:fixed;
+        background:#4c4c4c;
+        transform-origin: left top;
+        transform:rotate(-90deg) translateX(-100%);
+        text-align: center;
+        background-color: white;
+    
+    }
+    
+    #nav-overrides{
+        background-color: white;
+    }
+    #nav-item{
+        margin: auto;
+        font-family:  'Raleway';
+        font-size: 12px;
+        font-weight: 400;
+        margin-left: 10px;
+        
+    }
+    
+    #nav-item:hover{
+        font-family:  'Raleway';
+        font-size: 11px;
+        font-weight: 300;
+        
+    }
+    
+    #nav-link{
+        color: black;
+        text-decoration: none;
+        margin: auto;
+        font-family:  'Raleway';
+        font-size: 11px;
+        font-weight: 400;
+        margin-left: 5px;
+    
+    }
+    
+    #nav-link:hover{
+        color: #4bfcb9;
+    }
+    
+    .nav-burger{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .nav-burger:hover{
+        margin-left: 20px;
+        font-size: 20px;
+        color: #4bfcb9;
+    }
+    
+      ul.nav li {    
+        margin-right:20px;
+        float:right;
+        height:100%;
+        line-height:45px;
+      }
+    
+    
+    
+    .container{
+      margin-left: 70px;
+    }
+    
+    #essa{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        z-index: 1;
+        min-height: calc(100vh - 50px);
+    
+    }
+    
+    #ressoa{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        align-content: flex-end;
+        z-index: 1;
+        min-height: calc(100vh - 50px);
+    }
+    
+    
+    #h1{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200;
+        font-size: 100px;
+    }
+    
+    #h1B{
+        font-family: 'Raleway', sans-serif;
+        font-weight: 400;
+        font-size: 100px;
+    }
+    
+    .hrh1 {
+        width: 50%;
+        border: 2px solid;
+        opacity: 100;
+    }
+    
+    .socialbar{
+        background-color: white;
+        width: 100%;
+        height: 60px;
+        color:#614be0;
+        position: fixed;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: flex-end;
+        margin-top: 20%;
+        z-index: 5;
+    }
+    
+    .socialtext{
+        padding: 5px;
+        text-align: center; 
+    }
+    
+    #ze-ricardo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: flex-end;
+        align-content: flex-end;
+        /* z-index: 1; */
+        /* min-height: calc(100vh ); */
+    }
