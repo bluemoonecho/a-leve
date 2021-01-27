@@ -503,16 +503,6 @@ NAVIGATION BAR
 
 
 
-.titulo-right{
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: flex-start;
-    align-content: flex-start;
-    z-index: -1;
-    /* min-height: calc(100vh - 50px); */
- 
-}
 
 @media only screen and (min-width:320px) {
     
@@ -528,22 +518,6 @@ NAVIGATION BAR
      
     } 
 }
-
-.titulo-right{
-    margin-top: 50px;
-    margin-right: -60px;
-    margin-bottom: 100px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: flex-end;
-    justify-content: flex-end;
-    align-content: flex-end;
-    z-index: 1;
-    text-align: right;
-
-}
-
 
 .hr-essa{
 
@@ -564,18 +538,6 @@ NAVIGATION BAR
     border: 1.5px solid;
     margin-top: 30px;
 }
-
-/* #ressoa{
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: flex-end;
-    align-content: flex-end;
-    z-index: 1;
-    min-height: calc(100vh - 50px);
-
-} */
 
 
 h1 {
@@ -847,8 +809,8 @@ p {
 }
 
 .se-conecte-frase{
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     display: flex;
     flex-direction: row;
     margin-left: -5px;
@@ -1098,6 +1060,7 @@ p {
 
 
 .right-Div{
+
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1106,7 +1069,7 @@ p {
 }
 
 .titulo-right{
-    margin-top: 30px;
+    margin-top: 150px;
     margin-right: -60px;
     margin-bottom: 100px;
 	display: flex;
@@ -1220,7 +1183,7 @@ p {
   }
 
   .titulo-left{
-    margin-top: 30px;
+    margin-top: 150px;
     margin-right: -50px;
     margin-bottom: 50px;
 	display: flex;
@@ -1264,6 +1227,11 @@ p {
  
 
 /* /////////////////HORIZONTAL */
+
+.rio-2c-Img{
+width: 100%;
+height: 70vh;
+}
 
 
   .horizontal-Img{

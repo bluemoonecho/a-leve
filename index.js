@@ -25,7 +25,7 @@ $(document).ready(function(){
     variableWidth: true
   })
 
-  $('.slick-show-gil').slickLightbox({
+  $('.slick-show').slickLightbox({
     src: 'src',
     itemSelector: '.selector img'
   });
