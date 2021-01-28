@@ -638,6 +638,30 @@ p {
     bottom: 0;
 }
 
+.seta{ 
+
+  /* position: fixed; */
+    /* z-index: 100; */
+    size: 200px;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: flex-end;
+    margin-top: -70px;
+    margin-left: 50px;
+    margin-right: -20px;
+    /* position: relative; */
+
+
+    
+   
+    /* position: sticky; */
+    /* bottom: 5;     */
+
+}
 
 .icon{
     /* margin-top: 6px;
@@ -659,9 +683,47 @@ p {
 	align-items: center;
     align-content: flex-end;
     margin-right: 30px;
-    margin-top: -70px;
+    margin-top: -40px;
 
 }
+
+.arrow-image{
+    width: 40px;
+}
+
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  #animate-flicker {
+     -webkit-animation: flickerAnimation ease 3s infinite;
+     -moz-animation: flickerAnimation ease 3s infinite;
+     -o-animation: flickerAnimation ease 3s infinite;
+      animation: flickerAnimation ease 3s infinite;
+  }
+
+
+
+
+
 
 /* ///////////////////CONHECA O ZE RICARDO */
 .ze-ricardo{
@@ -898,35 +960,6 @@ font-weight: 600 !important;
 }
 
 }
-/* 
-
-@keyframes flickerAnimation {
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-o-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-moz-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  @-webkit-keyframes flickerAnimation{
-    0%   { opacity:1; }
-    50%  { opacity:0; }
-    100% { opacity:1; }
-  }
-  #animate-flicker {
-     -webkit-animation: flickerAnimation ease 4s infinite;
-     -moz-animation: flickerAnimation ease 4s infinite;
-     -o-animation: flickerAnimation ease 4s infinite;
-      animation: flickerAnimation ease 4s infinite;
-  }
- */
 
 
 
@@ -1474,4 +1507,6 @@ height: 70vh;
     margin-left: 80px;
 }
 
-    
+
+
+
