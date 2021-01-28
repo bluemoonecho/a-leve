@@ -249,8 +249,8 @@ color: white;
     }
 
     #main-mobile {
-        transition: margin-top .5s;
-        margin-top: 1px;
+        /* transition: margin-top .5s; */
+        /* margin-top: 1px; */
         margin-left: 5px;
         margin-right: 5px;
     }
@@ -258,7 +258,6 @@ color: white;
     .addMargin {
         transition: margin-top .5s;
         margin-top:400px;
-
     }
 
 
@@ -998,16 +997,10 @@ font-weight: 600 !important;
 .essa-eh-a-leve-text-left{
     font-size: 21px;
     width: 400px;
-    /* margin-right: 400px; */
-    /* margin: auto; */
-    /* margin-left: -30px; */
     margin-bottom: 100px;
     margin-right: 600px;
     text-align: justify;    
     margin-top: -120px;
-	/* align-items: flex-start;
-    justify-content: flex-start;
-    align-content: flex-start; */
     z-index: 1;
  
 
