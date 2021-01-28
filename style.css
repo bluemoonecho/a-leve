@@ -478,7 +478,7 @@ NAVIGATION BAR
 #sub-nav-link{
     color: gray;
     font-weight: 10px;
-    font-size: 12px; 
+    font-size: 16px; 
     font-style: italic;
     margin-top: 8px;
 }
@@ -988,19 +988,33 @@ font-weight: 600 !important;
 .essa-eh-a-leve-text{
     font-size: 21px;
     width: 400px;
-    margin-top: 100px;
     margin-right: 50px;
- 
+    margin-top: -125px;
+    
+
 }
 
 
 .essa-eh-a-leve-text-left{
     font-size: 21px;
     width: 400px;
-    margin-top: 150px;
     /* margin-right: 400px; */
-    margin: auto;
+    /* margin: auto; */
+    /* margin-left: -30px; */
+    margin-bottom: 100px;
+    margin-right: 600px;
+    text-align: justify;    
+    margin-top: -120px;
+	/* align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start; */
+    z-index: 1;
+ 
+
 }
+
+
+
 
 .essa-eh-a-leve-quote{
     margin-top: 100px;
