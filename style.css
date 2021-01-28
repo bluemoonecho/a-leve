@@ -530,6 +530,7 @@ NAVIGATION BAR
     opacity: 100;
 }
 
+
 .hrZericardo{
     border: 2px solid;
     opacity: 100;
@@ -827,27 +828,29 @@ p {
 font-weight: 600 !important;
 }
 
-.fade-in {
+.solucoes{ 
     margin-top: -450px;
     text-align: center;
     margin-left: 430px;
     position: absolute;
-  animation: fadeIn ease 10s;
-  -webkit-animation: fadeIn ease 10s;
-  -moz-animation: fadeIn ease 10s;
-  -o-animation: fadeIn ease 10s;
-  -ms-animation: fadeIn ease 10s;
 }
 
-.fade-in h2{
+.solucoes h2{
     font-size: 50px !important;
     font-style: italic !important;
     font-weight: 600 !important;
-    /* position: absolute !important; */
-    /* top: 200px !important;
-    left: 0 !important; */
-    
+
 }
+
+
+.fade-in {
+
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 10s;
+    -moz-animation: fadeIn ease 10s;
+    -o-animation: fadeIn ease 10s;
+    -ms-animation: fadeIn ease 10s;
+  }
 @keyframes fadeIn {
   0% {
     opacity:0;
@@ -893,6 +896,37 @@ font-weight: 600 !important;
 }
 
 }
+/* 
+
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  #animate-flicker {
+     -webkit-animation: flickerAnimation ease 4s infinite;
+     -moz-animation: flickerAnimation ease 4s infinite;
+     -o-animation: flickerAnimation ease 4s infinite;
+      animation: flickerAnimation ease 4s infinite;
+  }
+ */
+
+
 
 @media (max-width: 767px) {
 
@@ -985,13 +1019,57 @@ font-weight: 600 !important;
 
 }
 
+
+.titulo-right-essa{
+    margin-top: 150px;
+    margin-right: -60px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    z-index: 1;
+    text-align: right;
+} 
+
+.titulo-right-inspiracao{
+    margin-right: -60px;
+    margin-bottom: 100px;
+    margin-top: -50px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    z-index: 1;
+    text-align: right;
+} 
+
+.titulo-left-essa{
+    /* margin-top: 150px; */
+    margin-left: -30px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+  }
+
 .essa-eh-a-leve-text{
     font-size: 21px;
     width: 400px;
     margin-right: 50px;
     margin-top: -125px;
-    
-
+   
 }
 
 
@@ -999,21 +1077,20 @@ font-weight: 600 !important;
     font-size: 21px;
     width: 400px;
     margin-bottom: 100px;
-    margin-right: 600px;
+    margin-right: 650px;
     text-align: justify;    
-    margin-top: -120px;
+    margin-top: -150px;
     z-index: 1;
- 
 
 }
-
-
-
 
 .essa-eh-a-leve-quote{
     margin-top: 100px;
-    margin-bottom: 400px;
+    margin-bottom: 150px;
 }
+
+
+/* //////////////// */
 
 
 /* ja fez //////////////////////////////////////O QUE A LEVE JA FEZ */
