@@ -315,6 +315,7 @@ NAVIGATION BAR
    /* color: #232323; */
    color: white;
    transition: color 0.3s ease;
+   font-weight: 800;
    /* font-stretch: 55%; */
 
  }
@@ -448,10 +449,7 @@ NAVIGATION BAR
  /* //////////////////////////////////////////SUB MENU */
 
  #hide{
-     /* display: none;
-     transition:0s 180s; */
-    /* display:none; */
-     /* transition: all 0s; delay 1s */
+
     height: 0;
     /* display: block; */
     transition: all 0s ease 5s; /*delay 1s*/
@@ -476,7 +474,7 @@ NAVIGATION BAR
 
 #sub-nav-link{
     color: gray;
-    font-weight: 10px;
+    font-weight: 600 !important;
     font-size: 16px; 
     font-style: italic;
     margin-top: 8px;
@@ -832,7 +830,7 @@ font-weight: 600 !important;
     margin-top: -450px;
     text-align: center;
     margin-left: 450px;
-    position: absolute;
+    /* position: absolute; */
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 10s;
   -moz-animation: fadeIn ease 10s;
@@ -844,7 +842,9 @@ font-weight: 600 !important;
     font-size: 50px !important;
     font-style: italic !important;
     font-weight: 600 !important;
-    position: center;
+    /* position: absolute !important; */
+    /* top: 200px !important;
+    left: 0 !important; */
     
 }
 @keyframes fadeIn {
