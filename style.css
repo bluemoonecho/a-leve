@@ -531,10 +531,11 @@ NAVIGATION BAR
 }
 
 .hrZericardo{
+    border: 2px solid;
+    opacity: 100;
+    margin-top: 30px;
     width: 75%;
     margin-right: 50px;
-    border: 1.5px solid;
-    margin-top: 30px;
 }
 
 
@@ -829,8 +830,8 @@ font-weight: 600 !important;
 .fade-in {
     margin-top: -450px;
     text-align: center;
-    margin-left: 450px;
-    /* position: absolute; */
+    margin-left: 430px;
+    position: absolute;
   animation: fadeIn ease 10s;
   -webkit-animation: fadeIn ease 10s;
   -moz-animation: fadeIn ease 10s;
