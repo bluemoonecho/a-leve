@@ -54,6 +54,23 @@ $(document).ready(function(){
 // }
 
 
+//MAKE ARROW DISAPEAR
+
+// document.onscroll = function() {
+//   if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+//       document.getElementById('seta').style.display='none';
+//   }
+// }
+
+// $(window).bind('scroll', function() {
+//   if ($(window).scrollTop() > 100) {
+//       $('#seta-index').hide();
+//   }
+//   // else {
+//   //     $('#seta-index').show();
+//   // }
+// });
+
 
 // Opening page timeout
 

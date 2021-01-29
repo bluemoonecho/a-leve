@@ -626,11 +626,10 @@ p {
 }
 
 
-
 .socialbar{
     background-color: white;
     width: 100%;
-    height: 100px;
+    height: 60px;
     color:#614be0;
     position: fixed;
     z-index: 2;
@@ -638,40 +637,17 @@ p {
     bottom: 0;
 }
 
-.seta{ 
-
-  /* position: fixed; */
-    /* z-index: 100; */
-    size: 200px;
-
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-    align-content: flex-end;
-    margin-top: -70px;
-    margin-left: 50px;
-    margin-right: -20px;
-    /* position: relative; */
-
-
-    
-   
-    /* position: sticky; */
-    /* bottom: 5;     */
-
-}
 
 .icon{
     /* margin-top: 6px;
     margin-right: 5px;
     margin-bottom:10px; */
-    width: 40px;
+    width: 35px;
 }
 
 .social-logo{
-    width: 150px;
+    width: 100px;
+    margin-top: -4px;
     margin-left: 30px;
 }
 
@@ -683,7 +659,7 @@ p {
 	align-items: center;
     align-content: flex-end;
     margin-right: 30px;
-    margin-top: -40px;
+    margin-top: -55px;
 
 }
 
@@ -1056,7 +1032,8 @@ font-weight: 600 !important;
 
 
 .titulo-right-essa{
-    margin-top: 150px;
+    padding-top: 20px;
+    margin-top: -100px;
     margin-right: -60px;
     margin-bottom: 100px;
 	display: flex;
@@ -1157,6 +1134,49 @@ font-weight: 600 !important;
 
 
 
+#seta-index{ 
+
+    size: 200px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+    align-content: flex-end;
+    margin-top: 30vh;
+    bottom:0;
+      margin-left: 50px;
+      margin-right: -20px;
+      /* position: relative; */
+ 
+     position: sticky;
+      /* bottom: 5;     */
+  
+  }
+
+
+#seta{ 
+
+    size: 200px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+    align-content: flex-end;
+    margin-top: -130px;
+  
+      margin-left: 50px;
+      margin-right: -20px;
+      /* position: relative; */
+ 
+     position: sticky;
+      /* bottom: 5;     */
+  
+  }
+
+
+
 /* CRISTO GALLERY */
 .box-cristo {
     display: flex;
@@ -1214,6 +1234,10 @@ font-weight: 600 !important;
 }
 
 /* RIGHT gil  ////////////////////////////GILBERTO */
+
+#live-do-gil{
+    margin-top: 200px;
+}
 
 
 .right-Div{
@@ -1288,11 +1312,11 @@ font-weight: 600 !important;
 
 .slick-prev:before {
     color: #7b7b7b !important;
-    background-color: #ffffff;
+    background-color: transparent;
   }
   .slick-next:before {
     color: #7b7b7b!important;
-    background-color: #ffffff;
+    background-color:transparent;
   }
 
 
