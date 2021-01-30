@@ -70,13 +70,26 @@ $(document).ready(function(){
 //   //     $('#seta-index').show();
 //   // }
 // });
-
+// onended="videoEnded()"
 
 // Opening page timeout
 
 setTimeout(function () {
   document.getElementById('open').style.display='none';
-}, 3000);
+}, 5000);
+
+
+// $('#vid').hide();
+
+$('#vid').on('ended',function(){ 
+$('#vid').hide();
+});
+
+
+
+
+
+$('video').on('ended',function(){ $(this).hide(); });
 
 //change background color 
 
