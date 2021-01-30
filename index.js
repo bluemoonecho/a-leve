@@ -85,7 +85,7 @@ setTimeout(function () {
 
 setTimeout(function () {
   document.getElementById('open').style.display='none';
-}, 7500);
+}, 7600);
 
 
 
