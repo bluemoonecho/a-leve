@@ -75,8 +75,18 @@ $(document).ready(function(){
 // Opening page timeout
 
 setTimeout(function () {
+  document.getElementById('open-logo').style.display='none';
+}, 6000);
+
+
+setTimeout(function () {
+  document.getElementById('open-end-logo').style.display='none';
+}, 6000);
+
+setTimeout(function () {
   document.getElementById('open').style.display='none';
-}, 5000);
+}, 7500);
+
 
 
 // $('#vid').hide();

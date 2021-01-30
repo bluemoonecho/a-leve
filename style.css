@@ -215,11 +215,10 @@ color: white;
     height: 100%;
     z-index: 100;
     position: absolute;
-
-
-
+    transition: opacity 1s ease;
 }
-.open-logo{
+
+#open-logo{
     margin: 10% auto;
     width: 60%;
     display: flex;
@@ -234,6 +233,91 @@ color: white;
     width: 100%;
     z-index: 200;
 }
+
+.open-end-logo{
+
+    margin: 10% auto;
+    width: 40%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    z-index: 100;
+
+}
+
+
+
+.fade-Out {
+
+    animation: fadeOut ease 8s;
+    -webkit-animation: fadeOut ease 8s;
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+    -ms-animation: fadeOut ease 8s;
+  }
+@keyframes fadeOut {
+    80% {
+        opacity:1;
+      }
+
+      100% {
+        opacity:0;
+      }
+    }
+
+@-moz-keyframes fadeIn {
+    
+    80% {
+        opacity:1;
+      }
+
+      100% {
+        opacity:0;
+      }
+
+}
+
+@-webkit-keyframes fadeIn {
+    80% {
+        opacity:1;
+      }
+
+      100% {
+        opacity:0;
+      }
+
+}
+
+
+@-o-keyframes fadeIn {
+    80% {
+        opacity:1;
+      }
+
+      100% {
+        opacity:0;
+      }
+
+}
+
+@-ms-keyframes fadeIn {
+    80% {
+        opacity:1;
+      }
+
+      100% {
+        opacity:0;
+      }
+    
+}
+
+
+
+
+
+
 
 
 #main{
