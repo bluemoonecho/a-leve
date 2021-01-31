@@ -220,7 +220,7 @@ color: white;
 
 #open-logo{
     margin: 10% auto;
-    width: 60%;
+    width: 700px;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -1199,7 +1199,87 @@ font-weight: 600 !important;
 
 }
 
-/* //////////////// */
+/* //////////////// */ 
+
+
+ /* >>>>//////////// O QUE A LEVE JA FEZ 2 */
+
+.titulo-master-card{
+    z-index: 1;
+    text-align: right;
+}
+ 
+
+.master-card-container{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-left: -250px;
+    margin-top: 150px;    
+    margin-bottom: 100px;
+}
+
+.master-card-Img{
+ 
+    width: 400px;
+    height: 500px;
+    margin-left: -20px;
+    margin-bottom: 100px;
+    z-index: 1;
+}
+
+.esquerda-container{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-left: -250px;
+    margin-top: 150px;    
+    margin-bottom: 100px;
+
+}
+
+.titulo-esquerda{
+    z-index: 1;
+    text-align: left;
+}
+
+.esquerda-horizontal-Img{
+    width: 540px;
+    margin-left: -35px;
+    /* height: 500px; */
+}
+
+.live-ford-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-right: -250px;
+    margin-top: 150px;    
+    margin-bottom: 100px;
+}
+
+.titulo-live-ford{
+    z-index: 1;
+    text-align: right;
+    margin-right: -10px;
+    margin-top: -20px;
+}
+
+.live-ford-Img{
+    width: 540px;
+    margin-left: 30px;
+}
 
 
 /* ja fez //////////////////////////////////////O QUE A LEVE JA FEZ */
