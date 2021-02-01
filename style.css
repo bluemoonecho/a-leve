@@ -1491,10 +1491,11 @@ font-weight: 600 !important;
 
 
 /* //////////cristooo////// */
+
 .titulo-cristo{
     z-index: 1;
-    text-align: left;
-    margin-right: -10px;
+    text-align: right;
+    margin-right: 10px;
     margin-top: -10px;
     display: flex;
     flex-direction: column;
@@ -1509,11 +1510,17 @@ font-weight: 600 !important;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-left: -200px;
     margin-bottom: 200px;
 
-
 }
+
+.estacio-logo{
+    width: 300px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+
 
 .gif-cristo{
     width: 450px;
@@ -1574,7 +1581,7 @@ font-weight: 600 !important;
 	align-items: flex-start;
 	align-content: flex-start;
     margin-bottom: 200px;
-    margin-left: 70px;
+    margin-left: 150px;
 }
 
 .titulo-verao-tim{    
@@ -1587,7 +1594,7 @@ font-weight: 600 !important;
 
 .logo-tim-2{
     width: 150px;
-    margin-left: 190px;
+    margin-left: 160px;
 }
    
 
@@ -1647,6 +1654,90 @@ font-weight: 600 !important;
 
    100% { 
        background-image: url('images/veraotim-gif/VERAO1.png'); 
+    }
+   }
+
+
+/* //////////rio 2c//////////////// */
+
+.rio-2c-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    margin-left: -200px;
+}
+
+.titulo-rio-2c{
+    z-index: 1;
+    text-align: left;
+    margin-top: -10px;
+    /* margin-right: 20px; */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gif-rio-2c{
+    width: 550px;
+    height: 350px;
+    color: black;
+    margin-left: -30px;
+    -webkit-animation-name: effect-rio-2c;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+   z-index: 1;
+   }
+   
+   
+   @-webkit-keyframes effect-rio-2c {  
+    0% { 
+        background-image: url('images/rio2c-gif/2c1.png'); 
+       }
+    19% { 
+        background-image: url('images/rio2c-gif/2c1.png'); 
+       }
+    20% { 
+        background-image: url('images/rio2c-gif/2c2.png'); 
+    }
+    39% { 
+        background-image: url('images/rio2c-gif/2c2.png'); 
+    }
+    40% {  
+        background-image: url('images/rio2c-gif/2c3.png'); 
+    }
+    59% {  
+        background-image: url('images/rio2c-gif/2c3.png'); 
+    }
+
+    60% {  
+    background-image: url('images/rio2c-gif/2c4.png'); 
+    }
+
+    79% {  
+        background-image: url('images/rio2c-gif/2c4.png'); 
+        }
+
+    80% {  
+        background-image: url('images/rio2c-gif/2c5.png'); 
+        }
+
+    99% {  
+        background-image: url('images/rio2c-gif/2c5.png'); 
+    }
+
+   100% { 
+       background-image: url('images/rio2c-gif/2c1.png'); 
     }
    }
 
@@ -1751,6 +1842,12 @@ font-weight: 600 !important;
     margin-bottom: 200px;
 }
 
+.ubc-logo{
+    width: 200px;
+    margin-top: 50px;
+    margin-right: 0px;
+}
+
 .gif-premio-ucb{
     width: 550px;
     height: 350px;
@@ -1797,93 +1894,6 @@ font-weight: 600 !important;
        background-image: url('images/ubc-gif/ubc1.png'); 
     }
    }
-
-/* //////////rio 2c//////////////// */
-
-.rio-2c-container{
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: flex-start;
-    margin-right: 200px;
-    margin-bottom: 200px;
-    margin-left: -220px;
-}
-
-.titulo-rio-2c{
-    z-index: 1;
-    text-align: left;
-    margin-top: -10px;
-    /* margin-right: 20px; */
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-.gif-rio-2c{
-    width: 550px;
-    height: 350px;
-    color: black;
-    margin-left: -30px;
-    -webkit-animation-name: effect-rio-2c;  
-   -webkit-animation-iteration-count: infinite;  
-   -webkit-animation-duration: 8s ; 
-   -webkit-animation-direction: normal;
-   background-size: cover;
-
-   /* background-size: 100% 100%; */
-   background-repeat: no-repeat, repeat;
-   /* background-attachment: fixed; */
-   z-index: 1;
-   }
-   
-   
-   @-webkit-keyframes effect-rio-2c {  
-    0% { 
-        background-image: url('images/rio2c-gif/2c1.png'); 
-       }
-    19% { 
-        background-image: url('images/rio2c-gif/2c1.png'); 
-       }
-    20% { 
-        background-image: url('images/rio2c-gif/2c2.png'); 
-    }
-    39% { 
-        background-image: url('images/rio2c-gif/2c2.png'); 
-    }
-    40% {  
-        background-image: url('images/rio2c-gif/2c3.png'); 
-    }
-    59% {  
-        background-image: url('images/rio2c-gif/2c3.png'); 
-    }
-
-    60% {  
-    background-image: url('images/rio2c-gif/2c4.png'); 
-    }
-
-    79% {  
-        background-image: url('images/rio2c-gif/2c4.png'); 
-        }
-
-    80% {  
-        background-image: url('images/rio2c-gif/2c5.png'); 
-        }
-
-    99% {  
-        background-image: url('images/rio2c-gif/2c5.png'); 
-    }
-
-   100% { 
-       background-image: url('images/rio2c-gif/2c1.png'); 
-    }
-   }
-
-
-
-
 
 
 /* ja fez OLDDD OLD OLD //////////////////////////////////////O QUE A LEVE JA FEZ */
@@ -1950,64 +1960,6 @@ font-weight: 600 !important;
   
   }
 
-
-
-/* CRISTO GALLERY */
-.box-cristo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    color: white;
-    height: 70vh;
-    /* border: 1px solid black; */
-    font-size: 50px;
-    transition-duration: 1s;
-    background-position: center;
-    background-size: cover;
-   
-}
-
-.box-cristo:hover{
-    flex: 4;   
-    /* four times more than the others  */
-}
-
-.gallery{
-    display: flex;
-    height: 100vh;
-    align-items: center; 
-    margin-left: 50px;
-    /* width: 100px;
-    overflow-x: scroll; */
-}
-
-.box-cristo:nth-of-type(1){
-    background-image: url("images/cristo-na-pascoa/IO7A9690.jpg");
-}
-.box-cristo:nth-of-type(2){
-    background-image: url("images/cristo-na-pascoa/IO7A9719.jpg");
-}
-.box-cristo:nth-of-type(3){
-    background-image: url("images/cristo-na-pascoa/IO7A9741.jpg");
-}
-.box-cristo:nth-of-type(4){
-    background-image: url("images/cristo-na-pascoa/IO7A9720-1.jpg");
-}
-.box-cristo:nth-of-type(5){
-    background-image: url("images/cristo-na-pascoa/IO7A9798-1.jpg");
-}
-
-
-@media(max-width: 480px){
-    .gallery {
-        flex-direction: column;
-    }
-    .box-cristo {
-        width: 80vw;
-    }
-}
-
 /* RIGHT gil  ////////////////////////////GILBERTO */
 
 #live-do-gil{
@@ -2037,6 +1989,21 @@ font-weight: 600 !important;
     z-index: 1;
     text-align: right;
 } 
+
+.titulo-right-ford{
+    margin-top: 50px;
+    margin-right: -20px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    z-index: 1;
+    text-align: right;
+} 
+
 
 
 .right-text{
@@ -2142,7 +2109,7 @@ font-weight: 600 !important;
   }
 
   .titulo-left{
-    margin-top: 150px;
+    margin-top: 40px;
     margin-left: -30px;
     margin-bottom: 100px;
 	display: flex;
