@@ -219,8 +219,8 @@ color: white;
 }
 
 #open-logo{
-    margin: 10% auto;
-    width: 700px;
+    margin: 100px auto;
+    width: 500px;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -314,12 +314,6 @@ color: white;
 }
 
 
-
-
-
-
-
-
 #main{
     /* margin-top: 0px; */
     margin-left: 20%;
@@ -333,7 +327,6 @@ color: white;
 @media (max-width: 767px) {
 
     #main{
-
         /* margin-top: 0px; */
         margin-left: 5px;
         margin-right: 5px;
@@ -970,7 +963,6 @@ font-weight: 600 !important;
     font-size: 50px !important;
     font-style: italic !important;
     font-weight: 600 !important;
-
 }
 
 
@@ -1199,17 +1191,36 @@ font-weight: 600 !important;
 
 }
 
-/* //////////////// */ 
+/* //////////////// ////////////////////////////////////////////////////*/ 
+
+
 
 
  /* >>>>//////////// O QUE A LEVE JA FEZ 2 */
 
+ #main-o-que-a-leve-ja-fez h1{
+    font-size: 70px !important;
+ }
+
+ #main-o-que-a-leve-ja-fez a{
+    text-decoration: none;
+    color: black !important;
+ }
+
 .titulo-master-card{
     z-index: 1;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logo-mastercard{
+    width: 150px;
+    margin-right: 20px;
+
 }
  
-
 .master-card-container{
 
     display: flex;
@@ -1218,71 +1229,664 @@ font-weight: 600 !important;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-left: -250px;
-    margin-top: 150px;    
-    margin-bottom: 100px;
+    margin-left: -120px;
+    margin-right: auto;
+    margin-top: 50px;    
+    margin-bottom: 200px;
+
 }
 
-.master-card-Img{
- 
+
+
+/* ////////// GIF MASTERCARD */
+
+.gif-mastercard{
     width: 400px;
-    height: 500px;
-    margin-left: -20px;
-    margin-bottom: 100px;
-    z-index: 1;
-}
+    height: 550px;
+    color: black;
+    -webkit-animation-name: effect-mastercard;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
 
-.esquerda-container{
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
 
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	align-content: flex-start;
-    margin-left: -250px;
-    margin-top: 150px;    
-    margin-bottom: 100px;
+   z-index: 100;
+   }
+   
+   
+   @-webkit-keyframes effect-mastercard {  
+    0% { 
+        background-image: url('images/mastercard-gif/lives_mastercard1.png'); 
+       }
+    15% { 
+        background-image: url('images/mastercard-gif/lives_mastercard1.png'); 
+       }
+    16% { 
+        background-image: url('images/mastercard-gif/lives_mastercard2.png'); 
+    }
+    31% { 
+        background-image: url('images/mastercard-gif/lives_mastercard2.png'); 
+    }
+    32% {  
+        background-image: url('images/mastercard-gif/lives_mastercard3.png'); 
+    }
+    47% {  
+        background-image: url('images/mastercard-gif/lives_mastercard3.png'); 
+    }
 
-}
+    48% {  
+    background-image: url('images/mastercard-gif/lives_mastercard4.png'); 
+    }
 
-.titulo-esquerda{
-    z-index: 1;
-    text-align: left;
-}
+    63% {  
+        background-image: url('images/mastercard-gif/lives_mastercard4.png'); 
+        }
 
-.esquerda-horizontal-Img{
-    width: 540px;
-    margin-left: -35px;
-    /* height: 500px; */
-}
+    64% {  
+        background-image: url('images/mastercard-gif/lives_mastercard5.png'); 
+        }
+    
+    79% {  
+        background-image: url('images/mastercard-gif/lives_mastercard5.png'); 
+     }
+
+     80% {  
+        background-image: url('images/mastercard-gif/lives_mastercard6.png'); 
+     }
+
+    99% {  
+        background-image: url('images/mastercard-gif/lives_mastercard6.png'); 
+    }
+
+   100% { 
+       background-image: url('images/mastercard-gif/lives_mastercard1.png'); 
+    }
+   }
+
+
+
+/* /////// ford */
 
 .live-ford-container{
+
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-right: -250px;
-    margin-top: 150px;    
-    margin-bottom: 100px;
+    margin-right: 350px;
+    margin-bottom: 200px;
+
 }
 
 .titulo-live-ford{
     z-index: 1;
+    text-align: left;
+    margin-right: -20px;
+    margin-top: -10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-ford{
+    width: 150px;
+    margin-left: 15px;
+
+}
+
+
+
+.gif-ford{
+    width: 550px;
+    height: 350px;
+    color: black;
+    margin-left: -100px;
+    -webkit-animation-name: effect-ford;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+   z-index: 1;
+   
+   }
+
+   
+   @-webkit-keyframes effect-ford {  
+    0% { 
+        background-image: url('images/ford-gif/ford1.png'); 
+       }
+    24% { 
+        background-image: url('images/ford-gif/ford1.png'); 
+       }
+    25% { 
+        background-image: url('images/ford-gif/ford2.png'); 
+   }
+    49% { 
+        background-image: url('images/ford-gif/ford2.png'); 
+    }
+    50% {  
+        background-image: url('images/ford-gif/ford3.png'); 
+   }
+    74% {  
+        background-image: url('images/ford-gif/ford3.png'); 
+    }
+
+   75% {  
+        background-image: url('images/ford-gif/ford4.png'); 
+}
+    99% {  
+        background-image: url('images/ford-gif/ford4.png'); 
+    }
+
+   100% { 
+       background-image: url('images/ford-gif/ford1.png'); 
+    }
+   }
+
+
+
+ /* //////////////// convenção da tim */
+
+.titulo-convencao-da-tim{
+    z-index: 1;
     text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    /* margin-right: 20px; */
+}
+.convencao-da-tim-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-right: -40px;
+    margin-bottom: 200px;
+}
+
+
+.logo-tim{
+    width: 150px;
+    margin-right: 40px;
+
+}
+
+ .gif-convencao-tim{
+    width: 550px;
+    height: 350px;
+    color: black;
+    -webkit-animation-name: effect-convencao-tim;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+
+   z-index: 1;
+   }
+   
+   
+   @-webkit-keyframes effect-convencao-tim {  
+    0% { 
+        background-image: url('images/convencaotim-gif/timconvencao1.png'); 
+       }
+    15% { 
+        background-image: url('images/convencaotim-gif/timconvencao1.png'); 
+       }
+    16% { 
+        background-image: url('images/convencaotim-gif/timconvencao2.png'); 
+    }
+    31% { 
+        background-image: url('images/convencaotim-gif/timconvencao2.png'); 
+    }
+    32% {  
+        background-image: url('images/convencaotim-gif/timconvencao3.png'); 
+    }
+    47% {  
+        background-image: url('images/convencaotim-gif/timconvencao3.png'); 
+    }
+
+    48% {  
+    background-image: url('images/convencaotim-gif/timconvencao4.png'); 
+    }
+
+    63% {  
+        background-image: url('images/convencaotim-gif/timconvencao4.png'); 
+        }
+
+    64% {  
+        background-image: url('images/convencaotim-gif/timconvencao5.png'); 
+        }
+    
+    79% {  
+        background-image: url('images/convencaotim-gif/timconvencao5.png'); 
+     }
+
+     80% {  
+        background-image: url('images/convencaotim-gif/timconvencao6.png'); 
+     }
+
+    99% {  
+        background-image: url('images/convencaotim-gif/timconvencao6.png'); 
+    }
+
+   100% { 
+       background-image: url('images/convencaotim-gif/timconvencao1.png'); 
+    }
+   }
+
+
+/* //////////cristooo////// */
+.titulo-cristo{
+    z-index: 1;
+    text-align: left;
     margin-right: -10px;
-    margin-top: -20px;
-}
-
-.live-ford-Img{
-    width: 540px;
-    margin-left: 30px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
 }
 
 
-/* ja fez //////////////////////////////////////O QUE A LEVE JA FEZ */
+.cristo-container{
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-left: -200px;
+    margin-bottom: 200px;
+
+
+}
+
+.gif-cristo{
+    width: 450px;
+    height: 550px;
+    color: black;
+    -webkit-animation-name: effect-cristo;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+   z-index: 1;
+   }
+
+   
+   @-webkit-keyframes effect-cristo {  
+    0% { 
+        background-image: url('images/cristo-gif/cristo1.png'); 
+       }
+    24% { 
+        background-image: url('images/cristo-gif/cristo1.png'); 
+       }
+    25% { 
+        background-image: url('images/cristo-gif/cristo2.png'); 
+   }
+    49% { 
+        background-image: url('images/cristo-gif/cristo2.png'); 
+    }
+    50% {  
+        background-image: url('images/cristo-gif/cristo3.png'); 
+   }
+    74% {  
+        background-image: url('images/cristo-gif/cristo3.png'); 
+    }
+
+   75% {  
+        background-image: url('images/cristo-gif/cristo4.png'); 
+}
+    99% {  
+        background-image: url('images/cristo-gif/cristo4.png'); 
+    }
+
+   100% { 
+       background-image: url('images/cristo-gif/cristo1.png'); 
+    }
+   }
+
+
+/* verao tim //////////////////////// verao tim */
+.verao-tim-container{
+   
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-bottom: 200px;
+    margin-left: 70px;
+}
+
+.titulo-verao-tim{    
+    z-index: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.logo-tim-2{
+    width: 150px;
+    margin-left: 190px;
+}
+   
+
+.gif-verao-tim{
+    width: 550px;
+    height: 350px;
+    color: black;
+    -webkit-animation-name: effect-verao-tim;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+   z-index: 1;
+   }
+
+
+   
+   @-webkit-keyframes effect-verao-tim {  
+    0% { 
+        background-image: url('images/veraotim-gif/VERAO1.png'); 
+       }
+    19% { 
+        background-image: url('images/veraotim-gif/VERAO1.png'); 
+       }
+    20% { 
+        background-image: url('images/veraotim-gif/verao2.png'); 
+    }
+    39% { 
+        background-image: url('images/veraotim-gif/verao2.png'); 
+    }
+    40% {  
+        background-image: url('images/veraotim-gif/verao3.png'); 
+    }
+    59% {  
+        background-image: url('images/veraotim-gif/verao3.png'); 
+    }
+
+    60% {  
+    background-image: url('images/veraotim-gif/verao4.png'); 
+    }
+
+    79% {  
+        background-image: url('images/veraotim-gif/verao4.png'); 
+        }
+
+    80% {  
+        background-image: url('images/veraotim-gif/verao5.png'); 
+        }
+
+    99% {  
+        background-image: url('images/veraotim-gif/verao5.png'); 
+    }
+
+   100% { 
+       background-image: url('images/veraotim-gif/VERAO1.png'); 
+    }
+   }
+
+
+
+/* /////////////////////maratona/////////////// */
+
+.maratona-rio-main-container{
+    
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-left: -30px;
+    margin-bottom: 200px;
+}
+
+.titulo-maratona-rio{
+    z-index: 1;
+    text-align: left;
+    margin-right: -10px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ////////// GIF MARATONA */
+
+.gif-maratona{
+    width: 400px;
+    height: 550px;
+    color: black;
+    margin-right: -20px;
+    -webkit-animation-name: effect-maratona;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+
+   z-index: 1;
+   }
+   
+   
+   @-webkit-keyframes effect-maratona {  
+    0% { 
+        background-image: url('images/maratona-gif/MARATONA.png'); 
+       }
+    24% { 
+        background-image: url('images/maratona-gif/MARATONA.png'); 
+       }
+    25% { 
+        background-image: url('images/maratona-gif/MARATONA1.png'); 
+   }
+    49% { 
+    background-image: url('images/maratona-gif/MARATONA1.png'); 
+    }
+    50% {  
+        background-image: url('images/maratona-gif/MARATONA2.png'); 
+   }
+    74% {  
+    background-image: url('images/maratona-gif/MARATONA2.png'); 
+    }
+
+   75% {  
+    background-image: url('images/maratona-gif/MARATONA3.png'); 
+}
+    99% {  
+        background-image: url('images/maratona-gif/MARATONA3.png'); 
+    }
+
+   100% { 
+       background-image: url('images/maratona-gif/MARATONA.png'); 
+    }
+   }
+
+
+/* /////////////premio ucb///////////// */
+
+.titulo-premio-ubc{
+    z-index: 1;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.premio-ubc-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-right: -80px;
+    margin-bottom: 200px;
+}
+
+.gif-premio-ucb{
+    width: 550px;
+    height: 350px;
+    color: black;
+    -webkit-animation-name: effect-premio-ucb;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+   z-index: 1;
+   }
+
+   
+   @-webkit-keyframes effect-premio-ucb {  
+    0% { 
+        background-image: url('images/ubc-gif/ubc1.png'); 
+       }
+    24% { 
+        background-image: url('images/ubc-gif/ubc1.png'); 
+       }
+    25% { 
+        background-image: url('images/ubc-gif/ubc2.png'); 
+   }
+    49% { 
+        background-image: url('images/ubc-gif/ubc2.png'); 
+    }
+    50% {  
+        background-image: url('images/ubc-gif/ubc3.png'); 
+   }
+    74% {  
+        background-image: url('images/ubc-gif/ubc3.png'); 
+    }
+   75% {  
+        background-image: url('images/ubc-gif/ubc4.png'); 
+}
+    99% {  
+        background-image: url('images/ubc-gif/ubc4.png'); 
+    }
+
+   100% { 
+       background-image: url('images/ubc-gif/ubc1.png'); 
+    }
+   }
+
+/* //////////rio 2c//////////////// */
+
+.rio-2c-container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-right: 200px;
+    margin-bottom: 200px;
+    margin-left: -220px;
+}
+
+.titulo-rio-2c{
+    z-index: 1;
+    text-align: left;
+    margin-top: -10px;
+    /* margin-right: 20px; */
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.gif-rio-2c{
+    width: 550px;
+    height: 350px;
+    color: black;
+    margin-left: -30px;
+    -webkit-animation-name: effect-rio-2c;  
+   -webkit-animation-iteration-count: infinite;  
+   -webkit-animation-duration: 8s ; 
+   -webkit-animation-direction: normal;
+   background-size: cover;
+
+   /* background-size: 100% 100%; */
+   background-repeat: no-repeat, repeat;
+   /* background-attachment: fixed; */
+   z-index: 1;
+   }
+   
+   
+   @-webkit-keyframes effect-rio-2c {  
+    0% { 
+        background-image: url('images/rio2c-gif/2c1.png'); 
+       }
+    19% { 
+        background-image: url('images/rio2c-gif/2c1.png'); 
+       }
+    20% { 
+        background-image: url('images/rio2c-gif/2c2.png'); 
+    }
+    39% { 
+        background-image: url('images/rio2c-gif/2c2.png'); 
+    }
+    40% {  
+        background-image: url('images/rio2c-gif/2c3.png'); 
+    }
+    59% {  
+        background-image: url('images/rio2c-gif/2c3.png'); 
+    }
+
+    60% {  
+    background-image: url('images/rio2c-gif/2c4.png'); 
+    }
+
+    79% {  
+        background-image: url('images/rio2c-gif/2c4.png'); 
+        }
+
+    80% {  
+        background-image: url('images/rio2c-gif/2c5.png'); 
+        }
+
+    99% {  
+        background-image: url('images/rio2c-gif/2c5.png'); 
+    }
+
+   100% { 
+       background-image: url('images/rio2c-gif/2c1.png'); 
+    }
+   }
+
+
+
+
+
+
+/* ja fez OLDDD OLD OLD //////////////////////////////////////O QUE A LEVE JA FEZ */
 
 
 .foto-index-capa{
@@ -1407,7 +2011,7 @@ font-weight: 600 !important;
 /* RIGHT gil  ////////////////////////////GILBERTO */
 
 #live-do-gil{
-    margin-top: 200px;
+    margin-top: 0px;
 }
 
 
@@ -1421,7 +2025,7 @@ font-weight: 600 !important;
 }
 
 .titulo-right{
-    margin-top: 150px;
+    margin-top: 50px;
     margin-right: -60px;
     margin-bottom: 100px;
 	display: flex;
@@ -1566,6 +2170,7 @@ font-weight: 600 !important;
   .left-text{
     font-size: 21px;
     width: 400px;
+    margin-top: -100px;
     margin: auto;
   }
 
@@ -1599,10 +2204,9 @@ width: 100%;
 height: 70vh;
 }
 
-
-  .horizontal-Img{
-    width: 100%;
-    height: 100%;
+.horizontal-Img{
+width: 100%;
+height: 100%;
 }
 
 .horizontal-container{
