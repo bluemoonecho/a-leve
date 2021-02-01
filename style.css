@@ -1764,8 +1764,13 @@ font-weight: 600 !important;
     margin-top: -10px;
     display: flex;
     flex-direction: column;
+    
 }
 
+.dreamfact-logo{
+    width: 250px;
+    margin-left: 50px;
+}
 
 /* ////////// GIF MARATONA */
 
@@ -1845,7 +1850,7 @@ font-weight: 600 !important;
 .ubc-logo{
     width: 200px;
     margin-top: 50px;
-    margin-right: 0px;
+    margin-right: 30px;
 }
 
 .gif-premio-ucb{
