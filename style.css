@@ -2285,7 +2285,7 @@ height: 100%;
 .palestra-do-ze-quote{
     font-size: 21px;
     width: 400px; 
-    margin-right: -50px;
+    /* margin-right: -50px; */
 }
 
 .palestra-do-ze-container-1{
@@ -2297,6 +2297,7 @@ height: 100%;
     align-content: flex-end;
     margin-bottom: 50px;
 }
+
 .palestra-do-ze-video{
     width: 100%;
     height: 80vh;
@@ -2312,7 +2313,7 @@ height: 100%;
 	justify-content: flex-end;
     align-content: flex-end;
     margin-bottom: 50px;
-    margin-left: -50px;
+    /* margin-left: -50px; */
 
 }
 
@@ -2325,7 +2326,15 @@ height: 100%;
     align-content: flex-start;
     margin-top: 50px;
     margin-bottom: 200px;
-    margin-left: 80px;
+    margin-left: 0px;
+}
+.ze-contato-container b{
+    font-weight: 600;
+}
+
+.hr-palestra{
+    width: 270px;
+    margin-right: 20px;
 }
 
 
