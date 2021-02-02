@@ -146,7 +146,7 @@ font-weight: 100;
 color: white;
 /* transition: background-color #5c5c5e 2s; */
 /* height: 100px; */
--webkit-animation-name: colorChangePurpleConecte;  
+-webkit-animation-name: colorChangeBlue;  
 -webkit-animation-iteration-count: infinite;  
 -webkit-animation-duration: 5s ; 
 -webkit-animation-transition: 5s ease-out;
@@ -2247,6 +2247,20 @@ height: 100%;
     margin: auto; 
 }
 
+.palestra-do-ze-Div h4{
+    font-family: 'Raleway';
+    line-height: 33px;
+    font-size: 25px;
+    font-weight: 400 !important;
+    font-style: italic !important;
+    letter-spacing: 1px !important;
+    text-align: justify;
+    text-align-last: left;
+    line-height: 1.6;
+
+
+}
+
 .titulo-palestra-do-ze{
     margin-top: 30px;
     margin-right: -60px;
@@ -2267,6 +2281,13 @@ height: 100%;
     margin-left: auto;
 }
 
+
+.palestra-do-ze-quote{
+    font-size: 21px;
+    width: 400px; 
+    margin-right: -50px;
+}
+
 .palestra-do-ze-container-1{
     display: flex;
 	flex-direction: row;
@@ -2277,7 +2298,8 @@ height: 100%;
     margin-bottom: 50px;
 }
 .palestra-do-ze-video{
-    height: 300px;
+    width: 100%;
+    height: 80vh;
     transition-duration: 1s;
     border: none;
 }
@@ -2290,6 +2312,7 @@ height: 100%;
 	justify-content: flex-end;
     align-content: flex-end;
     margin-bottom: 50px;
+    margin-left: -50px;
 
 }
 
