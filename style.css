@@ -267,7 +267,7 @@ color: white;
       }
     }
 
-@-moz-keyframes fadeIn {
+@-moz-keyframes fadeOut {
     
     80% {
         opacity:1;
@@ -279,7 +279,7 @@ color: white;
 
 }
 
-@-webkit-keyframes fadeIn {
+@-webkit-keyframes fadeOut {
     80% {
         opacity:1;
       }
@@ -291,7 +291,7 @@ color: white;
 }
 
 
-@-o-keyframes fadeIn {
+@-o-keyframes fadeOut {
     80% {
         opacity:1;
       }
@@ -302,7 +302,7 @@ color: white;
 
 }
 
-@-ms-keyframes fadeIn {
+@-ms-keyframes fadeOut {
     80% {
         opacity:1;
       }
@@ -977,6 +977,9 @@ font-weight: 600 !important;
   0% {
     opacity:0;
   }
+  80% {
+    opacity:0;
+  }
   100% {
     opacity:1;
   }
@@ -984,6 +987,9 @@ font-weight: 600 !important;
 
 @-moz-keyframes fadeIn {
   0% {
+    opacity:0;
+  }
+  80% {
     opacity:0;
   }
   100% {
@@ -995,6 +1001,9 @@ font-weight: 600 !important;
   0% {
     opacity:0;
   }
+  80% {
+    opacity:0;
+  }
   100% {
     opacity:1;
   }
@@ -1004,6 +1013,9 @@ font-weight: 600 !important;
   0% {
     opacity:0;
   }
+  80% {
+    opacity:0;
+  }
   100% {
     opacity:1;
   }
@@ -1011,6 +1023,9 @@ font-weight: 600 !important;
 
 @-ms-keyframes fadeIn {
   0% {
+    opacity:0;
+  }
+  80% {
     opacity:0;
   }
   100% {
@@ -2098,6 +2113,10 @@ font-weight: 600 !important;
 .video-tim{
     width: 100%;
     height: 80vh; 
+}
+
+video:focus {
+    outline: none;
 }
 
 .video-erasmo{
