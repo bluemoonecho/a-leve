@@ -354,10 +354,9 @@ color: white;
 
 
 
-
 #main-o-que-a-leve-ja-fez{
-    margin-left: 20%;
-    margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 #main-palestra-do-ze{
@@ -1229,13 +1228,12 @@ font-weight: 600 !important;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-left: -120px;
+    margin-left: -70px;;
     margin-right: auto;
     margin-top: 50px;    
     margin-bottom: 200px;
 
 }
-
 
 
 /* ////////// GIF MASTERCARD */
@@ -1253,8 +1251,7 @@ font-weight: 600 !important;
    /* background-size: 100% 100%; */
    background-repeat: no-repeat, repeat;
    /* background-attachment: fixed; */
-
-   z-index: 100;
+   z-index: 1;
    }
    
    
@@ -1262,44 +1259,50 @@ font-weight: 600 !important;
     0% { 
         background-image: url('images/mastercard-gif/lives_mastercard1.png'); 
        }
-    15% { 
+    13% { 
         background-image: url('images/mastercard-gif/lives_mastercard1.png'); 
        }
-    16% { 
+    14% { 
         background-image: url('images/mastercard-gif/lives_mastercard2.png'); 
     }
-    31% { 
+    27% { 
         background-image: url('images/mastercard-gif/lives_mastercard2.png'); 
     }
-    32% {  
-        background-image: url('images/mastercard-gif/lives_mastercard3.png'); 
+    28% {  
+        background-image: url('images/mastercard-gif/lives_mastercard7.png'); 
     }
-    47% {  
-        background-image: url('images/mastercard-gif/lives_mastercard3.png'); 
+    41% {  
+        background-image: url('images/mastercard-gif/lives_mastercard7.png'); 
     }
 
-    48% {  
+    42% {  
     background-image: url('images/mastercard-gif/lives_mastercard4.png'); 
     }
 
-    63% {  
+    55% {  
         background-image: url('images/mastercard-gif/lives_mastercard4.png'); 
         }
 
-    64% {  
+    56% {  
         background-image: url('images/mastercard-gif/lives_mastercard5.png'); 
         }
     
-    79% {  
+    69% {  
         background-image: url('images/mastercard-gif/lives_mastercard5.png'); 
      }
 
-     80% {  
+     70% {  
         background-image: url('images/mastercard-gif/lives_mastercard6.png'); 
      }
 
-    99% {  
+    83% {  
         background-image: url('images/mastercard-gif/lives_mastercard6.png'); 
+    }
+    84% {  
+        background-image: url('images/mastercard-gif/lives_mastercard3.png'); 
+    }
+    99% {  
+        background-image: url('images/mastercard-gif/lives_mastercard3.png'); 
     }
 
    100% { 
@@ -1318,8 +1321,9 @@ font-weight: 600 !important;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-start;
-	align-content: flex-start;
-    margin-right: 350px;
+    align-content: flex-start;
+    margin-top: 200px;
+    margin-right: 150px;
     margin-bottom: 200px;
 
 }
@@ -1327,16 +1331,17 @@ font-weight: 600 !important;
 .titulo-live-ford{
     z-index: 1;
     text-align: left;
-    margin-right: -20px;
+    margin-right: -50px;
     margin-top: -10px;
-    margin-left: 20px;
+    margin-left: 0px;
     display: flex;
     flex-direction: column;
 }
 
 .logo-ford{
-    width: 150px;
-    margin-left: 15px;
+    width: 130px;
+    margin-left: 35px;
+    margin-top: -20px;
 
 }
 
@@ -1398,7 +1403,7 @@ font-weight: 600 !important;
 
 .titulo-convencao-da-tim{
     z-index: 1;
-    text-align: right;
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -1411,14 +1416,14 @@ font-weight: 600 !important;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-right: -40px;
+    margin-right: 105px;
     margin-bottom: 200px;
 }
 
 
 .logo-tim{
     width: 150px;
-    margin-right: 40px;
+    margin-right: 250px;
 
 }
 
@@ -1511,13 +1516,14 @@ font-weight: 600 !important;
 	align-items: flex-start;
 	align-content: flex-start;
     margin-bottom: 200px;
+    margin-left: 40px;
 
 }
 
 .estacio-logo{
     width: 300px;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 60px;
+    margin-top: 10px;
 }
 
 
@@ -1581,7 +1587,7 @@ font-weight: 600 !important;
 	align-items: flex-start;
 	align-content: flex-start;
     margin-bottom: 200px;
-    margin-left: 150px;
+    margin-left: 170px;
 }
 
 .titulo-verao-tim{    
@@ -1594,13 +1600,15 @@ font-weight: 600 !important;
 
 .logo-tim-2{
     width: 150px;
-    margin-left: 160px;
+    margin-left: 190px;
 }
    
 
 .gif-verao-tim{
     width: 550px;
     height: 350px;
+    /* width: 507px;
+    height: 320px; */
     color: black;
     -webkit-animation-name: effect-verao-tim;  
    -webkit-animation-iteration-count: infinite;  
@@ -1667,9 +1675,9 @@ font-weight: 600 !important;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-right: 200px;
+    margin-right: 80px;
     margin-bottom: 200px;
-    margin-left: -200px;
+    margin-left: -160px;
 }
 
 .titulo-rio-2c{
@@ -1683,8 +1691,8 @@ font-weight: 600 !important;
 }
 
 .gif-rio-2c{
-    width: 550px;
-    height: 350px;
+    width: 507px;
+    height: 320px;
     color: black;
     margin-left: -30px;
     -webkit-animation-name: effect-rio-2c;  
@@ -1753,13 +1761,13 @@ font-weight: 600 !important;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-left: -30px;
+    margin-left: -145px;
     margin-bottom: 200px;
 }
 
 .titulo-maratona-rio{
     z-index: 1;
-    text-align: left;
+    text-align: right;
     margin-right: -10px;
     margin-top: -10px;
     display: flex;
@@ -1769,7 +1777,7 @@ font-weight: 600 !important;
 
 .dreamfact-logo{
     width: 250px;
-    margin-left: 50px;
+    margin-left: 230px;
 }
 
 /* ////////// GIF MARATONA */
@@ -1843,19 +1851,19 @@ font-weight: 600 !important;
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-right: -80px;
+    margin-right: 80px;
     margin-bottom: 200px;
 }
 
 .ubc-logo{
     width: 200px;
-    margin-top: 50px;
-    margin-right: 30px;
+    margin-top: 10px;
+    margin-right: 190px;
 }
 
 .gif-premio-ucb{
-    width: 550px;
-    height: 350px;
+    width: 507px;
+    height: 320px;
     color: black;
     -webkit-animation-name: effect-premio-ucb;  
    -webkit-animation-iteration-count: infinite;  
@@ -1935,9 +1943,9 @@ font-weight: 600 !important;
     align-content: flex-end;
     margin-top: 30vh;
     bottom:0;
-      margin-left: 50px;
-      margin-right: -20px;
-      /* position: relative; */
+    margin-left: 50px;
+    margin-right: -20px;
+    /* position: relative; */
  
      position: sticky;
       /* bottom: 5;     */
@@ -1945,22 +1953,21 @@ font-weight: 600 !important;
   }
 
 
-#seta{ 
+#seta-o-que-a-leve-ja-fez{ 
 
     size: 200px;
+    position: sticky;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-end;
     align-content: flex-end;
-    margin-top: -130px;
-  
-      margin-left: 50px;
-      margin-right: -20px;
-      /* position: relative; */
+    margin-top: -250px;
+    margin-right: 0px;
+    /* position: relative; */
  
-     position: sticky;
+     z-index: 10;
       /* bottom: 5;     */
   
   }
@@ -1979,6 +1986,7 @@ font-weight: 600 !important;
     flex-wrap: wrap;
     z-index: 2;
     margin: auto;   
+
 }
 
 .titulo-right{
@@ -1997,7 +2005,7 @@ font-weight: 600 !important;
 
 .titulo-right-ford{
     margin-top: 50px;
-    margin-right: -20px;
+    margin-right: -80px;
     margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;

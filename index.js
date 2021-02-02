@@ -91,15 +91,15 @@ setTimeout(function () {
 
 // $('#vid').hide();
 
-$('#vid').on('ended',function(){ 
-$('#vid').hide();
-});
+// $('#vid').on('ended',function(){ 
+// $('#vid').hide();
+// });
 
 
 
 
 
-$('video').on('ended',function(){ $(this).hide(); });
+// $('video').on('ended',function(){ $(this).hide(); });
 
 //change background color 
 
@@ -119,7 +119,6 @@ var hovering = function(){
 var leaving = function(){
   $("hamburger").hide("new-nav", { direction: "left" }, 1000);
 };
-
 $("#hamburger").hover(hovering, leaving);
 
 
