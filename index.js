@@ -5,16 +5,7 @@
 $(document).ready(function(){
 
 
-  // $('.slick-show-elza').slick({
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 300,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   centerMode: true,
-  //   variableWidth: true
-  // });
-
+  
 
   $('.slick-show').slick({
     dots: true,
@@ -61,8 +52,6 @@ setInterval(function() {
 },  3000);
 
 
-
-
 // POP UP WINDOW !!!
 
 
@@ -93,13 +82,30 @@ $(window).load(function () {
 
 
 
+$(window).load(function () {
+  $(".trigger_leve").click(function(){
+     $('.hover_leve').show();
+  });
+  $('.hover_leve').click(function(){
+      $('.hover_leve').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('.hover_leve').hide();
+  });
+});
 
-function play() {
-  var audio = document.getElementById("audio");
-  audio.play();
+
+
+function playMar() {
+  var mar = document.getElementById("mar");
+  mar.play();
 }
 
 
+function playGol() {
+  var gol= document.getElementById("gol");
+  gol.play();
+}
 // // Get the modal
 // function onClick(element) {
 //   document.getElementById("img01").src = element.src;
@@ -139,6 +145,11 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById('open').style.display='none';
 }, 7200);
+
+
+setTimeout(function () {
+  document.getElementById('intro-quote').style.display='none';
+}, 14000);
 
 
 

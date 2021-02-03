@@ -211,7 +211,7 @@ color: white;
     background-color: rgb( 251,252, 252);
     width: 100%;
     height: 100%;
-    z-index: 100;
+    z-index: 1000;
     position: absolute;
     transition: opacity 1s ease;
 }
@@ -309,7 +309,6 @@ color: white;
     /* margin-top: 0px; */
     margin-left: 15%;
     margin-right: 15%;
-    z-index: 1;
 
 }
 
@@ -776,11 +775,9 @@ p {
     display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	/* justify-content: flex-start; */
 	align-items: flex-end;
     align-content: flex-end;
     z-index: 2;
-    /* min-height: calc(100vh - 50px ); */
     margin: auto;
 
 }
@@ -938,7 +935,7 @@ font-weight: 600 !important;
 
 .solucoes{ 
     margin-top: -450px;
-    /* margin-top: -30%; */
+    margin-bottom: 220px;
     text-align: center;
     margin-left: auto;
     margin-right: 100px;
@@ -954,73 +951,105 @@ font-weight: 600 !important;
 }
 
 
-.fade-in {
-    animation: fadeIn ease 10s;
-    -webkit-animation: fadeIn ease 10s;
-    -moz-animation: fadeIn ease 10s;
-    -o-animation: fadeIn ease 10s;
-    -ms-animation: fadeIn ease 10s;
+.fade-in-out {
+    animation: fadeInOut ease 15s;
+
+    /* -webkit-animation: fadeInOut ease 15s;
+    -moz-animation: fadeInOut ease 15s;
+    -o-animation: fadeInOut ease 15s;
+    -ms-animation: fadeInOut ease 15s; */
   }
-@keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  80% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+@keyframes fadeInOut  {
+    0% {
+        opacity:0;
+      }
+      50% {
+        opacity:0;
+      }
+      75% {
+        opacity:1;
+      }
+      99%{
+        opacity:0; 
+      }
+      100% {
+        opacity:0;
+      }
 }
 
-@-moz-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  80% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+@-moz-keyframes fadeInOut  {
+    0% {
+        opacity:0;
+      }
+      50% {
+        opacity:0;
+      }
+      75% {
+        opacity:1;
+      }
+      99%{
+        opacity:0; 
+      }
+      100% {
+        opacity:0;
+      }
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  80% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+@-webkit-keyframes fadeInOut  {
+    0% {
+        opacity:0;
+      }
+      50% {
+        opacity:0;
+      }
+      75% {
+        opacity:1;
+      }
+      99%{
+        opacity:0; 
+      }
+      100% {
+        opacity:0;
+      }
 }
 
-@-o-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  80% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
-  }
+@-o-keyframes fadeInOut  {
+    0% {
+        opacity:0;
+      }
+      50% {
+        opacity:0;
+      }
+      75% {
+        opacity:1;
+      }
+      99%{
+        opacity:0; 
+      }
+      100% {
+        opacity:0;
+      }
 }
 
-@-ms-keyframes fadeIn {
-  0% {
-    opacity:0;
-  }
-  80% {
-    opacity:0;
-  }
-  100% {
-    opacity:1;
+@-ms-keyframes fadeInOut  {
+    0% {
+        opacity:0;
+      }
+      50% {
+        opacity:0;
+      }
+      75% {
+        opacity:1;
+      }
+      99%{
+        opacity:0; 
+      }
+      100% {
+        opacity:0;
+      }
 }
 
-}
+
 
 
 
@@ -1071,44 +1100,33 @@ font-weight: 600 !important;
 
 /* /////////////////////ESSA E A LEVE DIV */
 
-#slide-intro { 
-    /* margin: 50px auto;  */
-    position: relative; 
-    width: 240px; 
-    height: 240px; 
-    padding: 10px; 
-    width: 100vw;
-    height: 100vh;
-    position: relative; 
-    z-index: -10;
-    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
-}
 
-#slide-intro > div { 
-    object-fit: cover;
-    width: 80px;
-    height: 100px;
-    position: relative; 
-    /* top: 10px; 
-    left: 10px; 
-    right: 10px; 
-    bottom: 10px;  */
-}
+#seta-index{ 
+    size: 200px;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+    align-content: flex-end;
+    margin-left: 50px;
+    margin-right: -20px;
+    position: sticky;
+    margin-bottom: 200px;
+
+  }
 
 
 
 .intro-gif{
-    /* margin-top: -100vh; */
-    /* margin-bottom: -50vh; */
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
-    -webkit-animation-name: effect-intro-gif;  
+     -webkit-animation-name: effect-intro-gif;  
    -webkit-animation-iteration-count: infinite;  
-   -webkit-animation-duration: 20s ; 
+   -webkit-animation-duration: 25s ; 
    -webkit-animation-direction: normal;
    background-size: cover;
-
-   /* background-size: 100% 100%; */
    background-repeat: no-repeat, repeat;
    /* background-attachment: fixed; */
    z-index: 100;
@@ -1117,74 +1135,70 @@ font-weight: 600 !important;
    
    @-webkit-keyframes effect-intro-gif {  
     0% { 
-        background-image: url(''); 
-       }
-    9% { 
-        background-image: url(''); 
+        background-image: url('images/fotohome/4.jpg'); 
        }
     10% { 
-        background-image: url('images/fotohome/2.jpg'); 
-    }
-    19% { 
-        background-image: url('images/fotohome/2.jpg'); 
-    }
-    20% {  
-        background-image: url('images/fotohome/3.jpg'); 
-    }
-    29% {  
-        background-image: url('images/fotohome/3.jpg'); 
-    }
-
-    30% {  
-    background-image: url('images/fotohome/4.jpg'); 
-    }
-
-    39% {  
         background-image: url('images/fotohome/4.jpg'); 
+       }
+    11% { 
+        background-image: url('images/fotohome/2.jpg'); 
+    }
+    21% { 
+        background-image: url('images/fotohome/2.jpg'); 
+    }
+    22% {  
+        background-image: url('images/fotohome/3.jpg'); 
+    }
+    32% {  
+        background-image: url('images/fotohome/3.jpg'); 
+    }
+
+    33% {  
+    background-image: url('images/fotohome/1.jpg'); 
+    }
+
+    43% {  
+        background-image: url('images/fotohome/1.jpg'); 
         }
 
-    40% {  
+    44% {  
         background-image: url('images/fotohome/5.jpg'); 
         }
     
-    49% {  
+    54% {  
         background-image: url('images/fotohome/5.jpg'); 
      }
 
-     50% {  
-        background-image: url('images/fotohome/6.jpg'); 
-     }
-
-    59% {  
-        background-image: url('images/fotohome/6.jpg'); 
-    }
-    60% {  
+    55% {  
         background-image: url('images/fotohome/7.jpg'); 
     }
-    69% {  
+    65% {  
         background-image: url('images/fotohome/7.jpg'); 
     }
 
-    70% { 
+    66% { 
        background-image: url('images/fotohome/8.jpg'); 
     }
-    79% { 
+    76% { 
         background-image: url('images/fotohome/8.jpg'); 
      }
-    80% { 
+    77% { 
         background-image: url('images/fotohome/9.jpg'); 
      }
-    89% { 
+    87% { 
         background-image: url('images/fotohome/9.jpg'); 
      }
-    90% { 
+    88% { 
+        background-image: url('images/fotohome/10.jpg'); 
+     }
+    98% { 
         background-image: url('images/fotohome/10.jpg'); 
      }
     99% { 
-        background-image: url('images/fotohome/10.jpg'); 
+        background-image: url('images/fotohome/4.jpg'); 
      }
     100% { 
-        background-image: url(''); 
+        background-image: url('images/fotohome/4.jpg'); 
      }
    }
 
@@ -1194,7 +1208,6 @@ font-weight: 600 !important;
     flex-direction: column;          
     flex-wrap: wrap;
     z-index: 2;
-    margin: auto;
 }
 
 .topo{ 
@@ -1219,13 +1232,12 @@ font-weight: 600 !important;
 
 .essa-e-a-leve-container{
     margin-right: -60px;
-    margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
-	align-items: flex-end;
-    justify-content: flex-end;
-    align-content: flex-end;
+	align-items: center;
+    justify-content: center;
+    align-content: center;
     z-index: 1;
     text-align: right;
 }
@@ -1266,8 +1278,9 @@ font-weight: 600 !important;
 
 .titulo-essa{
     padding-top: 20px;
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: nowrap;
@@ -1275,11 +1288,11 @@ font-weight: 600 !important;
     justify-content: flex-start;
     align-content: flex-start;
     z-index: 1;
-    text-align: right;
+    text-align: left;
 } 
 
 .titulo-right-inspiracao{
-    margin-right: -60px;
+    /* margin-right: -60px; */
     margin-bottom: 100px;
     margin-top: -50px;
 	display: flex;
@@ -1310,30 +1323,23 @@ font-weight: 600 !important;
 
 .essa-eh-a-leve-text{
     font-size: 21px;
-    width: 400px;
+    width: 800px;
     margin-right: 50px;
-    margin-top: -125px;
+    margin-top: 50px;
    
 }
 
 
-.essa-eh-a-leve-text-right{
-    font-size: 21px;
-    width: 450px;
-    margin-bottom: 100px;
-    margin-top: -350px;
-    z-index: 1;
-
-}
-
 .essa-eh-a-leve-quote{
-    margin-top: 100px;
-    margin-bottom: 150px;
-    margin-right: 100px
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-right: auto;
 }
 
 .essa-eh-a-leve-quote h3{
    text-align: center !important;
+   font-size: 35px !important;
+   line-height: 50px !important;
 
 }
 
@@ -1382,28 +1388,20 @@ input:focus {
 }
 .hover_johny_hooker .helper{
     display:inline-block;
-    /* height:100%; */
     vertical-align:middle;
 }
 .hover_johny_hooker > div {
-    /* background-color: #fff; */
-    /* box-shadow: 10px 10px 60px #555; */
+
     display: inline-block;
     height: auto;
-    max-width: 551px;
     min-height: 100px;
     vertical-align: middle;
     margin: 100px auto;
- 
-    /* width: 100%; */
-    position: relative;
-    /* border-radius: 8px; */
+     position: relative;
     padding: 15px 5%;
 }
 .popupCloseButton {
-    /* background-color: #fff; */
-    /* border: 3px solid #999; */
-    /* border-radius: 50px; */
+
     cursor: pointer;
     display: inline-block;
     position: absolute;
@@ -1415,26 +1413,22 @@ input:focus {
     height: 30px;
     text-align: center;
 }
-/* .popupCloseButton:hover {
-    background-color: #ccc;
-} */
+
 .trigger_johny_hooker {
     cursor: pointer;
-    /* font-size: 20px; */
-    /* margin: 20px; */
-    /* display: inline-block; */
+
 }
 .pop-up-image{
-    width: 600px;
+    width: 800px;
 }
-/* Popup box BEGIN */
 
-/* Popup box BEGIN */
+/* Popup box JOHNY HOOKER */
+
+/* Popup box IZA */
 .hover_iza{
     background:rgba(0,0,0,.4);
     cursor:pointer;
     display:none;
-    /* height:; */
     position:fixed;
     text-align:center;
     top:0;
@@ -1448,24 +1442,17 @@ input:focus {
     vertical-align:middle;
 }
 .hover_iza > div {
-    /* background-color: #fff; */
-    /* box-shadow: 10px 10px 60px #555; */
+
     display: inline-block;
     height: auto;
-    max-width: 551px;
     min-height: 100px;
     vertical-align: middle;
     margin: 100px auto;
- 
-    /* width: 100%; */
     position: relative;
-    /* border-radius: 8px; */
     padding: 15px 5%;
 }
 .popupCloseButton {
-    /* background-color: #fff; */
-    /* border: 3px solid #999; */
-    /* border-radius: 50px; */
+
     cursor: pointer;
     display: inline-block;
     position: absolute;
@@ -1477,19 +1464,66 @@ input:focus {
     height: 30px;
     text-align: center;
 }
-/* .popupCloseButton:hover {
-    background-color: #ccc;
-} */
+
 .trigger_iza {
     cursor: pointer;
-    /* font-size: 20px; */
-    /* margin: 20px; */
-    /* display: inline-block; */
+
 }
 .pop-up-image{
-    width: 600px;
+    width: 800px;
 }
 
+/* END POP UP IZA */
+
+
+/* Popup box LEVE */
+.hover_leve{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    height: 100%;
+    z-index:10000;
+}
+.hover_leve .helper{
+    display:inline-block;
+    vertical-align:middle;
+}
+.hover_leve > div {
+
+    display: inline-block;
+    height: auto;
+    min-height: 100px;
+    vertical-align: middle;
+    margin: 100px auto;
+    position: relative;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+
+
+    cursor: pointer;
+    display: inline-block;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 40px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+
+.trigger_leve {
+    cursor: pointer;
+
+}
+.pop-up-image{
+    width: 800px;
+}
 
 
  /* >>>>//////////// O QUE A LEVE JA FEZ 2 */
@@ -2211,10 +2245,9 @@ input:focus {
     }
    }
 
-
 /* ja fez OLDDD OLD OLD //////////////////////////////////////O QUE A LEVE JA FEZ */
 
-
+/* 
 .foto-index-capa{
     object-fit: cover;
     width: 100vw;
@@ -2222,7 +2255,7 @@ input:focus {
     position: relative; 
     z-index: -10;
 
-}
+} */
 
 .foto-verao-tim{
     object-fit: cover;
@@ -2231,29 +2264,6 @@ input:focus {
     position: static;
 
 }
-
-
-
-
-#seta-index{ 
-
-    size: 200px;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-end;
-    align-content: flex-end;
-    margin-top: 30vh;
-    bottom:0;
-    margin-left: 50px;
-    margin-right: -20px;
-    /* position: relative; */
- 
-     position: sticky;
-      /* bottom: 5;     */
-  
-  }
 
 
 #seta-o-que-a-leve-ja-fez{ 
@@ -2268,11 +2278,8 @@ input:focus {
     align-content: flex-end;
     margin-top: -250px;
     margin-right: 0px;
-    /* position: relative; */
  
-     z-index: 10;
-      /* bottom: 5;     */
-  
+     z-index: 10;  
   }
 
 /* RIGHT gil  ////////////////////////////GILBERTO */
@@ -2503,13 +2510,13 @@ height: 100%;
 	justify-content: flex-start;
     align-content: flex-start;
 }
+
 .horizontal-text{
     font-size: 21px;
     width: 400px;
     margin-left: 100px;
     margin-top: 100px
 
-    /* margin: auto; */
 }
 
 .horizontal-ficha{
@@ -2545,8 +2552,6 @@ height: 100%;
     text-align: justify;
     text-align-last: left;
     line-height: 1.6;
-
-
 }
 
 .titulo-palestra-do-ze{
@@ -2573,7 +2578,6 @@ height: 100%;
 .palestra-do-ze-quote{
     font-size: 21px;
     width: 400px; 
-    /* margin-right: -50px; */
 }
 
 .palestra-do-ze-container-1{
@@ -2601,8 +2605,6 @@ height: 100%;
 	justify-content: flex-end;
     align-content: flex-end;
     margin-bottom: 50px;
-    /* margin-left: -50px; */
-
 }
 
 .ze-contato-container{
@@ -2614,7 +2616,6 @@ height: 100%;
     align-content: flex-start;
     margin-top: 50px;
     margin-bottom: 200px;
-    margin-left: 0px;
 }
 .ze-contato-container b{
     font-weight: 600;
