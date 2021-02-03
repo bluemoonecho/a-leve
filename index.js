@@ -4,6 +4,7 @@
 
 $(document).ready(function(){
 
+
   // $('.slick-show-elza').slick({
   //   dots: true,
   //   infinite: true,
@@ -45,6 +46,58 @@ $(document).ready(function(){
   // $('#default-demo').slickLightbox();
 
 });
+
+
+
+$("#slide-intro> div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slide-intro > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slide-intro');
+},  3000);
+
+
+
+
+// POP UP WINDOW !!!
+
+
+$(window).load(function () {
+  $(".trigger_johny_hooker").click(function(){
+     $('.hover_johny_hooker').show();
+  });
+  $('.hover_johny_hooker').click(function(){
+      $('.hover_bkgr_fricc').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('.hover_johny_hooker').hide();
+  });
+});
+
+
+$(window).load(function () {
+  $(".trigger_iza").click(function(){
+     $('.hover_iza').show();
+  });
+  $('.hover_iza').click(function(){
+      $('.hover_iza').hide();
+  });
+  $('.popupCloseButton').click(function(){
+      $('.hover_iza').hide();
+  });
+});
+
+
+
+
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
+}
 
 
 // // Get the modal
