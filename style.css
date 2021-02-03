@@ -1137,19 +1137,19 @@ font-weight: 600 !important;
     0% { 
         background-image: url('images/fotohome/4.jpg'); 
        }
-    10% { 
+    8% { 
         background-image: url('images/fotohome/4.jpg'); 
        }
     11% { 
         background-image: url('images/fotohome/2.jpg'); 
     }
-    21% { 
+    19% { 
         background-image: url('images/fotohome/2.jpg'); 
     }
     22% {  
         background-image: url('images/fotohome/3.jpg'); 
     }
-    32% {  
+    30% {  
         background-image: url('images/fotohome/3.jpg'); 
     }
 
@@ -1157,7 +1157,7 @@ font-weight: 600 !important;
     background-image: url('images/fotohome/1.jpg'); 
     }
 
-    43% {  
+    41% {  
         background-image: url('images/fotohome/1.jpg'); 
         }
 
@@ -1165,27 +1165,27 @@ font-weight: 600 !important;
         background-image: url('images/fotohome/5.jpg'); 
         }
     
-    54% {  
+    52% {  
         background-image: url('images/fotohome/5.jpg'); 
      }
 
     55% {  
         background-image: url('images/fotohome/7.jpg'); 
     }
-    65% {  
+    63% {  
         background-image: url('images/fotohome/7.jpg'); 
     }
 
     66% { 
        background-image: url('images/fotohome/8.jpg'); 
     }
-    76% { 
+    74% { 
         background-image: url('images/fotohome/8.jpg'); 
      }
     77% { 
         background-image: url('images/fotohome/9.jpg'); 
      }
-    87% { 
+    85% { 
         background-image: url('images/fotohome/9.jpg'); 
      }
     88% { 
@@ -1753,8 +1753,9 @@ input:focus {
 
 
 .logo-tim{
-    width: 150px;
-    margin-right: 250px;
+    width: 300px;
+    margin-right: 130px;
+    margin-top: 20px;
 
 }
 
@@ -1930,8 +1931,9 @@ input:focus {
 }
 
 .logo-tim-2{
-    width: 150px;
-    margin-left: 190px;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 20px;
 }
    
 
