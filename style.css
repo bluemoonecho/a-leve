@@ -1287,6 +1287,9 @@ font-weight: 600 !important;
 
 }
 
+.essa-eh-a-leve-text.fim {
+    margin-bottom: 150px;
+}
 
 .titulo-essa{
     padding-top: 20px;
@@ -1353,6 +1356,11 @@ font-weight: 600 !important;
    font-size: 35px !important;
    line-height: 50px !important;
 
+}
+
+.essa-eh-a-leve-quote.pergunta{
+
+ margin-left: 150px !important;
 }
 
 /* //////////////// ////////////////////////////////////////////////////*/ 

@@ -152,6 +152,19 @@ setTimeout(function () {
 }, 14000);
 
 
+var myVideo = document.getElementById('indexVideo');
+if (typeof myVideo.loop == 'boolean') { // loop supported
+  myVideo.loop = true;
+} else { // loop property not supported
+  myVideo.addEventListener('ended', function () {
+    this.currentTime = 0;
+    this.play();
+  }, false);
+}
+//...
+myVideo.play();
+
+
 
 // $('#vid').hide();
 
