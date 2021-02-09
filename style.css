@@ -309,51 +309,16 @@ color: white;
 }
 
 
-#main{
-    /* margin-top: 0px; */
+#main {
     margin-left: 15%;
     margin-right: 15%;
-
 }
 
-@media (max-width: 767px) {
-
-    #main{
-        /* margin-top: 0px; */
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    #main-mobile {
-        /* transition: margin-top .5s; */
-        /* margin-top: 1px; */
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-
-    .addMargin {
-        transition: margin-top .5s;
-        margin-top:400px;
-    }
-
-
-    #nav-Div{
-        position: top;
-    }
-
-  
-} 
-
-#main-o-que-a-leve-ja-fez{
+#main-o-que-a-leve-ja-fez {
     margin-left: 10%;
     margin-right: 5%;
 }
 
-#main-palestra-do-ze{
-    margin-left: 20%;
-    margin-right: 10%;
-   
-}
 
 /*
 NAVIGATION BAR
@@ -508,7 +473,6 @@ NAVIGATION BAR
    font-weight: 600;
    transform:scale(0.3,1); 
    -webkit-transform:scale(0.8,1);
-   
  }
  
  /*
@@ -524,20 +488,20 @@ NAVIGATION BAR
  #hide{
 
     height: 0;
-    /* display: block; */
     transition: all 0s ease 5s; /*delay 1s*/
     visibility: hidden;
     margin-top: 0;
-     /* transition: all 0s ease 10s;  */
  }
 
- .activate-menu:hover + #hide
+
+ .activate-menu:hover + #hide 
  {
     transition-delay: 0s;
     visibility: visible;
     height: 100%;
     margin-top: 10px;
  }
+
 .sub-menu {
     display: flex;
     flex-direction: column;
@@ -552,42 +516,8 @@ NAVIGATION BAR
     font-style: italic;
     margin-top: 8px;
 }
-/* 
-.hide {
-    display: none;
-  }
-  
-  .myDIV:hover + .hide {
-    display: block;
-    color: red;
-  } */
-
- /* END OF MENU */
-  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-  /* #main {
-    transition: margin-left .5s;
-    padding: 20px;
-    margin-left: 70px;
-    margin-right: 50px;
-  } */
 
 
-
-
-@media only screen and (min-width:320px) {
-    
-    .titulo {
-        width: 100%;
-        display: flex;
-	    flex-direction: column;
-	    flex-wrap: wrap;
-	    justify-content: center;
-        align-content: center;
-        z-index: -1;
-        font-size: 60px;
-     
-    } 
-}
 
 .hr-essa{
 
@@ -622,24 +552,6 @@ h1 {
     -webkit-transform:scale(0.8,1);
     display:inline-block; 
     z-index: 1;
-}
-
-@media (max-width: 767px) {
-    h1 {
-        font-family: 'Raleway', sans-serif;
-        font-weight: 200 !important;
-        font-size: 50px;
-        text-transform: uppercase;
-        transform:scale(0.3,1); 
-        -webkit-transform:scale(0.8,1);
-        display:inline-block; 
-        z-index: 1;
-    }
-
-    .hrZericardo{
-        width: 80%;
-        margin-right: 20px;
-    }
 }
 
 h4{
@@ -768,10 +680,6 @@ p {
   }
 
 
-
-
-
-
 /* ///////////////////CONHECA O ZE RICARDO */
 .ze-ricardo{
     display: flex;
@@ -835,59 +743,17 @@ p {
     }
 }
 
-@media (max-width: 767px) {
-    #conhecaVideo {
-        display: none;
-    }
-    #body-conheca-o-ze {
-        height: 100vh;
-        background-image: url('images/FOTOTRATADA.jpg');
-        background-size: cover;
-        background-repeat: no-repeat, repeat;
-        background-attachment: fixed;
-
-    }
-
-    .ze-ricardo{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        align-content: center;
-        z-index: 2;
-        margin: 10px;
-    
-    } 
-
-    .ze-ricardo-text {
-        width: 400px;
-        text-align: center;
-        flex-direction: column;
-        justify-content: center;
-        /* right: 10%;
-        left: 10%; */
-        margin-bottom: 200px; 
-    }  
-
-}
-
-
-
-
-
 /* ///////////////////////////////////// SE CONCECTE */
 .se-conecte-Div{
     display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	/* justify-content: flex-start; */
 	align-items: flex-end;
     align-content: flex-end;
     z-index: 1;
-    /* min-height: calc(100vh - 50px ); */
-    margin: auto;
-    
+    margin: auto;   
 }
+
 .titulo-se-conecte{
     margin-top: 100px;
     display: flex;
@@ -896,14 +762,12 @@ p {
 	justify-content: flex-end;
 	align-items: flex-end;
     align-content: flex-end;
-    /* min-height: calc(100vh - 50px); */
     text-align: right;
     right: 10%;
     left: 10%;
 }
 
 .se-conecte-container{
-    /* margin: 100px 100px; */
     display: flex;
     flex-direction: column;
 	flex-wrap: wrap;
@@ -912,7 +776,6 @@ p {
     align-content: flex-start;
     margin-top: 50px;
     margin-bottom: 100px;
-    /* margin-left: 100px; */
 }
 
 .se-conecte-frase{
@@ -952,6 +815,7 @@ font-weight: 600 !important;
     font-weight: 600 !important;
 }
 
+/* /////////// */
 
 .fade-in-out {
     animation: fadeInOut ease 15s;
@@ -1049,54 +913,6 @@ font-weight: 600 !important;
       100% {
         opacity:0;
       }
-}
-
-
-
-
-
-@media (max-width: 767px) {
-
-    .se-conecte-Div{
-        /* margin: 100px 100px; */
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        margin: auto;    
-    }
-
-    
-    .titulo-se-conecte{
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        z-index: 1;
-        /* min-height: calc(100vh - 50px); */
-        text-align: right;
-        /* margin-right: -50px; */
-        margin-left: 50px;
-        
-    }
-
-    .se-conecte-container{
-        /* margin: 100px 100px; */
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        align-items: flex-start;
-        align-content: flex-start;
-        margin-top: 50px;
-        margin-bottom: 100px;
-    }
-    
-  
 }
 
 
@@ -2669,6 +2485,258 @@ height: 100%;
     margin-right: 20px;
 }
 
+/* //////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+///////////////////////// */
+
+/* ////////// MEDIA QUERiESSSSSS///////// */
 
 
+/* //////MAIN QUEEERIESSS///////// */
 
+@media (max-width: 767px) {
+
+    #main{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    #main-mobile {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .addMargin {
+        transition: margin-top .5s;
+        margin-top:400px;
+    }
+
+    .addMarginExtra{
+        transition: margin-top .5s;
+        margin-top: 600px;
+    }
+
+    #nav-Div{
+        position: top;
+    }
+  
+} 
+
+
+ /* SUB MENU */
+
+ @media (max-width: 767px) {
+
+    .linkDisabled{ 
+        pointer-events: none
+    }
+}
+
+/* /////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+ */
+
+@media only screen and (min-width:320px) {
+    
+    .titulo {
+        width: 100%;
+        display: flex;
+	    flex-direction: column;
+	    flex-wrap: wrap;
+	    justify-content: center;
+        align-content: center;
+        z-index: -1;
+        font-size: 60px;
+     
+    } 
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 200 !important;
+        font-size: 50px;
+        text-transform: uppercase;
+        transform:scale(0.3,1); 
+        -webkit-transform:scale(0.8,1);
+        display:inline-block; 
+        z-index: 1;
+    }
+
+    .hrZericardo{
+        width: 80%;
+        margin-right: 20px;
+    }
+}
+
+/* ///////////////////////////////////////\\\\\\\\\\\\\\\\\
+/////CONHECA O ZE RICARDO - MEDIA QUREIES//////// 
+///////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+@media (max-width: 767px) {
+    #conhecaVideo {
+        display: none;
+    }
+
+    #body-conheca-o-ze {
+        height: 100vh;
+        background-image: url('images/FOTOTRATADA.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+    .ze-ricardo{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        z-index: 2;
+        margin: 10px;
+    
+    } 
+
+    .ze-ricardo-text {
+        width: 300px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        right: 10%;
+        left: 10%;
+        margin-bottom: 200px; 
+    }  
+
+}
+
+/* ///////////////////////////////////////
+////////// SE CONECTE MEDIA QUREIES//////// 
+///////////////////\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+@media (max-width: 767px) {
+
+    .se-conecte-Div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+
+    .titulo-se-conecte{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        z-index: 1;
+        margin-top: 50px;
+        text-align: right;
+        margin-left: 50px;
+        
+    }
+
+    .se-conecte-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-end;
+        align-content: center;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+    
+  
+}
+
+/* ///////////////////////////////////////
+//////////PALESTRA DO ZE MEDIA QUERIES//////// 
+///////////////////\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+
+@media (max-width: 767px) {
+
+    .palestra-do-ze-Div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        z-index: 2;
+        margin: auto; 
+    }
+
+    .titulo-palestra-do-ze{
+        margin-top: 50px;
+        margin-right: 0px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: center;
+        align-content: flex-end;
+        z-index: 1;
+        text-align: right;
+    }
+
+    .palestra-do-ze-video{
+        width: 100%;
+        height: 100%;
+        transition-duration: 1s;
+        border: none;
+    }
+
+    .palestra-do-ze-text{
+        font-size: 21px;
+        width: 300px; 
+        margin: auto;
+    }
+    .palestra-do-ze-quote{
+        font-size: 18px;
+        width: 300px; 
+        margin-bottom: 50px;
+    }
+
+    .palestra-do-ze-Div h4{
+        font-family: 'Raleway';
+        line-height: 33px;
+        font-size: 20px;
+        font-weight: 400 !important;
+        font-style: italic !important;
+        letter-spacing: 1px !important;
+        text-align: justify;
+        text-align-last: center;
+        line-height: 1.6;
+    }
+   
+
+    .palestra-do-ze-container-2{
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-end;
+        margin-bottom: 50px;
+    }
+
+    .ze-contato-container{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-top: 50px;
+        margin: auto;
+        margin-bottom: 200px;
+
+    }
+
+}

@@ -33,8 +33,8 @@
         </li>
 
         <li>
-          <div class='activate-menu'>
-          <a id="nav-link"href="o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
+          <div class='activate-menu' onclick='mobileExtraNav()'>
+          <a class='linkDisabled' id="nav-link" href="o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
         </div>
           <!-- START SUBMENU -->
 
@@ -81,6 +81,8 @@
       
       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
     <div id="main"> 
+      <div id='main-mobile'>
+
             <div class='ze-ricardo'>
               <video autoplay muted loop id="conhecaVideo">
                 <source src="images/about_gif.mp4" type="video/mp4">
@@ -131,6 +133,7 @@
             </div>
 
 
+            </div>
         <!-- END OF MAIN -->
       </div> 
     
@@ -155,10 +158,9 @@
   
 
  
-
+    <script src="/path/to/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
-    <script src="/path/to/jquery.slim.min.js"></script>
 
 
 </body>

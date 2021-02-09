@@ -276,15 +276,25 @@ let w = window.matchMedia("(max-width: 767px)")
 // }
 // }
 
-function mobileMargin(){
+function mobileNav(){
   var x = document.getElementById("main-mobile");
-  if( x.classList.contains('addMargin')){
-    x.classList.remove('addMargin');
+  if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
+    (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
   } else {
     x.classList.add('addMargin')
   }
-
 }
+
+function mobileExtraNav(){
+  var v = document.getElementById("main-mobile");
+  if( v.classList.contains('addMarginExtra')){
+    v.classList.remove('addMarginExtra');
+  } else {
+    v.classList.add('addMarginExtra')
+  }
+}
+
+
 
 // $('.slide-gil').slick({
 //   infinite: true,
