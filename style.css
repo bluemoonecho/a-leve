@@ -736,9 +736,7 @@ p {
 
 }
 
-.arrow-image{
-    width: 40px;
-}
+
 
 
 @keyframes flickerAnimation {
@@ -1106,21 +1104,38 @@ font-weight: 600 !important;
 
 
 #seta-index{ 
-    size: 200px;
+
+    /* size: 200px;
+    position: sticky;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
 	align-items: flex-end;
     align-content: flex-end;
-    margin-left: 50px;
-    margin-right: -20px;
-    position: relative;
-    margin-bottom: 150px;
-    margin-top: -160px;
+    margin-top: -250px;
+    margin-right: 0px;
+ 
+     z-index: 10;   */
+
+    position: absolute;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-end;
+    align-content: stretch;
+    top: 80vh;
+    margin-left: 52%;
+    /* margin-bottom: 15%; */
+    /* margin-top: -10%; */
+    /* margin-top: -30vh;  */
 
   }
 
+  .arrow-image{
+    width: 40px;
+}
 
 
   #indexVideo{
@@ -1233,7 +1248,7 @@ font-weight: 600 !important;
 	align-items: center;
     align-content: stretch;
     margin-left: 84px;    
-    margin-top: 150px;
+    margin-top: 180px;
     margin-bottom: 100px; 
 }
 
@@ -2322,6 +2337,7 @@ input:focus {
     flex-wrap: wrap;
     z-index: 2;
     margin: auto;   
+    margin-bottom: 150px;
 
 }
 
@@ -2459,6 +2475,7 @@ video:focus {
     flex-wrap: wrap;
     z-index: 2;
     margin: auto;
+    margin-bottom: 150px;
   }
 
   .titulo-left{
