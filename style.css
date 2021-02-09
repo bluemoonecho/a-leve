@@ -134,6 +134,9 @@ background-color: transparent;
 #body-o-que-a-leve-ja-fez a {
     color: #666666 !important;
 }
+#body-o-que-a-leve-ja-fez a:hover {
+    color: #614be0 !important;
+}
 
 #body-o-que-a-leve-ja-fez #menuToggle span{
     color: #666666 !important;
@@ -331,10 +334,6 @@ NAVIGATION BAR
 }
 
 
-/* CASCADE ANIMATION */
-
-
-
 /* ////////END CASCADE ANIMATION */
 
  #menuToggle
@@ -350,18 +349,22 @@ NAVIGATION BAR
  #menuToggle a
  {
    text-decoration: none;
-   /* color: #232323; */
    color: white;
    transition: color 0.3s ease;
    font-weight: 800;
-   /* font-stretch: 55%; */
-
  }
 
  
  #menuToggle a:hover
  {
-    text-decoration: line-through;
+color: #614be0
+}
+
+#body-se-conecte a:hover{
+    color: #4bfcb9
+}
+#body-a-palestra-do-ze a:hover{
+    color: #4bfcb9
 }
 
 
@@ -385,6 +388,7 @@ NAVIGATION BAR
  /*
   * Just a quick hamburger
   */
+
  #menuToggle span
  {
    display: block;
@@ -1208,12 +1212,9 @@ font-weight: 600 !important;
     color : #0efce9;
     text-decoration: none;    
     font-size: 25px;
-    /*input has OS specific font-family*/
-    /* text-decoration: underline; */
     cursor: pointer;
     font-family: 'Raleway';
-    /* font-weight: 100; */
-    /* letter-spacing: 1px; */
+
     line-height: 32px;
     letter-spacing: 2px;
     font-weight: 300 !important;
