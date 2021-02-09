@@ -367,6 +367,11 @@ color: #614be0
     color: #4bfcb9
 }
 
+#body-conheca-o-ze a:hover{
+    color: #4bfcb9
+}
+
+
 
  #menuToggle input
  {
@@ -925,18 +930,6 @@ font-weight: 600 !important;
 
 #seta-index{ 
 
-    /* size: 200px;
-    position: sticky;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-end;
-    align-content: flex-end;
-    margin-top: -250px;
-    margin-right: 0px;
- 
-     z-index: 10;   */
 
     position: absolute;
     display: flex;
@@ -947,9 +940,6 @@ font-weight: 600 !important;
     align-content: stretch;
     top: 80vh;
     margin-left: 52%;
-    /* margin-bottom: 15%; */
-    /* margin-top: -10%; */
-    /* margin-top: -30vh;  */
 
   }
 
