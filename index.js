@@ -362,3 +362,9 @@ function mobileExtraNav(){
 //     $(this).toggleClass('open');
 //   });
 // })
+
+document.onscroll = function() {
+  if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+      document.getElementById('seta-index').style.display='none';
+  }
+}

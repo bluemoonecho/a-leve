@@ -928,9 +928,7 @@ font-weight: 600 !important;
 
 
 #seta-index{ 
-
-
-    position: absolute;
+    position: fixed;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -939,7 +937,6 @@ font-weight: 600 !important;
     align-content: stretch;
     top: 80vh;
     margin-left: 52%;
-
   }
 
   .arrow-image{
@@ -1782,7 +1779,7 @@ input:focus {
    }
 
 .cristo-logos{
- margin-left: 100px; 
+ margin-left: 60px; 
  margin-top: 30px; 
  width: 300px
 }
