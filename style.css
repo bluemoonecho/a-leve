@@ -355,8 +355,7 @@ NAVIGATION BAR
  }
 
  
- #menuToggle a:hover
- {
+ #menuToggle a:hover{
 color: #614be0
 }
 
@@ -626,7 +625,7 @@ p {
     height: 60px;
     color:#614be0;
     position: fixed;
-    z-index: 2;
+    z-index: 1000;
     left: 0;
     bottom: 0;
 }
@@ -1412,7 +1411,15 @@ input:focus {
 
 }
 
+.mastercard-gil{
+    width: 150px;
+    margin-right: 50px;
+}
 
+.mastercard-milton{
+    width: 150px;
+    margin-left: 100px;
+}
 /* ////////// GIF MASTERCARD */
 
 .gif-mastercard{
@@ -1491,6 +1498,22 @@ input:focus {
 
 /* /////// ford */
 
+
+.titulo-right-ford{
+    margin-top: 50px;
+    margin-right: -80px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    z-index: 1;
+    text-align: right;
+} 
+
+
 .live-ford-container{
 
     display: flex;
@@ -1520,6 +1543,10 @@ input:focus {
     margin-left: 35px;
     margin-top: -20px;
 
+}
+.logo-ford-2{
+    width: 130px;
+    margin-right: 100px;
 }
 
 
@@ -1754,6 +1781,12 @@ input:focus {
     }
    }
 
+.cristo-logos{
+ margin-left: 100px; 
+ margin-top: 30px; 
+ width: 300px
+}
+
 
 /* verao tim //////////////////////// verao tim */
 .verao-tim-container{
@@ -1781,7 +1814,16 @@ input:focus {
     margin-left: 40px;
     margin-top: 20px;
 }
-   
+.logo-tim-3{
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+.logo-tim-4{
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 70px;
+}
 
 .gif-verao-tim{
     width: 550px;
@@ -1875,6 +1917,12 @@ input:focus {
     margin-top: 20px;
 }
 
+.logo-rio-2c-2{
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
 .gif-rio-2c{
     width: 507px;
     height: 320px;
@@ -1964,6 +2012,10 @@ input:focus {
     width: 250px;
     margin-left: 230px;
 }
+.dreamfact-logo-2{
+    width: 250px;
+    margin-left: 80px;
+}
 
 /* ////////// GIF MARATONA */
 
@@ -2045,6 +2097,11 @@ input:focus {
     margin-top: 10px;
     margin-right: 190px;
 }
+.ubc-logo-2{
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 80px;
+}
 
 .gif-premio-ucb{
     width: 507px;
@@ -2095,25 +2152,6 @@ input:focus {
 
 /* ja fez OLDDD OLD OLD //////////////////////////////////////O QUE A LEVE JA FEZ */
 
-/* 
-.foto-index-capa{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: relative; 
-    z-index: -10;
-
-} */
-
-.foto-verao-tim{
-    object-fit: cover;
-    width: 100%;
-    height: 100vh;
-    position: static;
-
-}
-
-
 #seta-o-que-a-leve-ja-fez{ 
 
     size: 200px;
@@ -2132,9 +2170,6 @@ input:focus {
 
 /* RIGHT gil  ////////////////////////////GILBERTO */
 
-#live-do-gil{
-    margin-top: 0px;
-}
 
 
 .right-Div{
@@ -2161,21 +2196,6 @@ input:focus {
     z-index: 1;
     text-align: right;
 } 
-
-.titulo-right-ford{
-    margin-top: 50px;
-    margin-right: -80px;
-    margin-bottom: 100px;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	align-items: flex-end;
-    justify-content: flex-end;
-    align-content: flex-end;
-    z-index: 1;
-    text-align: right;
-} 
-
 
 
 .right-text{
