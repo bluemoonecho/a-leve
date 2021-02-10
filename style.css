@@ -935,8 +935,8 @@ font-weight: 600 !important;
 	justify-content: flex-end;
 	align-items: center;
 	align-content: stretch;
-    top: 50vh;
     margin-left: 90%;
+    top: 50vh;
   }
 
   .arrow-image{

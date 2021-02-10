@@ -3,8 +3,10 @@
 
 $(document).scroll(function(){
   
-  if (window.innerHeight + window.scrollY > document.body.clientHeight) {
-    document.getElementById('seta-index').style.display='none';
+  if (window.innerHeight + window.scrollY > document.body.clientHeight - 50) {
+    $('#seta-index').hide();
+} else {
+  $('#seta-index').show();
 }
 
 });
@@ -13,7 +15,7 @@ $(document).scroll(function(){
 // window.innerHeight=743
 //window.scrollY = eh interativo, maximo é 2968
 //document.body.clientHeight = 3351
-// To//
+// To
 
 /// Slick Carousell
 
