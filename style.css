@@ -932,15 +932,15 @@ font-weight: 600 !important;
     display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-end;
-    align-content: stretch;
-    top: 80vh;
-    margin-left: 52%;
+	justify-content: flex-end;
+	align-items: center;
+	align-content: stretch;
+    top: 50vh;
+    margin-left: 90%;
   }
 
   .arrow-image{
-    width: 40px;
+    width: 60px;
 }
 
 

@@ -1,11 +1,24 @@
 
+
+
+$(document).scroll(function(){
+  
+  if (window.innerHeight + window.scrollY > document.body.clientHeight) {
+    document.getElementById('seta-index').style.display='none';
+}
+
+});
+
+
+// window.innerHeight=743
+//window.scrollY = eh interativo, maximo é 2968
+//document.body.clientHeight = 3351
+// To//
+
 /// Slick Carousell
 
 
 $(document).ready(function(){
-
-
-  
 
   $('.slick-show').slick({
     dots: true,
@@ -21,20 +34,6 @@ $(document).ready(function(){
     src: 'src',
     itemSelector: '.selector img'
   });
-
-  // $('.slick-show-milton').slick({
-  //   infinite: true,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 3
-  // })
-
-  // $('.slick-show-ford').slick({
-  //   infinite: true,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  // })
-
-  // $('#default-demo').slickLightbox();
 
 });
 
@@ -152,26 +151,56 @@ setTimeout(function () {
 }, 6000);
 
 
-setTimeout(function () {
-  document.getElementById('open-end-logo').style.display='none';
-}, 6000);
+// setTimeout(function () {
+//   document.getElementById('open-end-logo').style.display='none';
+// }, 6000);
 
 setTimeout(function () {
   document.getElementById('open').style.display='none';
 }, 7200);
 
 
-setTimeout(function () {
-  document.getElementById('intro-quote').style.display='none';
-}, 14000);
+// setTimeout(function () {
+//   document.getElementById('intro-quote').style.display='none';
+// }, 14000);
 
 
 
+var hovering = function(){
+  $("hamburger").show("new-nav", { direction: "right" }, 1000);
+};
+
+var leaving = function(){
+  $("hamburger").hide("new-nav", { direction: "left" }, 1000);
+};
+$("#hamburger").hover(hovering, leaving);
 
 
+// document.querySelector('.hide-item')
+// .addEventListener('click', () => alert('hidden item still triggers events'));
+
+function mobileNav(){
+  var x = document.getElementById("main-mobile");
+  if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
+    (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
+  } else {
+    x.classList.add('addMargin')
+  }
+}
+
+function mobileExtraNav(){
+  var v = document.getElementById("main-mobile");
+  if( v.classList.contains('addMarginExtra')){
+    v.classList.remove('addMarginExtra');
+  } else {
+    v.classList.add('addMarginExtra')
+  }
+}
 
 
-
+// document.onscroll = function() {
+ 
+// }
 
 
 
@@ -198,43 +227,30 @@ setTimeout(function () {
 // Opening nav on hover timeout
 
 
-var hovering = function(){
-  $("hamburger").show("new-nav", { direction: "right" }, 1000);
-};
 
-var leaving = function(){
-  $("hamburger").hide("new-nav", { direction: "left" }, 1000);
-};
-$("#hamburger").hover(hovering, leaving);
-
-
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-  }
+// /* Set the width of the side navigation to 250px */
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "250px";
+//   }
   
-  /* Set the width of the side navigation to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-  }
+//   /* Set the width of the side navigation to 0 */
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//   }
 
 
-  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-  }
+//   /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+// function openNav() {
+//     document.getElementById("mySidenav").style.width = "250px";
+//     document.getElementById("main").style.marginLeft = "250px";
+//   }
   
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "70px";
-  }
+//   /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+//   function closeNav() {
+//     document.getElementById("mySidenav").style.width = "0";
+//     document.getElementById("main").style.marginLeft = "70px";
+//   }
 
-
-document.querySelector('.hide-item')
-.addEventListener('click', () => alert('hidden item still triggers events'));
 
 // function mobileNav(){
 //   document.getElementById("main").style.marginTop = "70px";
@@ -244,7 +260,7 @@ document.querySelector('.hide-item')
 //   document.getElementById("main").style.width = "0";
 // }
 
-let w = window.matchMedia("(max-width: 767px)")
+// let w = window.matchMedia("(max-width: 767px)")
 
 // if(w.matches){
 // function activateMobile(){
@@ -275,24 +291,6 @@ let w = window.matchMedia("(max-width: 767px)")
 //     x.style.marginTop = "400px";
 // }
 // }
-
-function mobileNav(){
-  var x = document.getElementById("main-mobile");
-  if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
-    (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
-  } else {
-    x.classList.add('addMargin')
-  }
-}
-
-function mobileExtraNav(){
-  var v = document.getElementById("main-mobile");
-  if( v.classList.contains('addMarginExtra')){
-    v.classList.remove('addMarginExtra');
-  } else {
-    v.classList.add('addMarginExtra')
-  }
-}
 
 
 
@@ -363,8 +361,3 @@ function mobileExtraNav(){
 //   });
 // })
 
-document.onscroll = function() {
-  if (window.innerHeight + window.scrollY > document.body.clientHeight) {
-      document.getElementById('seta-index').style.display='none';
-  }
-}
