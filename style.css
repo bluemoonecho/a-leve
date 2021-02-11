@@ -526,7 +526,6 @@ color: #614be0
 }
 
 
-
 .hr-essa{
 
     width: 100%;
@@ -630,11 +629,8 @@ p {
     bottom: 0;
 }
 
-
 .icon{
-    /* margin-top: 6px;
-    margin-right: 5px;
-    margin-bottom:10px; */
+
     width: 35px;
 }
 
@@ -642,6 +638,27 @@ p {
     width: 100px;
     margin-top: -4px;
     margin-left: 30px;
+}
+.languages{ 
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: flex-start;
+    margin-top: -45px;
+    margin-left: 130px;
+    color: #666666 !important;
+
+
+}
+
+.languages a {
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 12px;
+    color: #666666 
+
 }
 
 .social-icons{
@@ -652,7 +669,7 @@ p {
 	align-items: center;
     align-content: flex-end;
     margin-right: 30px;
-    margin-top: -55px;
+    margin-top: -30px;
 
 }
 
@@ -935,7 +952,7 @@ font-weight: 600 !important;
 	justify-content: flex-end;
 	align-items: center;
 	align-content: stretch;
-    margin-left: 90%;
+    margin-left: 93.5%;
     top: 50vh;
   }
 
@@ -1132,7 +1149,6 @@ font-weight: 600 !important;
 } 
 
 .titulo-right-inspiracao{
-    /* margin-right: -60px; */
     margin-bottom: 100px;
     margin-top: -50px;
 	display: flex;
@@ -2213,6 +2229,7 @@ input:focus {
 	flex-wrap: wrap;
 	justify-content: flex-start;
     align-content: flex-start;
+    margin-bottom: 100px;
 }
 
 .right-ficha{
@@ -2326,6 +2343,7 @@ video:focus {
 	justify-content: flex-start;
     align-content: flex-start;
     margin-left: 50px;
+    margin-bottom: 100px;
   }
 
   .left-text{
@@ -2376,6 +2394,7 @@ height: 100%;
 	flex-wrap: wrap;
 	justify-content: flex-start;
     align-content: flex-start;
+    margin-bottom: 100px;
 }
 
 .horizontal-text{
