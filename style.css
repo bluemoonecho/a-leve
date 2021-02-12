@@ -1419,7 +1419,6 @@ input:focus {
     margin-right: auto;
     margin-top: 50px;    
     margin-bottom: 200px;
-
 }
 
 .mastercard-gil{
@@ -2025,7 +2024,7 @@ input:focus {
 }
 .dreamfact-logo-2{
     width: 250px;
-    margin-left: 80px;
+    margin-left: 100px;
 }
 
 /* ////////// GIF MARATONA */
@@ -2090,6 +2089,19 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+}
+
+.title-premio-ubc{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+
+}
+
+.title-premio-ubc img{
+margin-right: 120px;
 }
 
 .premio-ubc-container{
@@ -2161,23 +2173,6 @@ input:focus {
     }
    }
 
-/* ja fez OLDDD OLD OLD //////////////////////////////////////O QUE A LEVE JA FEZ */
-
-#seta-o-que-a-leve-ja-fez{ 
-
-    size: 200px;
-    position: sticky;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: flex-end;
-    align-content: flex-end;
-    margin-top: -250px;
-    margin-right: 0px;
- 
-     z-index: 10;  
-  }
 
 /* RIGHT gil  ////////////////////////////GILBERTO */
 
@@ -2207,7 +2202,6 @@ input:focus {
     z-index: 1;
     text-align: right;
 } 
-
 
 .right-text{
     font-size: 21px;
@@ -2403,19 +2397,6 @@ height: 100%;
 
 }
 
-.horizontal-ficha{
-    margin-top: 200px;
-    width: 400px;
-    margin-left: 50px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-items: flex-end;
-    justify-content: flex-end;
-    align-content: flex-end;
-    margin-bottom: 200px;
-}
-
 /* /////////////A PALESTRA DO ZE */
 
 .palestra-do-ze-Div{
@@ -2514,7 +2495,22 @@ height: 100%;
 /////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 /////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-///////////////////////// */
+///////////////////////// 
+//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////
+//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////
+//////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////*/
 
 /* ////////// MEDIA QUERiESSSSSS///////// */
 
@@ -2764,4 +2760,133 @@ height: 100%;
 
     }
 
+}
+
+
+/* ///////////////////////////////////////\\\\\\\\\\\\\\\\\
+/////LIVES MASTERCARD - MEDIA QUREIES//////// 
+///////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+
+@media (max-width: 767px){
+
+/* RIGHT\\\\\\\\\\\\\\\\ */
+    .right-Div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        z-index: 2;
+        margin: auto;   
+        margin-bottom: 150px;
+    }
+
+    .titulo-right{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        align-content: center;
+        z-index: 1;
+        text-align: right;
+        margin-top: 100px;
+
+    } 
+    
+    .right-text{
+        font-size: 21px;
+        width: 300px;
+        margin: auto;
+    }
+
+    .mastercard-gil{
+        width: 60px;
+        margin-right: 50px;
+    }
+
+    .video-gil{
+        width: 35vh;
+        height: 65vh; 
+        margin: auto;
+        margin-top: 50px;
+        margin-left: 10%
+    }
+
+    .slick-show{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+/* LEFT////////////// */
+    .left-Div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        z-index: 2;
+        margin: auto;
+        margin-bottom: 150px;
+      }
+
+
+      .titulo-left{
+        margin-top: 40px;
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        z-index: 1;
+        text-align: left;
+   
+      }
+    
+      .left-container{
+        display: flex;
+        flex-direction: row;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-left: 50px;
+        margin-bottom: 100px;
+      }
+    
+      .left-text{
+        font-size: 21px;
+        width: 300px;
+        margin-top: -100px;
+        margin: auto;
+      }
+/* HORIZONTAL////////////// */
+
+.horizontal-Img{
+    margin: auto;
+    width: 80%;
+    height: 80%;
+    }
+
+    .horizontal-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-bottom: 100px;
+        margin: auto;
+    }
+
+    .horizontal-text{
+        font-size: 21px;
+        width: 300px;
+        margin-top: 100px
+
+    }
+
+    #seta-index{
+        display: none!important;
+    }
 }

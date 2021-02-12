@@ -1,17 +1,6 @@
 
 
 
-$(document).scroll(function(){
-  
-  if (window.innerHeight + window.scrollY > document.body.clientHeight - 100) {
-    $('#seta-index').hide();
-} else {
-  $('#seta-index').show();
-}
-
-});
-
-
 // window.innerHeight=743
 //window.scrollY = eh interativo, maximo é 2968
 //document.body.clientHeight = 3351
@@ -40,17 +29,30 @@ $(document).ready(function(){
 });
 
 
+$(document).scroll(function(){
+  
+  if (window.innerHeight + window.scrollY > document.body.clientHeight - 100) {
+    $('#seta-index').hide();
+} else {
+  $('#seta-index').show();
+}
 
-$("#slide-intro> div:gt(0)").hide();
+});
 
-setInterval(function() { 
-  $('#slide-intro > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slide-intro');
-},  3000);
+
+
+
+
+// $("#slide-intro> div:gt(0)").hide();
+
+// setInterval(function() { 
+//   $('#slide-intro > div:first')
+//     .fadeOut(1000)
+//     .next()
+//     .fadeIn(1000)
+//     .end()
+//     .appendTo('#slide-intro');
+// },  3000);
 
 
 // POP UP WINDOW !!!
