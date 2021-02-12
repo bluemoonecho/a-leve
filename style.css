@@ -639,6 +639,7 @@ p {
     margin-top: -4px;
     margin-left: 30px;
 }
+
 .languages{ 
     display: flex;
 	flex-direction: row;
@@ -647,9 +648,8 @@ p {
 	align-items: center;
     align-content: flex-start;
     margin-top: -45px;
-    margin-left: 130px;
+    margin-left: 170px;
     color: #666666 !important;
-
 
 }
 
@@ -657,7 +657,8 @@ p {
     font-weight: 300;
     text-decoration: none;
     font-size: 11px;
-    color: #666666 
+    color: #666666; 
+    font-weight: 600 !important;
 
 }
 
@@ -1197,7 +1198,7 @@ font-weight: 600 !important;
 }
 
 .essa-eh-a-leve-quote.pergunta{
- margin-left: 250px !important;
+ margin-left: 250px;
 }
 
 
@@ -1641,7 +1642,11 @@ input:focus {
     margin-top: 20px;
 
 }
-
+.logo-tim-en-2{
+    width: 300px;
+    margin-right: 150px;
+    margin-top: 20px;
+}
  .gif-convencao-tim{
     width: 550px;
     height: 350px;
@@ -1740,7 +1745,11 @@ input:focus {
     margin-left: 60px;
     margin-top: 10px;
 }
-
+.estacio-logo-en{
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
 
 
 .gif-cristo{
@@ -1834,6 +1843,13 @@ input:focus {
     margin-top: 20px;
     margin-right: 70px;
 }
+
+.logo-tim-en{
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
 
 .gif-verao-tim{
     width: 550px;
@@ -2590,6 +2606,238 @@ height: 100%;
         margin-right: 20px;
     }
 }
+
+/* ///////////////////////////////////////\\\\\\\\\\\\\\\\\
+/////INDEX - ESSA E A LEVE - MEDIA QUREIES//////// 
+///////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+*/
+@media (max-width: 767px) {
+
+
+.languages{ 
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+    align-content: flex-start;
+    margin-top: -45px;
+    margin-left: 130px;
+    color: #666666 !important;
+
+}
+
+.languages a {
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 11px;
+    color: #666666; 
+    font-weight: 600 !important;
+
+}
+
+
+    #open{
+        background-color: rgb( 251,252, 252);
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+        position: absolute;
+        transition: opacity 1s ease;
+    }
+    
+    #open-logo{
+        margin: 100px auto;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+
+    #seta-index{ 
+        position: fixed;
+        display: none;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        align-content: stretch;
+        margin-left: 93.5%;
+        top: 50vh;
+      }
+    
+      .arrow-image{
+        width: 60px;
+    }
+    
+    
+      #indexVideo{
+        position: static;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+    
+
+    .essa-e-a-leve-Div{
+        display: flex;
+        flex-direction: column;          
+        flex-wrap: wrap;
+        z-index: 2;
+    }
+    
+    #topo{ 
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: stretch;
+        margin-left: 84px;    
+        margin-top: 180px;
+        margin-bottom: 100px; 
+    }
+    
+    .topo h4{
+        font-size: 21px;
+        margin-left: -20px;
+    }
+    
+    .logo_branco{
+        width: 100px;
+    }
+    
+    .essa-e-a-leve-container{
+        margin-right: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        z-index: 1;
+        text-align: right;
+    }
+    
+    .essa-e-a-leve-container h2{
+        font-size: 30px !important;
+        font-style: italic !important;
+        font-weight: 600 !important;
+    }
+    
+    .essa-e-a-leve-container a {
+        color : #0efce9;
+        text-decoration: none;
+    }
+    
+    .essa-e-a-leve-container h6{
+        font-size: 18px;
+        font-weight: 400 !important;
+        text-align: justify;
+        text-align-last: left;
+        line-height: 40px;
+    
+    }
+    
+    .essa-e-a-leve-container h3{
+        font-size: 20px !important;
+        font-style: italic !important;
+        font-weight: 600 !important;
+        line-height: 50px !important;
+        text-align: left;
+        text-align: justify;
+    
+    }
+
+
+    .essa-eh-a-leve-quote h3{
+        text-align: center !important;
+        font-size: 20px !important;
+        line-height: 50px !important;
+        font-style: italic !important;
+ 
+     }
+     
+    
+    .essa-eh-a-leve-text.fim {
+        margin-bottom: 150px;
+    }
+    
+    .titulo-essa{
+        padding-top: 20px;
+        margin-left: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        z-index: 1;
+        text-align: left;
+    } 
+    
+    .titulo-right-inspiracao{
+        margin-bottom: 100px;
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-content: flex-end;
+        z-index: 1;
+        text-align: right;
+    } 
+    
+    .titulo-left-essa{
+    
+        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        align-content: flex-start;
+        z-index: 1;
+        text-align: left;
+        right: 10%;
+        left: 10%;
+      }
+    
+    .essa-eh-a-leve-text{
+        font-size: 21px;
+        width: 300px;
+        margin: 0px;
+    }
+    
+    .essa-eh-a-leve-quote{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        width: 300px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .essa-eh-a-leve-quote.pergunta{
+     margin-left: auto;
+     margin-right: auto;
+
+    }
+    
+   /* end media queries index  */
+
+}
+
+
+
+
 
 /* ///////////////////////////////////////\\\\\\\\\\\\\\\\\
 /////CONHECA O ZE RICARDO - MEDIA QUREIES//////// 
