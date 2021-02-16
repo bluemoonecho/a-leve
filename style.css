@@ -1512,14 +1512,14 @@ input:focus {
 
 .titulo-right-ford{
     margin-top: 50px;
-    margin-right: -80px;
+    margin-right: 0px;
     margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	align-items: flex-end;
     justify-content: flex-end;
-    align-content: flex-end;
+    align-content: center;
     z-index: 1;
     text-align: right;
 } 
@@ -3063,12 +3063,19 @@ height: 100%;
     /* //////ford */
 
     .titulo-right-ford{
-        /* margin-top: 50px;
-        margin-right: 0px;
-        margin-bottom: 50px; */
-        margin-top: 0px;
-        z-index: 1;
-        text-align: right;
+        
+            margin-top: 150px;
+            margin-right: 0px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            justify-content: flex-end;
+            align-content: center;
+            z-index: 1;
+            text-align: right;
+        
     } 
 
 
@@ -3104,7 +3111,7 @@ height: 100%;
     }
     .logo-ford-2{
         width: 130px;
-        margin-right: 100px;
+        margin-right: 50px;
     }
     .gif-ford{
         width: 300px;
