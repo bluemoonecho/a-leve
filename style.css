@@ -3194,7 +3194,9 @@ height: 100%;
     .logo-rio-2c{
         width: 200px;
         margin-left: 10px;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
     }
     
     .logo-rio-2c-2{
@@ -3248,7 +3250,9 @@ height: 100%;
 
 
     .gif-cristo{
+        margin-top:50px;
         width: 300px;
+        height: 400px;
         background-position: center;
         background-size: 300px 400px;
     }
@@ -3320,7 +3324,7 @@ height: 100%;
 
     .dreamfact-logo{
         width: 150px;
-        margin-left: 200px;
+        margin-left: 140px;
     }
     .dreamfact-logo-2{
         width: 250px;
@@ -3372,7 +3376,7 @@ height: 100%;
     .ubc-logo{
         width: 150px;
         margin-top: 10px;
-        margin-right: 190px;
+        margin-right: 100px;
     }
     .ubc-logo-2{
         width: 200px;
@@ -3406,9 +3410,9 @@ height: 100%;
 
     .titulo-right{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
-        align-items: center;
+        align-items: flex-end;
         justify-content: flex-end;
         align-content: center;
         z-index: 1;
@@ -3419,6 +3423,11 @@ height: 100%;
 
     } 
     
+    .titulo-right.mobile{
+        margin-top: 0px !important;
+
+    }
+
     .right-text{
         font-size: 21px;
         width: 300px;
@@ -3435,12 +3444,9 @@ height: 100%;
     }
 
     .video-gil{
-        width: 35vh;
-        height: 65vh; 
-        margin-top: 50px;
-        margin-right: 0;
-        margin-left: 12%;
-        margin-bottom: 50px;
+        width: 45vh;
+        height: 80vh; 
+        margin: 10% 30%;
 
     }
 
@@ -3493,20 +3499,20 @@ height: 100%;
         margin-top: -100px;
         margin: auto;
       }
-/* HORIZONTAL////////////// */
+/* Queries HORIZONTAL////////////// */
 
-.horizontal-Img{
+    .horizontal-Img{
     margin: 0;
-    width: 80%;
-    height: 80%;
+    width: 90%;
+    height: 90%;
     }
 
     .horizontal-container{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        justify-content: flex-start;
-        align-content: flex-start;
+        justify-content: center;
+        align-content: center;
         margin-bottom: 100px;
         margin: 0;
     }
@@ -3514,7 +3520,8 @@ height: 100%;
     .horizontal-text{
         font-size: 21px;
         width: 300px;
-        margin-top: 100px
+        margin-top: 100px;
+        margin:auto;
 
     }
 
