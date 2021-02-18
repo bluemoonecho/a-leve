@@ -1201,6 +1201,10 @@ font-weight: 600 !important;
  margin-left: 250px;
 }
 
+.essa-eh-a-leve-quote.pergunta:nth-of-type(2){
+    margin-left: 290px;
+   }
+
 
 
 /* //////////////// ////////////////////////////////////////////////////*/ 
@@ -1512,7 +1516,7 @@ input:focus {
 
 .titulo-right-ford{
     margin-top: 50px;
-    margin-right: 0px;
+    margin-right: -250px;
     margin-bottom: 100px;
 	display: flex;
 	flex-direction: column;
@@ -1816,20 +1820,38 @@ input:focus {
     margin-bottom: 200px;
     margin-left: 170px;
 }
+.verao-tim-container.en{
+   
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: flex-start;
+	align-content: flex-start;
+    margin-bottom: 200px;
+    margin-left: 105px;
+}
 
 .titulo-verao-tim{    
     z-index: 1;
     text-align: right;
     display: flex;
     flex-direction: column;
-    margin-right: 10px;
+    margin-right: 0px;
 }
+
 
 .logo-tim-2{
     width: 300px;
     margin-left: 40px;
     margin-top: 20px;
 }
+.logo-tim-2.en{
+    width: 300px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
 .logo-tim-3{
     width: 300px;
     margin-top: 20px;
@@ -2830,7 +2852,9 @@ height: 100%;
         margin-left: 30%;
         width: 100%;
     }
-    
+    .essa-eh-a-leve-quote.pergunta:nth-of-type(2){
+        margin-left: 20%;
+       }
    /* end media queries index  */
 
 }
@@ -3510,6 +3534,7 @@ height: 100%;
 
     .horizontal-Img{
     margin: 0;
+    margin-bottom: 50px;
     width: 90%;
     height: 90%;
     }
