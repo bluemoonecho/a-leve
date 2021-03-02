@@ -970,6 +970,14 @@ font-weight: 600 !important;
     height: 100%;
   }
 
+  #index-open-Video{
+    position: static;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 
 
 .intro-gif{
@@ -3055,6 +3063,14 @@ height: 100%;
         flex-direction: column;
         align-items: flex-end;
     }
+    .titulo-master-card.en{
+        z-index: 1;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 50px;
+    }
 
     .logo-mastercard{
         width: 100px;
@@ -3160,6 +3176,17 @@ height: 100%;
         margin-left: 0px;
     }
     
+    .verao-tim-container.en{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: flex-start;
+        margin-bottom: 200px;
+        margin-left: 0px;
+
+    }
     .titulo-verao-tim{    
         z-index: 1;
         text-align: right;
@@ -3167,6 +3194,14 @@ height: 100%;
         flex-direction: column;
         margin-right: 0px;
         margin-bottom: 50px;
+    }
+
+    .titulo-verao-tim.en{
+        z-index: 1;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        margin-right: -50px;
     }
     
     .logo-tim-2{
@@ -3190,13 +3225,16 @@ height: 100%;
         margin-top: 20px;
         margin-left: 100px;
     }
-    
+    .logo-tim-2.en{
+        width: 300px;
+        margin-top: 20px;
+        margin-left: 0px;
+    }
     
     .gif-verao-tim{
         width: 300px;
         background-position: center;
         margin-bottom: 50px;
-
     }
      
     /* /////rio 2c */
@@ -3274,7 +3312,7 @@ height: 100%;
     }
 
     .estacio-logo-en{
-        width: 300px;
+        width: 200px;
         margin-left: 100px;
         margin-top: 10px;
     }
@@ -3320,7 +3358,7 @@ height: 100%;
 
     }
     .logo-tim-en-2{
-        width: 300px;
+        width: 200px;
         margin-right: 150px;
         margin-top: 20px;
     }

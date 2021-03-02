@@ -137,7 +137,7 @@ function playGol() {
 // Opening page timeout
 $(window).load(function () {
 
-var myVideo = document.getElementById('indexVideo');
+var myVideo = document.getElementById('index-open-Video');
 if (typeof myVideo.loop == 'boolean') { // loop supported
   myVideo.loop = true;
 } else { // loop property not supported
@@ -147,8 +147,34 @@ if (typeof myVideo.loop == 'boolean') { // loop supported
   }, false);
 }
 //...
-myVideo.play();
+
+setTimeout(function () {
+  myVideo.play();
+}, 6800);
+
+
 })
+
+
+$(window).load(function () {
+
+  var myVideo = document.getElementById('indexVideo');
+  if (typeof myVideo.loop == 'boolean') { // loop supported
+    myVideo.loop = true;
+  } else { // loop property not supported
+    myVideo.addEventListener('ended', function () {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+  }
+  //...
+  myVideo.play();
+  
+  })
+
+// setTimeout(function () {
+//   document.getElementById('indexVideo').stop();
+// }, 90000);
 
 setTimeout(function () {
   document.getElementById('open-logo').style.display='none';
