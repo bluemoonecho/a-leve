@@ -2869,6 +2869,9 @@ height: 100%;
         width: 250px;
     }
    /* end media queries index  */
+   #button{
+    font-size: 18px;
+   }
 
     #body-index{
         background-size: cover;
