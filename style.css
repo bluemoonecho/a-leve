@@ -3144,6 +3144,7 @@ height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        margin-left: 20px;
     }
 
     .logo-ford{
@@ -3257,6 +3258,16 @@ height: 100%;
     }
     
     .titulo-rio-2c{
+        z-index: 1;
+        text-align: left;
+        margin-top: 0px;
+        margin-left: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+    .titulo-rio-2c-en{
         z-index: 1;
         text-align: left;
         margin-top: -100px;
@@ -3393,7 +3404,7 @@ height: 100%;
         z-index: 1;
         text-align: right;
         margin-right: -10px;
-        margin-top: -10px;
+        margin-top: -40px;
         display: flex;
         flex-direction: column;
         
@@ -3424,8 +3435,8 @@ height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        margin-top: -20px;
-        margin-left: 0px;
+        margin-top: -50px;
+        margin-left: 20px;
     }
 
     .title-premio-ubc{
