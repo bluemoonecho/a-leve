@@ -2871,12 +2871,9 @@ height: 100%;
    /* end media queries index  */
 
     #body-index{
-
-        background-image: url('images/backgroundcor/branco.png');
         background-size: cover;
         background-repeat: no-repeat, repeat;
         background-attachment: fixed;
-
 
     }
    #body-essa-eh-a-leve{
