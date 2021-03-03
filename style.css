@@ -2864,6 +2864,10 @@ height: 100%;
     .essa-eh-a-leve-quote.pergunta:nth-of-type(2){
         margin-left: 20%;
        }
+
+       .pop-up-image{
+        width: 250px;
+    }
    /* end media queries index  */
 
 }
