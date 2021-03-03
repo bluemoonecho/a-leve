@@ -195,6 +195,12 @@ setTimeout(function () {
 // }, 14000);
 
 
+var vid = document.getElementById("sound");
+vid.muted = true;
+
+
+
+
 
 var hovering = function(){
   $("hamburger").show("new-nav", { direction: "right" }, 1000);

@@ -1065,6 +1065,17 @@ font-weight: 600 !important;
    }
 
 
+.sound-icon{
+    width: 60px;
+}
+
+#sound{
+    position: absolute;
+    margin-left: 93vw;
+    margin-top: -102vh;
+    z-index: 1000;
+}
+
 .essa-e-a-leve-Div{
     display: flex;
     flex-direction: column;          
@@ -1082,6 +1093,7 @@ font-weight: 600 !important;
     margin-left: 84px;    
     margin-top: 180px;
     margin-bottom: 100px; 
+    padding-top: 20px;
 }
 
 .topo h4{
