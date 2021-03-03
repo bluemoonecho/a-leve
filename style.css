@@ -2865,7 +2865,7 @@ height: 100%;
         margin-left: 20%;
        }
 
-       .pop-up-image{
+    .pop-up-image{
         width: 250px;
     }
    /* end media queries index  */
@@ -3140,17 +3140,15 @@ height: 100%;
 
     .titulo-live-ford{
         z-index: 1;
-        text-align: left;
-        margin-right: 0px;
-        margin-top: 0px;
-        margin-left: 0px;
+        text-align: right;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
     }
 
     .logo-ford{
         width: 130px;
-        margin-left: 35px;
+        margin-right: 20px;
         margin-top: -20px;
 
     }
@@ -3197,8 +3195,9 @@ height: 100%;
         text-align: right;
         display: flex;
         flex-direction: column;
-        margin-right: 0px;
+        margin-right: -50px;
         margin-bottom: 50px;
+        align-items: flex-end;
     }
 
     .titulo-verao-tim.en{
@@ -3211,7 +3210,8 @@ height: 100%;
     
     .logo-tim-2{
         width: 200px;
-        margin-left: 40px;
+        margin-left: 0px;
+        margin-right: 20px;
         margin-top: 20px;
     }
     .logo-tim-3{
@@ -3259,10 +3259,12 @@ height: 100%;
     .titulo-rio-2c{
         z-index: 1;
         text-align: left;
-        margin-top: -10px;
-        margin-left: 0px;
+        margin-top: -100px;
+        margin-left: 70px;
         display: flex;
         flex-direction: column;
+        align-items: flex-end;
+
     }
     
     .logo-rio-2c{
@@ -3283,7 +3285,6 @@ height: 100%;
         width: 300px;
         background-position: center;
         margin-left: 0px;
-
     }
 
     /* ///////crito queries */
@@ -3294,6 +3295,7 @@ height: 100%;
         text-align: right;
         display: flex;
         flex-direction: column;
+        margin-right: -30px;
     }
 
 
@@ -3318,8 +3320,8 @@ height: 100%;
 
     .estacio-logo-en{
         width: 200px;
-        margin-left: 100px;
-        margin-top: 10px;
+        margin-left: 80px;
+        margin-top: 15px;
     }
 
 
@@ -3336,10 +3338,10 @@ height: 100%;
 
     .titulo-convencao-da-tim{
         z-index: 1;
-        text-align: left;
+        text-align: right;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         /* margin-right: 20px; */
     }
     .convencao-da-tim-container{
@@ -3357,15 +3359,16 @@ height: 100%;
 
     .logo-tim{
         width: 200px;
-        margin-right: 90px;
+        margin-right: 20px;
         margin-top: 20px;
         margin-bottom: 30px;
 
     }
     .logo-tim-en-2{
         width: 200px;
-        margin-right: 150px;
+        margin-right: 20px;
         margin-top: 20px;
+        margin-bottom: 20px;
     }
     .gif-convencao-tim{
         width: 300px;
@@ -3420,7 +3423,9 @@ height: 100%;
         text-align: right;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
+        margin-top: -20px;
+        margin-left: 0px;
     }
 
     .title-premio-ubc{
@@ -3428,12 +3433,14 @@ height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        margin-right: -50px;
+        margin-top: -50px;
 
     }
 
     .title-premio-ubc img{
-    margin-right: 120px;
+    margin-right: 30px;
     }
 
     .premio-ubc-container{
@@ -3450,8 +3457,14 @@ height: 100%;
     .ubc-logo{
         width: 150px;
         margin-top: 10px;
-        margin-right: 100px;
+        margin-right: 20px;
     }
+    .ubc-logo-en{
+        width: 150px;
+        margin-top: 10px;
+        margin-left: 100px;
+    }
+
     .ubc-logo-2{
         width: 200px;
         margin-top: 10px;
