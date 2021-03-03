@@ -2677,11 +2677,15 @@ height: 100%;
 
     #open{
         background-color: rgb( 251,252, 252);
-        width: 100%;
-        height: 100%;
         z-index: 1000;
         position: absolute;
         transition: opacity 1s ease;
+    }
+
+    #leve-intro{
+        width: 100px;
+        height: 200px;
+        z-index: 1000;
     }
     
     #open-logo{

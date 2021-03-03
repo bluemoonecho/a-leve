@@ -1,13 +1,6 @@
 
 
-
-// window.innerHeight=743
-//window.scrollY = eh interativo, maximo é 2968
-//document.body.clientHeight = 3351
-// To
-
 /// Slick Carousell
-
 
 $(document).ready(function(){
 
@@ -40,24 +33,7 @@ $(document).scroll(function(){
 });
 
 
-
-
-
-// $("#slide-intro> div:gt(0)").hide();
-
-// setInterval(function() { 
-//   $('#slide-intro > div:first')
-//     .fadeOut(1000)
-//     .next()
-//     .fadeIn(1000)
-//     .end()
-//     .appendTo('#slide-intro');
-// },  3000);
-
-
 // POP UP WINDOW !!!
-
-
 $(window).load(function () {
   $(".trigger_johny_hooker").click(function(){
      $('.hover_johny_hooker').show();
@@ -109,33 +85,13 @@ function playGol() {
   var gol= document.getElementById("gol");
   gol.play();
 }
-// // Get the modal
-// function onClick(element) {
-//   document.getElementById("img01").src = element.src;
-//   document.getElementById("modal01").style.display = "block";
-// }
 
-
-//MAKE ARROW DISAPEAR
-
-// document.onscroll = function() {
-//   if (window.innerHeight + window.scrollY > document.body.clientHeight) {
-//       document.getElementById('seta').style.display='none';
-//   }
-// }
-
-// $(window).bind('scroll', function() {
-//   if ($(window).scrollTop() > 100) {
-//       $('#seta-index').hide();
-//   }
-//   // else {
-//   //     $('#seta-index').show();
-//   // }
-// });
-// onended="videoEnded()"
 
 // Opening page timeout
 $(window).load(function () {
+
+  var leveIntro = document.getElementById('leve-intro');
+  leveIntro.play();  
 
 var myVideo = document.getElementById('index-open-Video');
 if (typeof myVideo.loop == 'boolean') { // loop supported
@@ -188,6 +144,9 @@ setTimeout(function () {
 setTimeout(function () {
   document.getElementById('open').style.display='none';
 }, 7200);
+
+
+
 
 
 // setTimeout(function () {
