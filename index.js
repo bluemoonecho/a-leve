@@ -1,5 +1,36 @@
 
 
+$(document).ready(function(){
+
+
+setTimeout(function () {
+    document.getElementById('intro-leve').play()
+}, 2000);
+
+
+
+})
+
+
+
+// var playPromise = document.getElementById('intro-leve').play();
+
+// // In browsers that don’t yet support this functionality,
+// // playPromise won’t be defined.
+// if (playPromise !== undefined) {
+//   playPromise.then(function() {
+//     // Automatic playback started!
+//   }).catch(function(error) {
+//     // Automatic playback failed.
+//     // Show a UI element to let the user manually start playback.
+//   });
+// }
+
+
+// Opening page timeout
+
+
+
 /// Slick Carousell
 
 $(document).ready(function(){
@@ -87,29 +118,27 @@ function playGol() {
 }
 
 
-// Opening page timeout
+
+
 $(window).load(function () {
 
-  var leveIntro = document.getElementById('leve-intro');
-  leveIntro.play();  
-
-var myVideo = document.getElementById('index-open-Video');
-if (typeof myVideo.loop == 'boolean') { // loop supported
-  myVideo.loop = true;
-} else { // loop property not supported
-  myVideo.addEventListener('ended', function () {
-    this.currentTime = 0;
-    this.play();
-  }, false);
-}
-//...
-
-setTimeout(function () {
+  var myVideo = document.getElementById('index-open-Video');
+  if (typeof myVideo.loop == 'boolean') { // loop supported
+    myVideo.loop = true;
+  } else { // loop property not supported
+    myVideo.addEventListener('ended', function () {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+  }
+  //...
+  setTimeout(function () {
   myVideo.play();
-}, 6800);
+}, 8000);
+
+  })
 
 
-})
 
 
 $(window).load(function () {

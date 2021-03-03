@@ -215,12 +215,20 @@ color: white;
 }
 
 #open{
-    background-color: rgb( 251,252, 252);
+    /* background-color: rgb( 25,252, 252); */
+    background-color: white;
     width: 100%;
     height: 100%;
     z-index: 1000;
     position: absolute;
     transition: opacity 1s ease;
+}
+
+#intro-leve{
+    background-color: rgb( 251,252, 252);
+    margin-left: 15%;
+    margin-top: 10%;
+    width: 900px;
 }
 
 #open-logo{
@@ -234,23 +242,7 @@ color: white;
     z-index: 1000;
 }
 
-.video-open{
-    width: 100%;
-    z-index: 1000;
-}
 
-.open-end-logo{
-
-    margin: 10% auto;
-    width: 40%;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-items: center;
-    z-index: 100;
-
-}
 
 .fade-Out {
 
@@ -2671,22 +2663,15 @@ height: 100%;
     font-size: 11px;
     color: #666666; 
     font-weight: 600 !important;
-
 }
-
-
     #open{
-        background-color: rgb( 251,252, 252);
+        background-color: rgb( 252,252, 252);
+        /* background-color: white; */
         z-index: 1000;
         position: absolute;
         transition: opacity 1s ease;
     }
 
-    #leve-intro{
-        width: 100px;
-        height: 200px;
-        z-index: 1000;
-    }
     
     #open-logo{
         margin: 100px auto;
