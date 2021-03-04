@@ -1062,7 +1062,7 @@ font-weight: 600 !important;
 }
 
 #sound{
-    position: absolute;
+    position: fixed;
     margin-left: 93vw;
     margin-top: -100vh;
     z-index: 1000;
@@ -3232,11 +3232,7 @@ height: 100%;
         margin-right: 20px;
         margin-top: 20px;
     }
-    .logo-tim-3{
-        width: 300px;
-        margin-top: 20px;
-        margin-right: 50px;
-    }
+   
     .logo-tim-4{
         width: 300px;
         margin-top: 20px;
@@ -3561,18 +3557,38 @@ height: 100%;
     }
 
     .video-gil{
-        width: 45vh;
+        width: 80vw;
         height: 80vh; 
-        margin: 10% 30%;
+        margin: 10% 10%;
 
     }
 
     .slick-show{
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-top: 20px;
         margin-bottom: 20px;
     }
+    
+    .slideshow-img{
+        height: 35vh;
+    }
+  
+    .slideshow-img-horizontal{
+      width: 100%;
+      height: 35vh; 
+    }
+    .slick-video-vertical{
+        width: 20vh;
+        height: 35vh;  
+        margin: 0;
+    }
+    
+    .slick-video-horizontal{
+        height: 35vh;  
+        margin: 0;
+    }
+    
 
 /* LEFT////////////// */
     .left-Div{
@@ -3646,4 +3662,19 @@ height: 100%;
     #seta-index{
         display: none!important;
     }
+
+
+    /* ////verao Tim queries */
+    .video-tim{
+        width: 90%;
+        height: 100%; 
+        margin-bottom: 40px;
+    }
+
+    .logo-tim-3{
+        width: 200px;
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
 }

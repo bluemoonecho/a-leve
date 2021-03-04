@@ -99,6 +99,7 @@ function playMar() {
 function playGol() {
   var gol= document.getElementById("gol");
   gol.play();
+  
 }
 
 function mute() {
