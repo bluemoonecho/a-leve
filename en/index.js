@@ -1,24 +1,21 @@
 
 
-
-$(document).scroll(function(){
-  
-  if (window.innerHeight + window.scrollY > document.body.clientHeight - 100) {
-    $('#seta-index').hide();
-} else {
-  $('#seta-index').show();
-}
-
-});
+setTimeout(function () {
+  document.getElementById('intro-leve').play()
+}, 3000);
 
 
-// window.innerHeight=743
-//window.scrollY = eh interativo, maximo é 2968
-//document.body.clientHeight = 3351
-// To
+setTimeout(function () {
+  document.getElementById('open').style.display='none';
+}, 7200);
+
+
+
+// Opening page timeout
+
+
 
 /// Slick Carousell
-
 
 $(document).ready(function(){
 
@@ -40,22 +37,18 @@ $(document).ready(function(){
 });
 
 
+$(document).scroll(function(){
+  
+  if (window.innerHeight + window.scrollY > document.body.clientHeight - 100) {
+    $('#seta-index').hide();
+} else {
+  $('#seta-index').show();
+}
 
-$("#slide-intro> div:gt(0)").hide();
-
-setInterval(function() { 
-  $('#slide-intro > div:first')
-    .fadeOut(1000)
-    .next()
-    .fadeIn(1000)
-    .end()
-    .appendTo('#slide-intro');
-},  3000);
+});
 
 
 // POP UP WINDOW !!!
-
-
 $(window).load(function () {
   $(".trigger_johny_hooker").click(function(){
      $('.hover_johny_hooker').show();
@@ -106,47 +99,70 @@ function playMar() {
 function playGol() {
   var gol= document.getElementById("gol");
   gol.play();
+  
 }
-// // Get the modal
-// function onClick(element) {
-//   document.getElementById("img01").src = element.src;
-//   document.getElementById("modal01").style.display = "block";
-// }
+
+function mute() {
+  var vid = document.getElementById("index-open-Video");
+  vid.muted = !vid.muted;
+  // vid.muted = true;
+
+  var icon = document.getElementById("sound-icon");
+  if (vid.muted){
+    icon.src='../images/semSOM.png'
+  }else {
+    icon.src='../images/SOM.png'
+  }
+
+  }
+ 
 
 
-//MAKE ARROW DISAPEAR
 
-// document.onscroll = function() {
-//   if (window.innerHeight + window.scrollY > document.body.clientHeight) {
-//       document.getElementById('seta').style.display='none';
-//   }
-// }
 
-// $(window).bind('scroll', function() {
-//   if ($(window).scrollTop() > 100) {
-//       $('#seta-index').hide();
-//   }
-//   // else {
-//   //     $('#seta-index').show();
-//   // }
-// });
-// onended="videoEnded()"
 
-// Opening page timeout
+
 $(window).load(function () {
 
-var myVideo = document.getElementById('indexVideo');
-if (typeof myVideo.loop == 'boolean') { // loop supported
-  myVideo.loop = true;
-} else { // loop property not supported
-  myVideo.addEventListener('ended', function () {
-    this.currentTime = 0;
-    this.play();
-  }, false);
-}
-//...
-myVideo.play();
-})
+  var myVideo = document.getElementById('index-open-Video');
+  if (typeof myVideo.loop == 'boolean') { // loop supported
+    myVideo.loop = true;
+  } else { // loop property not supported
+    myVideo.addEventListener('ended', function () {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+  }
+  //...
+  setTimeout(function () {
+  myVideo.play();
+}, 9000);
+
+  })
+
+ 
+
+
+
+$(window).load(function () {
+
+  var myVideo = document.getElementById('indexVideo');
+  if (typeof myVideo.loop == 'boolean') { // loop supported
+    myVideo.loop = true;
+  } else { // loop property not supported
+    myVideo.addEventListener('ended', function () {
+      this.currentTime = 0;
+      this.play();
+    }, false);
+  }
+  //...
+  myVideo.play();
+  
+  })
+
+// setTimeout(function () {
+//   document.getElementById('indexVideo').stop();
+// }, 90000);
 
 setTimeout(function () {
   document.getElementById('open-logo').style.display='none';
@@ -157,14 +173,21 @@ setTimeout(function () {
 //   document.getElementById('open-end-logo').style.display='none';
 // }, 6000);
 
-setTimeout(function () {
-  document.getElementById('open').style.display='none';
-}, 7200);
+
+
+
+
 
 
 // setTimeout(function () {
 //   document.getElementById('intro-quote').style.display='none';
 // }, 14000);
+
+
+var vid = document.getElementById("sound");
+vid.muted = true;
+
+
 
 
 

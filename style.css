@@ -2977,10 +2977,11 @@ height: 100%;
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
         align-content: center;
         margin-top: 50px;
         margin-bottom: 100px;
+        margin-left: 0px;
     }
     
   
