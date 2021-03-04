@@ -2641,6 +2641,16 @@ height: 100%;
 /////INDEX - ESSA E A LEVE - MEDIA QUREIES//////// 
 ///////////////////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 */
+
+/* ///querie for horizontal phone */
+@media (max-width: 900px) {
+
+        .pop-up-image{
+            width: 500px;
+        }
+}
+
+
 @media (max-width: 767px) {
 
 
@@ -3662,7 +3672,6 @@ height: 100%;
     #seta-index{
         display: none!important;
     }
-
 
     /* ////verao Tim queries */
     .video-tim{
