@@ -6,7 +6,7 @@ function entre() {
   let introLeve = $('#intro-leve');
 
   introLeve.on('ended', function(){
-    $('#intro-leve').addClass("fade-Out");
+    $('#intro-leve').addClass("fade-Out"); 
     document.getElementById('open').style.display='none';
     document.getElementById("index-open-Video").play();
   })
