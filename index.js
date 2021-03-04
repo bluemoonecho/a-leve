@@ -1,13 +1,41 @@
 
+let video = $('#intro-leve')
 
-setTimeout(function () {
-  document.getElementById('intro-leve').play()
-}, 3000);
+var req = new XMLHttpRequest();
+req.open('GET', 'images/leve-intro.mp4', true);
+req.responseType = 'blob';
+
+req.onload = function() {
+   // Onload is triggered even on 404
+   // so we need to check the status code
+   if (this.status === 200) {
+      var videoBlob = this.response;
+      var vid = URL.createObjectURL(videoBlob); // IE10+
+      // Video is now downloaded
+      console.log('downloaded')
+      video.attr('src', vid);
+      console.log(video)
+      video.play();
+      // and we can set it as source on the video element
+      video.src = vid;
+   }
+}
+req.onerror = function() {
+   // Error
+}
+
+req.send();
 
 
-setTimeout(function () {
-  document.getElementById('open').style.display='none';
-}, 7200);
+// setTimeout(function () {
+//   document.getElementById('intro-leve').play()
+
+// }, 3000);
+
+
+// setTimeout(function () {
+//   document.getElementById('open').style.display='none';
+// }, 7200);
 
 
 

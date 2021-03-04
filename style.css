@@ -243,7 +243,7 @@ color: white;
 }
 
 
-
+/* 
 .fade-Out {
 
     animation: fadeOut ease 8s;
@@ -251,7 +251,7 @@ color: white;
     -moz-animation: fadeOut ease 8s;
     -o-animation: fadeOut ease 8s;
     -ms-animation: fadeOut ease 8s;
-  }
+  } */
 @keyframes fadeOut {
     80% {
         opacity:1;
