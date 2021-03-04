@@ -31,11 +31,21 @@ $(document).ready(function(){
 
 setTimeout(function () {
   document.getElementById('open').style.display='none';
-  document.getElementById("index-open-Video").play();
-
 }, 7200);
 
 })
+
+
+$(document).ready(function(){
+
+  setTimeout(function () {
+    document.getElementById("index-open-Video").play();
+
+  }, 7200);
+  
+  })
+
+
 
 // Opening page timeout
 
