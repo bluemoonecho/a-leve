@@ -13,11 +13,11 @@ req.onload = function() {
       var vid = URL.createObjectURL(videoBlob); // IE10+
       // Video is now downloaded
       console.log('downloaded')
-      video.attr('src', vid);
+      document.getElementById('intro-leve').src = vid;
       console.log(video)
       video.play();
       // and we can set it as source on the video element
-      video.src = vid;
+      
    }
 }
 req.onerror = function() {
