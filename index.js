@@ -13,7 +13,7 @@ req.onload = function() {
       var vid = URL.createObjectURL(videoBlob); // IE10+
       // Video is now downloaded
       console.log('downloaded')
-      $('intro-leve-source').attr('src', vid);
+      $('#intro-leve-source').attr('src', vid);
       console.log()
       video.play();
       // and we can set it as source on the video element
