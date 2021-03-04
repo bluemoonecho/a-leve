@@ -1,43 +1,41 @@
 
-let video = $('#intro-leve')
-
-var req = new XMLHttpRequest();
-req.open('GET', 'images/leve-intro.mp4', true);
-req.responseType = 'blob';
-
-req.onload = function() {
-   // Onload is triggered even on 404
-   // so we need to check the status code
-   if (this.status === 200) {
-      var videoBlob = this.response;
-      var vid = URL.createObjectURL(videoBlob); // IE10+
-      // Video is now downloaded
-      console.log('downloaded')
-      $('#intro-leve-source').attr('src', vid);
-      console.log()
-      video.play();
-      // and we can set it as source on the video element
-      // video.src = vid;
-   }
-}
-req.onerror = function() {
-   // Error
-}
-
-req.send();
 
 
+
+
+// $(document).ready(function(){
+//   let introLeve = $('#intro-leve');
+
+//     introLeve.on('ended', function(){
+
+//     // video.addClass('fade-Out')
+//     document.getElementById('open').style.display='none';
+
+//     function addVideo() {
+//       var x = document.createElement("VIDEO");
+//       x.canPlayType("video/mp4");
+//       x.setAttribute("src","images/video-leve-sound.mp4");
+//       x.setAttribute("id", "index-open-Video");
+//       x.setAttribute("autoplay", "autoplay");
+//       x.setAttribute("loop", "true");
+//       document.body.appendChild(x);
+//     }
+
+//     addVideo();
+// })
 // setTimeout(function () {
 //   document.getElementById('intro-leve').play()
-
 // }, 3000);
 
+$(document).ready(function(){
 
-// setTimeout(function () {
-//   document.getElementById('open').style.display='none';
-// }, 7200);
+setTimeout(function () {
+  document.getElementById('open').style.display='none';
+  document.getElementById("index-open-Video").play();
 
+}, 7200);
 
+})
 
 // Opening page timeout
 
@@ -134,7 +132,6 @@ function mute() {
   var vid = document.getElementById("index-open-Video");
   vid.muted = !vid.muted;
   // vid.muted = true;
-
   var icon = document.getElementById("sound-icon");
   if (vid.muted){
     icon.src='images/semSOM.png'
@@ -162,9 +159,11 @@ $(window).load(function () {
     }, false);
   }
   //...
-  setTimeout(function () {
+
   myVideo.play();
-}, 9000);
+  // setTimeout(function () {
+ 
+  // }, 9000);
 
   })
 
@@ -413,4 +412,31 @@ function mobileExtraNav(){
 //     $(this).toggleClass('open');
 //   });
 // })
+
+
+
+// var req = new XMLHttpRequest();
+// req.open('GET', 'images/leve-intro.mp4', true);
+// req.responseType = 'blob';
+
+// req.onload = function() {
+//    // Onload is triggered even on 404
+//    // so we need to check the status code
+//    if (this.status === 200) {
+//       var videoBlob = this.response;
+//       var vid = URL.createObjectURL(videoBlob); // IE10+
+//       // Video is now downloaded
+//       console.log('downloaded')
+//       $('#intro-leve-source').attr('src', vid);
+//       console.log()
+//       video.play();
+//       // and we can set it as source on the video element
+//       // video.src = vid;
+//    }
+// }
+// req.onerror = function() {
+//    // Error
+// }
+
+// req.send();
 
