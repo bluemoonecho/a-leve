@@ -1057,14 +1057,14 @@ font-weight: 600 !important;
    }
 
 
-.sound-icon{
+#sound-icon{
     width: 60px;
 }
 
 #sound{
     position: absolute;
     margin-left: 93vw;
-    margin-top: -102vh;
+    margin-top: -100vh;
     z-index: 1000;
 }
 

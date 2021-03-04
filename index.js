@@ -101,6 +101,23 @@ function playGol() {
   gol.play();
 }
 
+function mute() {
+  var vid = document.getElementById("index-open-Video");
+  vid.muted = !vid.muted;
+  // vid.muted = true;
+
+  var icon = document.getElementById("sound-icon");
+  if (vid.muted){
+    icon.src='images/semSOM.png'
+  }else {
+    icon.src='images/SOM.png'
+  }
+
+  }
+ 
+
+
+
 
 
 
