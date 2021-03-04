@@ -1,5 +1,17 @@
 
+function entre() {
+  document.getElementById('entre').style.display='none';
+  document.getElementById('intro-leve').play()
 
+  let introLeve = $('#intro-leve');
+
+  introLeve.on('ended', function(){
+    $('#intro-leve').addClass("fade-Out");
+    document.getElementById('open').style.display='none';
+    document.getElementById("index-open-Video").play();
+  })
+
+}
 
 
 
@@ -27,23 +39,25 @@
 //   document.getElementById('intro-leve').play()
 // }, 3000);
 
-$(document).ready(function(){
-
-setTimeout(function () {
-  document.getElementById('open').style.display='none';
-}, 7200);
-
-})
 
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-  setTimeout(function () {
-    document.getElementById("index-open-Video").play();
+// setTimeout(function () {
+//   document.getElementById('open').style.display='none';
+// }, 7200);
 
-  }, 7200);
+// })
+
+
+// $(document).ready(function(){
+
+//   setTimeout(function () {
+//     document.getElementById("index-open-Video").play();
+
+//   }, 7200);
   
-  })
+//   })
 
 
 
