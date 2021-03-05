@@ -2016,6 +2016,20 @@ input:focus {
     flex-direction: column;
 }
 
+.titulo-right-rio2c{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    align-content: flex-end;
+    z-index: 1;
+    text-align: right;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-right: -20px;
+}
+
 .titulo-rio-2c-en{
     z-index: 1;
     text-align: left;
@@ -2433,6 +2447,22 @@ video:focus {
     left: 10%;
   }
 
+  .titulo-left-milton{
+    margin-top: 40px;
+    margin-left: -30px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+  }
+
   .left-container{
     display: flex;
 	flex-direction: row;
@@ -2713,6 +2743,13 @@ height: 100%;
 
 @media (max-width: 767px) {
 
+    #menuToggle{
+        position: fixed
+    }
+
+    #hide{
+        display: none;
+    }
 
 .languages{ 
     display: flex;
@@ -2809,7 +2846,7 @@ height: 100%;
         align-items: center;
         align-content: stretch;
         margin-left: 0px;    
-        margin-top: 180px;
+        margin-top: 50px;
         margin-bottom: 100px; 
     }
     
@@ -2880,8 +2917,8 @@ height: 100%;
     
     .titulo-essa{
         padding-top: 20px;
-        margin-left: 10px;
-        margin-top: 50px;
+        margin-left: 20px;
+        margin-top: 0px;
         margin-bottom: 50px;
         display: flex;
         flex-direction: column;
@@ -3324,9 +3361,9 @@ height: 100%;
     }
    
     .logo-tim-4{
-        width: 300px;
+        width: 200px;
         margin-top: 20px;
-        margin-right: 70px;
+        margin-right: 20px;
     }
     
     .logo-tim-en{
@@ -3378,6 +3415,20 @@ height: 100%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+
+    }
+
+    .titulo-right-rio2c{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-content: flex-end;
+        z-index: 1;
+        text-align: right;
+        margin-top: 100px;
+        margin-bottom: 50px;
+        margin-right: 20px;
 
     }
     
@@ -3461,7 +3512,7 @@ height: 100%;
     .convencao-da-tim-container{
         display: flex;
         flex-direction: column-reverse;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
         align-content: center;
@@ -3584,13 +3635,18 @@ height: 100%;
     .ubc-logo-2{
         width: 200px;
         margin-top: 10px;
-        margin-right: 80px;
+        margin-right: 20px;
+
     }
 
     .gif-premio-ucb{
         width: 300px;
     }
 
+    iframe{
+        width: 300px;
+        height: 100%;
+    }
 
 }
 
@@ -3625,6 +3681,8 @@ height: 100%;
         margin-right: 0;
 
     } 
+
+    
     
     .titulo-right.mobile{
         margin-top: 0px !important;
@@ -3643,7 +3701,7 @@ height: 100%;
     }
     .mastercard-milton{
         width: 80px;
-        margin-left: 50px;
+        margin-right: 30px;
     }
 
     .video-gil{
@@ -3692,17 +3750,33 @@ height: 100%;
 
 
       .titulo-left{
-        margin-top: 40px;
+        margin-top: 100px;
         margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: flex-start;
-        justify-content: flex-start;
-        align-content: flex-start;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-content: flex-end;
         z-index: 1;
-        text-align: left;
+        text-align: right;
    
+      }
+
+      .titulo-left-milton{
+          
+        margin-top: 0px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-content: flex-end;
+        z-index: 1;
+        text-align: right;
+          
+
       }
     
       .left-container{
@@ -3722,10 +3796,26 @@ height: 100%;
         margin-top: -100px;
         margin: auto;
       }
+
+
+      .left-Img{
+          width: 300px;
+          height: 100%;
+          margin: auto;
+          margin-bottom: 50px;
+      }
+
+      .cristo-logos{
+        margin-right: 30px; 
+        margin-top: 30px; 
+        width: 200px;
+        margin-bottom: -50px;
+       }
 /* Queries HORIZONTAL////////////// */
 
     .horizontal-Img{
-    margin: 0;
+    margin-left: 20px;
+    margin-right: 0;
     margin-bottom: 50px;
     width: 90%;
     height: 90%;
@@ -3734,7 +3824,7 @@ height: 100%;
     .horizontal-container{
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-content: center;
         margin-bottom: 100px;
@@ -3748,6 +3838,16 @@ height: 100%;
         margin:auto;
 
     }
+
+
+
+    .rio-2c-Img{
+        margin-left: 20px;
+        margin-right: 0;
+        margin-bottom: 50px;
+        width: 90%;
+        height: 90%;
+        }
 
     #seta-index{
         display: none!important;
