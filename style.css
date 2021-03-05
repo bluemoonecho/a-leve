@@ -496,13 +496,15 @@ color: #614be0
  /* //////////////////////////////////////////SUB MENU */
 
  #hide{
-
     height: 0;
     transition: all 0s ease 5s; /*delay 1s*/
     visibility: hidden;
     margin-top: 0;
  }
 
+ #display-mobile{
+    display: none;
+ }
 
  .activate-menu:hover + #hide 
  {
@@ -517,6 +519,12 @@ color: #614be0
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
+}
+
+.sub-menu-Mobile{
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: -20px;
 }
 
 #sub-nav-link{
@@ -2666,14 +2674,22 @@ height: 100%;
     }
 
     .addMargin {
-        transition: margin-top .5s;
-        margin-top:400px;
+        transition: margin .5s; 
+        margin-top:700px;
     }
 
-    .addMarginExtra{
+    /* .addMarginExtra{
         transition: margin-top .5s;
-        margin-top: 600px;
+        margin-top: 700px;
+    } */
+
+
+    .mobile-menu-o-que-a-leve{
+        margin-top: -20px;
+        color: white !important;
+        font-weight: 800 !important;
     }
+
 
     #nav-Div{
         position: top;
@@ -2747,30 +2763,42 @@ height: 100%;
         position: fixed
     }
 
-    #hide{
+    .activate-menu{
         display: none;
     }
 
-.languages{ 
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-    align-content: flex-start;
-    margin-top: -45px;
-    margin-left: 130px;
-    color: #666666 !important;
+    #display-mobile{
+        display: block;
+    }
 
-}
+    #hideMobile{
+        display: none;
+        height: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    
+     }
 
-.languages a {
-    font-weight: 300;
-    text-decoration: none;
-    font-size: 11px;
-    color: #666666; 
-    font-weight: 600 !important;
-}
+    .languages{ 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: flex-start;
+        margin-top: -45px;
+        margin-left: 130px;
+        color: #666666 !important;
+
+    }
+
+    .languages a {
+        font-weight: 300;
+        text-decoration: none;
+        font-size: 11px;
+        color: #666666; 
+        font-weight: 600 !important;
+    }
     #open{
         /* background-color: rgb( 252,252, 252); */
         background-color: white;
@@ -2813,10 +2841,10 @@ height: 100%;
     }
 
     #sound{
-        position: absolute;
-        margin-left: 330px;
-        margin-top: -180px;
-        z-index: 1000;
+        position: fixed;
+        margin-left: 300px;
+        margin-top: 40px;
+        z-index: 10000;
     }
     
     

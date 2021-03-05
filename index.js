@@ -152,23 +152,46 @@ function playGol() {
   
 }
 
-function mute() {
-  var vid = document.getElementById("index-open-Video");
-  vid.muted = !vid.muted;
-  // vid.muted = true;
-  var icon = document.getElementById("sound-icon");
-  if (vid.muted){
-    icon.src='images/semSOM.png'
-  }else {
-    icon.src='images/SOM.png'
-  }
 
-  }
  
 
+function showSubMenu(){
+  let submenu = document.getElementById('hideMobile')
+  
+  if(submenu.style.display === 'none'){
+    submenu.style.display = 'flex';
+        var v = document.getElementById("main-mobile");
+        if( v.classList.contains('addMarginExtra')){
+          v.classList.remove('addMarginExtra');
+        } else {
+          v.classList.add('addMarginExtra')
+        }
+
+  } else {
+    console.log('hello')
+    submenu.style.display = 'none';
+  }
+    // submenu.style.height='100%';
+
+    
+}
+  
 
 
 
+
+function mute() {
+    var vid = document.getElementById("index-open-Video");
+    vid.muted = !vid.muted;
+    // vid.muted = true;
+    var icon = document.getElementById("sound-icon");
+    if (vid.muted){
+      icon.src='images/semSOM.png'
+    }else {
+      icon.src='images/SOM.png'
+    }
+
+  }
 
 
 $(window).load(function () {
@@ -239,43 +262,44 @@ var vid = document.getElementById("sound");
 vid.muted = true;
 
 
+// var hovering = function(){
+//   $("hamburger").show("new-nav", { direction: "right" }, 1000);
+// };
 
-
-
-var hovering = function(){
-  $("hamburger").show("new-nav", { direction: "right" }, 1000);
-};
-
-var leaving = function(){
-  $("hamburger").hide("new-nav", { direction: "left" }, 1000);
-};
-$("#hamburger").hover(hovering, leaving);
+// var leaving = function(){
+//   $("hamburger").hide("new-nav", { direction: "left" }, 1000);
+// };
+// $("#hamburger").hover(hovering, leaving);
 
 
 // document.querySelector('.hide-item')
 // .addEventListener('click', () => alert('hidden item still triggers events'));
 
+
 function mobileNav(){
   var x = document.getElementById("main-mobile");
-  if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
-    setTimeout(function (){
-      (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
 
-    }, 5000
-    )
+  if( x.classList.contains('addMargin')){
+      x.classList.remove('addMargin')
   } else {
     x.classList.add('addMargin')
   }
 }
 
-function mobileExtraNav(){
-  var v = document.getElementById("main-mobile");
-  if( v.classList.contains('addMarginExtra')){
-    v.classList.remove('addMarginExtra');
-  } else {
-    v.classList.add('addMarginExtra')
-  }
-}
+
+
+// function mobileNav(){
+//   var x = document.getElementById("main-mobile");
+
+
+//   if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
+//       (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
+//   } else {
+//     x.classList.add('addMargin')
+//   }
+// }
+
+
 
 
 // document.onscroll = function() {
