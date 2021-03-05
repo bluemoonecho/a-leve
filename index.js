@@ -70,11 +70,11 @@ function entre() {
 $(document).ready(function(){
 
   $('.slick-show').slick({
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     centerMode: true,
     variableWidth: true
   })
