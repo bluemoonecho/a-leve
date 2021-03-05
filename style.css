@@ -184,7 +184,7 @@ transition: background-image 5s ease-out;
 }
 
 #body-essa-eh-a-leve{
-    font-family: 'Raleway', sans-serif;
+font-family: 'Raleway', sans-serif;
 font-weight: 100;
 /* background-color: #614be0; */
 color: white;
@@ -1120,7 +1120,7 @@ font-weight: 600 !important;
 #sound{
     position: fixed;
     margin-left: 94%;
-    margin-top: -53%;
+    margin-top: 40px;
     z-index: 1000;
 }
 
@@ -2673,20 +2673,45 @@ height: 100%;
         margin-right: 5px;
     }
 
-    .addMargin {
+    .addBackgroundMenu {
         transition: margin .5s; 
-        margin-top:700px;
+        width: 100%;
+        background: red;
     }
 
-    /* .addMarginExtra{
-        transition: margin-top .5s;
-        margin-top: 700px;
-    } */
+    .menu-verde{
+        width: 600px;
+        height: 800px;
+        background-image: url('images/backgroundcor/levecor.png'); 
+    }
 
+    .menu-roxo{
+        width: 600px;
+        height: 800px;
+        background-image: url('images/backgroundcor/roxo.png'); 
+    }
+
+    .menu-branco{
+        width: 600px;
+        height: 800px;
+        background-image: url('images/backgroundcor/branco.png');
+
+    }
+    .menu-conheca-o-ze{
+        width: 100px;
+        height: 800px;
+        background-image: url('images/cinza_fundo.png');
+    }
 
     .mobile-menu-o-que-a-leve{
         margin-top: -20px;
         color: white !important;
+        font-weight: 800 !important;
+    }
+
+    .mobile-menu-o-que-a-leve-cinza{
+        margin-top: -20px;
+        color: #666666 !important;
         font-weight: 800 !important;
     }
 

@@ -38,14 +38,15 @@
 <body id="body-o-que-a-leve-ja-fez">
 
 
+
   <nav id='nav-Div' role="navigation">
-    <div id="menuToggle" onclick='mobileNav()'>
-      <input type="checkbox" />
+    <div id="menuToggle" >
+      <input type="checkbox" onclick='mobileNav()' />
       <span></span>
       <span></span>
       <span></span>
      
-      <ul id="menu">
+      <ul id="menu" class="menu-branco"> 
 
         <li class='nav-item'>
           <a id="nav-link" href="essa-e-a-leve.html#topo">ESSA É A LEVE</a>        
@@ -54,14 +55,14 @@
         <li class='nav-item'>
           <a id="nav-link" href="conheca-o-ze.html">CONHEÇA O ZÉ RICARDO</a>     
         </li>
-
+ <!-- MENU DESKTOP -->
         <li>
           <div class='activate-menu'>
-          <a id="nav-link"href="o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
+          <a id="nav-link" href="o-que-a-leve-ja-fez.html">O QUE A LEVE JÁ FEZ</a>
         </div>
           <!-- START SUBMENU -->
 
-            <div id='hide'class='sub-menu'>
+            <div id='hide' class='sub-menu'>
 
             <a id="sub-nav-link" href='lives-mastercard.html#live-do-gil'> Live Mastercard - Gilberto Gil e Iza</a>
 
@@ -88,6 +89,43 @@
          
           <!-- END SUBMENU -->
                   </li>
+
+<!-- MENU MOBILE-->
+
+      <li id='display-mobile'>
+        <div >
+        <p class='mobile-menu-o-que-a-leve-cinza' onclick="showSubMenu()" >O QUE A LEVE JÁ FEZ<p>
+      </div>
+           
+      <div id='hideMobile' class='sub-menu-Mobile'>
+
+        <a id="sub-nav-link" href='lives-mastercard.html#live-do-gil'> Live Mastercard - Gilberto Gil e Iza</a>
+
+        <a id="sub-nav-link" href='lives-mastercard.html#milton-xenia-liniker'> Live Mastercard - Milton, Xênia e Liniker</a>
+
+        <a id="sub-nav-link" href='lives-mastercard.html#elza-seu-jorge-agnes'>Live Mastercard - Elza, Seu Jorge e Agnes</a>
+        
+        <a id="sub-nav-link" href='live-ford.html#ford-live'>Live Ford - Maria Rita, Diogo Nogueira e Rael</a>
+
+        <a id="sub-nav-link" href='verao-tim.html#verao-tim'>Verão Tim</a>
+
+        <a id="sub-nav-link" href='rio-2c.html#rio-2c'>Rio2C</a>
+
+        <a id="sub-nav-link" href='abraco-de-pascoa-no-cristo.html#cristo-pascoa'>Abraço de Páscoa no Cristo</a>
+
+        <a id="sub-nav-link" href='convencao-da-tim.html#convencao-da-tim'>Convenção da Tim</a>
+
+        <a id="sub-nav-link" href='maratona-com-arte-do-rio-de-janeiro.html#maratona-rio'>Maratona com arte do Rio de Janeiro</a>
+
+        <a id="sub-nav-link" href='premio-ubc.html#premio-ubc'>Prêmio UBC </a>
+
+    
+        </div>
+     
+      <!-- END SUBMENU -->
+      </li>
+
+<!-- END MENU MOBILE -->
         <li>
           <a id="nav-link" href="a-palestra-do-ze.html">A PALESTRA DO ZÉ</a>   
         </li>
@@ -97,7 +135,7 @@
 
                 </ul>
               </div>
-    </nav>
+    </nav>            
 
     <div id='seta-index' >
       <img  id='animate-flicker' class='arrow-image' src='images/setafinalcinza.png'>  

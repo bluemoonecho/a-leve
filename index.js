@@ -207,7 +207,7 @@ $(window).load(function () {
   }
   //...
 
-  myVideo.play();
+  // myVideo.play();
   // setTimeout(function () {
  
   // }, 9000);
@@ -276,15 +276,15 @@ vid.muted = true;
 // .addEventListener('click', () => alert('hidden item still triggers events'));
 
 
-function mobileNav(){
-  var x = document.getElementById("main-mobile");
+// function mobileNav(){
+//   var x = document.getElementById("nav-Div");
 
-  if( x.classList.contains('addMargin')){
-      x.classList.remove('addMargin')
-  } else {
-    x.classList.add('addMargin')
-  }
-}
+//   if( x.classList.contains('addBackgroundMenu')){
+//       x.classList.remove('addBackgroundMenu')
+//   } else {
+//     x.classList.add('addBackgroundMenu')
+//   }
+// }
 
 
 
