@@ -1,13 +1,63 @@
 
-
-setTimeout(function () {
+function entre() {
+  document.getElementById('entre').style.display='none';
   document.getElementById('intro-leve').play()
-}, 3000);
+
+  let introLeve = $('#intro-leve');
+
+  introLeve.on('ended', function(){
+    $('#intro-leve').addClass("fade-Out"); 
+    document.getElementById('open').style.display='none';
+    document.getElementById("index-open-Video").play();
+  })
+
+}
 
 
-setTimeout(function () {
-  document.getElementById('open').style.display='none';
-}, 7200);
+
+// $(document).ready(function(){
+//   let introLeve = $('#intro-leve');
+
+//     introLeve.on('ended', function(){
+
+//     // video.addClass('fade-Out')
+//     document.getElementById('open').style.display='none';
+
+//     function addVideo() {
+//       var x = document.createElement("VIDEO");
+//       x.canPlayType("video/mp4");
+//       x.setAttribute("src","images/video-leve-sound.mp4");
+//       x.setAttribute("id", "index-open-Video");
+//       x.setAttribute("autoplay", "autoplay");
+//       x.setAttribute("loop", "true");
+//       document.body.appendChild(x);
+//     }
+
+//     addVideo();
+// })
+// setTimeout(function () {
+//   document.getElementById('intro-leve').play()
+// }, 3000);
+
+
+
+// $(document).ready(function(){
+
+// setTimeout(function () {
+//   document.getElementById('open').style.display='none';
+// }, 7200);
+
+// })
+
+
+// $(document).ready(function(){
+
+//   setTimeout(function () {
+//     document.getElementById("index-open-Video").play();
+
+//   }, 7200);
+  
+//   })
 
 
 
@@ -20,11 +70,11 @@ setTimeout(function () {
 $(document).ready(function(){
 
   $('.slick-show').slick({
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     centerMode: true,
     variableWidth: true
   })
@@ -102,24 +152,46 @@ function playGol() {
   
 }
 
-function mute() {
-  var vid = document.getElementById("index-open-Video");
-  vid.muted = !vid.muted;
-  // vid.muted = true;
 
-  var icon = document.getElementById("sound-icon");
-  if (vid.muted){
-    icon.src='../images/semSOM.png'
-  }else {
-    icon.src='../images/SOM.png'
-  }
-
-  }
  
 
+function showSubMenu(){
+  let submenu = document.getElementById('hideMobile')
+  
+  if(submenu.style.display === 'none'){
+    submenu.style.display = 'flex';
+        var v = document.getElementById("main-mobile");
+        if( v.classList.contains('addMarginExtra')){
+          v.classList.remove('addMarginExtra');
+        } else {
+          v.classList.add('addMarginExtra')
+        }
+
+  } else {
+    console.log('hello')
+    submenu.style.display = 'none';
+  }
+    // submenu.style.height='100%';
+
+    
+}
+  
 
 
 
+
+function mute() {
+    var vid = document.getElementById("index-open-Video");
+    vid.muted = !vid.muted;
+    // vid.muted = true;
+    var icon = document.getElementById("sound-icon");
+    if (vid.muted){
+      icon.src='images/semSOM.png'
+    }else {
+      icon.src='images/SOM.png'
+    }
+
+  }
 
 
 $(window).load(function () {
@@ -134,9 +206,11 @@ $(window).load(function () {
     }, false);
   }
   //...
-  setTimeout(function () {
-  myVideo.play();
-}, 9000);
+
+  // myVideo.play();
+  // setTimeout(function () {
+ 
+  // }, 9000);
 
   })
 
@@ -188,39 +262,44 @@ var vid = document.getElementById("sound");
 vid.muted = true;
 
 
+// var hovering = function(){
+//   $("hamburger").show("new-nav", { direction: "right" }, 1000);
+// };
 
-
-
-var hovering = function(){
-  $("hamburger").show("new-nav", { direction: "right" }, 1000);
-};
-
-var leaving = function(){
-  $("hamburger").hide("new-nav", { direction: "left" }, 1000);
-};
-$("#hamburger").hover(hovering, leaving);
+// var leaving = function(){
+//   $("hamburger").hide("new-nav", { direction: "left" }, 1000);
+// };
+// $("#hamburger").hover(hovering, leaving);
 
 
 // document.querySelector('.hide-item')
 // .addEventListener('click', () => alert('hidden item still triggers events'));
 
-function mobileNav(){
-  var x = document.getElementById("main-mobile");
-  if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
-    (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
-  } else {
-    x.classList.add('addMargin')
-  }
-}
 
-function mobileExtraNav(){
-  var v = document.getElementById("main-mobile");
-  if( v.classList.contains('addMarginExtra')){
-    v.classList.remove('addMarginExtra');
-  } else {
-    v.classList.add('addMarginExtra')
-  }
-}
+// function mobileNav(){
+//   var x = document.getElementById("nav-Div");
+
+//   if( x.classList.contains('addBackgroundMenu')){
+//       x.classList.remove('addBackgroundMenu')
+//   } else {
+//     x.classList.add('addBackgroundMenu')
+//   }
+// }
+
+
+
+// function mobileNav(){
+//   var x = document.getElementById("main-mobile");
+
+
+//   if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
+//       (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
+//   } else {
+//     x.classList.add('addMargin')
+//   }
+// }
+
+
 
 
 // document.onscroll = function() {
@@ -385,4 +464,31 @@ function mobileExtraNav(){
 //     $(this).toggleClass('open');
 //   });
 // })
+
+
+
+// var req = new XMLHttpRequest();
+// req.open('GET', 'images/leve-intro.mp4', true);
+// req.responseType = 'blob';
+
+// req.onload = function() {
+//    // Onload is triggered even on 404
+//    // so we need to check the status code
+//    if (this.status === 200) {
+//       var videoBlob = this.response;
+//       var vid = URL.createObjectURL(videoBlob); // IE10+
+//       // Video is now downloaded
+//       console.log('downloaded')
+//       $('#intro-leve-source').attr('src', vid);
+//       console.log()
+//       video.play();
+//       // and we can set it as source on the video element
+//       // video.src = vid;
+//    }
+// }
+// req.onerror = function() {
+//    // Error
+// }
+
+// req.send();
 
