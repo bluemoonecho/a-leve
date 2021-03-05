@@ -258,7 +258,11 @@ $("#hamburger").hover(hovering, leaving);
 function mobileNav(){
   var x = document.getElementById("main-mobile");
   if( (x.classList.contains('addMargin')) || (x.classList.contains('addMarginExtra'))){
-    (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
+    setTimeout(function (){
+      (x.classList.remove('addMargin')) && (x.classList.remove('addMarginExtra'));
+
+    }, 5000
+    )
   } else {
     x.classList.add('addMargin')
   }
