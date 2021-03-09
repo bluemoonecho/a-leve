@@ -373,6 +373,12 @@ color: #614be0
 }
 
 
+.menu-verde{
+    width: 100%;
+    height: 100vh;
+    /* margin-right: -1000px; */
+    background-image: url('images/backgroundcor/levecor.png'); 
+}
 
  #menuToggle input
  {
@@ -462,8 +468,9 @@ color: #614be0
  #menu
  {
    /* display: inline; */
-   width: 300px;
-   margin: -120px -100px -200px  -80px;
+   width: 200px;
+   margin: -120px -10px -200px  -70px;
+   /* margin: -120px -100px -200px  -400px; */
    /* top, right, bottom, left */
    padding: 50px;
    padding-top: 125px;
@@ -475,6 +482,8 @@ color: #614be0
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
  }
+
+ 
  
  #menu li
  {
@@ -756,6 +765,13 @@ p {
  
 }    
 
+.ig-ze-ricardo{
+    width: 30px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    margin-left: -4px;
+}
+
 #conhecaVideo {
     /* position: static; */
     position: fixed;
@@ -1026,6 +1042,13 @@ font-weight: 600 !important;
     height: 100%;
   }
 
+  #index-open-Video-EN{
+    position: static;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 
 .intro-gif{
@@ -1703,7 +1726,7 @@ input:focus {
 	align-items: flex-start;
 	align-content: flex-start;
     margin-right: 105px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 .logo-tim{
@@ -1805,7 +1828,7 @@ input:focus {
 	justify-content: center;
 	align-items: flex-start;
 	align-content: flex-start;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     margin-left: 40px;
 
 }
@@ -2011,7 +2034,7 @@ input:focus {
 	align-items: flex-start;
 	align-content: flex-start;
     margin-right: 80px;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     margin-left: -160px;
 }
 
@@ -2784,6 +2807,24 @@ height: 100%;
 
 
 @media (max-width: 767px) {
+
+    #menu
+    {
+    /* display: inline; */
+    width: 400px;
+    margin: -120px -10px -200px  -70px;
+    /* margin: -120px -100px -200px  -400px; */
+    /* top, right, bottom, left */
+    padding: 50px;
+    padding-top: 125px;
+        list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+
+    }
 
     #menuToggle{
         position: fixed

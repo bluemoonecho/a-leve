@@ -73,8 +73,8 @@ $(document).ready(function(){
     // dots: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 1,
+    // slidesToScroll: 1,
     centerMode: true,
     variableWidth: true
   })
@@ -181,22 +181,22 @@ function showSubMenu(){
 
 
 function mute() {
-    var vid = document.getElementById("index-open-Video");
+    var vid = document.getElementById("index-open-Video-EN");
     vid.muted = !vid.muted;
     // vid.muted = true;
     var icon = document.getElementById("sound-icon");
     if (vid.muted){
-      icon.src='images/semSOM.png'
+      icon.src='../images/semSOM.png'
     }else {
-      icon.src='images/SOM.png'
+      icon.src='../images/SOM.png'
     }
-
+µ
   }
 
 
 $(window).load(function () {
 
-  var myVideo = document.getElementById('index-open-Video');
+  var myVideo = document.getElementById('index-open-Video-EN');
   if (typeof myVideo.loop == 'boolean') { // loop supported
     myVideo.loop = true;
   } else { // loop property not supported
@@ -207,7 +207,7 @@ $(window).load(function () {
   }
   //...
 
-  // myVideo.play();
+  myVideo.play();
   // setTimeout(function () {
  
   // }, 9000);
