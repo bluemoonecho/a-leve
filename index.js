@@ -15,56 +15,6 @@ function entre() {
 
 
 
-// $(document).ready(function(){
-//   let introLeve = $('#intro-leve');
-
-//     introLeve.on('ended', function(){
-
-//     // video.addClass('fade-Out')
-//     document.getElementById('open').style.display='none';
-
-//     function addVideo() {
-//       var x = document.createElement("VIDEO");
-//       x.canPlayType("video/mp4");
-//       x.setAttribute("src","images/video-leve-sound.mp4");
-//       x.setAttribute("id", "index-open-Video");
-//       x.setAttribute("autoplay", "autoplay");
-//       x.setAttribute("loop", "true");
-//       document.body.appendChild(x);
-//     }
-
-//     addVideo();
-// })
-// setTimeout(function () {
-//   document.getElementById('intro-leve').play()
-// }, 3000);
-
-
-
-// $(document).ready(function(){
-
-// setTimeout(function () {
-//   document.getElementById('open').style.display='none';
-// }, 7200);
-
-// })
-
-
-// $(document).ready(function(){
-
-//   setTimeout(function () {
-//     document.getElementById("index-open-Video").play();
-
-//   }, 7200);
-  
-//   })
-
-
-
-// Opening page timeout
-
-
-
 /// Slick Carousell
 
 $(document).ready(function(){
@@ -72,11 +22,15 @@ $(document).ready(function(){
   $('.slick-show').slick({
     // dots: true,
     infinite: true,
-    speed: 300,
+    speed: 200,
     slidesToShow: 1,
-    // slidesToScroll: 1,
-    centerMode: true,
-    variableWidth: true
+    slidesToScroll: 1,
+    // centerMode: true,
+    // centerPadding: 0,
+    variableWidth: true,
+    draggable: true
+
+
   })
 
   $('.slick-show').slickLightbox({
@@ -491,4 +445,56 @@ vid.muted = true;
 // }
 
 // req.send();
+
+
+
+// $(document).ready(function(){
+//   let introLeve = $('#intro-leve');
+
+//     introLeve.on('ended', function(){
+
+//     // video.addClass('fade-Out')
+//     document.getElementById('open').style.display='none';
+
+//     function addVideo() {
+//       var x = document.createElement("VIDEO");
+//       x.canPlayType("video/mp4");
+//       x.setAttribute("src","images/video-leve-sound.mp4");
+//       x.setAttribute("id", "index-open-Video");
+//       x.setAttribute("autoplay", "autoplay");
+//       x.setAttribute("loop", "true");
+//       document.body.appendChild(x);
+//     }
+
+//     addVideo();
+// })
+// setTimeout(function () {
+//   document.getElementById('intro-leve').play()
+// }, 3000);
+
+
+
+// $(document).ready(function(){
+
+// setTimeout(function () {
+//   document.getElementById('open').style.display='none';
+// }, 7200);
+
+// })
+
+
+// $(document).ready(function(){
+
+//   setTimeout(function () {
+//     document.getElementById("index-open-Video").play();
+
+//   }, 7200);
+  
+//   })
+
+
+
+// Opening page timeout
+
+
 

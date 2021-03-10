@@ -2172,7 +2172,12 @@ input:focus {
     width: 250px;
     margin-left: 230px;
 }
-.dreamfact-logo-2{
+
+.dreamfact-logo-main{
+    width: 250px;
+    margin-left: 80px;
+}
+.dreamfact-logo-main-en{
     width: 250px;
     margin-left: 100px;
 }
@@ -2479,6 +2484,41 @@ video:focus {
     left: 10%;
   }
 
+
+  .titulo-left-maratona{
+    margin-top: 40px;
+    margin-left: -30px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+  }
+
+
+  .titulo-left-maratona.en{
+    margin-top: 40px;
+    margin-left: -50px;
+    margin-bottom: 100px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+    justify-content: flex-start;
+    align-content: flex-start;
+    z-index: 1;
+    text-align: left;
+    right: 10%;
+    left: 10%;
+  }
+
+
   .titulo-left-milton{
     margin-top: 40px;
     margin-left: -30px;
@@ -2711,7 +2751,7 @@ height: 100%;
 
     .menu-roxo{
         width: 600px;
-        height: 800px;
+        height: 100vh;
         background-image: url('images/backgroundcor/roxo.png'); 
     }
 
@@ -2726,6 +2766,12 @@ height: 100%;
         height: 800px;
         background-image: url('images/cinza_fundo.png');
     }
+    .menu-se-conecte{
+        width: 100px;
+        height: 800px;
+        background-image: url('images/backgroundcor/azul.png');
+    }
+
 
     .mobile-menu-o-que-a-leve{
         margin-top: -20px;
@@ -2811,11 +2857,13 @@ height: 100%;
     #menu
     {
     /* display: inline; */
-    width: 400px;
-    margin: -120px -10px -200px  -70px;
+    width: 350px;
+    height: 1000px;
+    margin: -120px -30px -200px  -60px;
     /* margin: -120px -100px -200px  -400px; */
     /* top, right, bottom, left */
     padding: 50px;
+    padding-bottom: 0;
     padding-top: 125px;
         list-style-type: none;
     -webkit-font-smoothing: antialiased;
@@ -3363,7 +3411,7 @@ height: 100%;
 
     .titulo-right-ford{
         
-            margin-top: 150px;
+            margin-top: 100px;
             margin-right: 0px;
             margin-bottom: 100px;
             display: flex;
@@ -3679,10 +3727,17 @@ height: 100%;
         margin-left: 140px;
         margin-bottom: 20px;
     }
-    .dreamfact-logo-2{
-        width: 250px;
-        margin-left: 100px;
+    
+        
+    .dreamfact-logo-main{
+        width: 200px;
+        margin-right: 30px;
     }
+    .dreamfact-logo-main-en{
+        width: 200px;
+        margin-right: 30px;
+    }
+
 
     /* ////////// GIF MARATONA */
 
@@ -3788,7 +3843,8 @@ height: 100%;
         text-align: right;
         margin-top: 100px;
         margin-left:0;
-        margin-right: 0;
+        margin-right: -70px;
+        margin-bottom: 50px;
 
     } 
 
@@ -3872,6 +3928,40 @@ height: 100%;
         text-align: right;
    
       }
+
+
+    .titulo-left-maratona{
+        margin-top: 100px;
+        margin-bottom: -50px;
+        margin-right: 0px;
+        margin-left: 30px;
+        size: 280px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-content: flex-end;
+        z-index: 1;
+        text-align: right;
+    }
+
+
+    .titulo-left-maratona.en{
+        margin-top: 100px;
+        margin-bottom: -50px;
+        display: flex;
+        size: 280px;
+        margin-left: 0px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        justify-content: flex-end;
+        align-content: flex-end;
+        z-index: 1;
+        text-align: right;
+    }
+
 
       .titulo-left-milton{
           
@@ -3967,6 +4057,7 @@ height: 100%;
     .video-tim{
         width: 90%;
         height: 100%; 
+        margin-left:20px;
         margin-bottom: 40px;
     }
 
