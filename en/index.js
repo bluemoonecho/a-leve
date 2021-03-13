@@ -1,17 +1,29 @@
 
-function entre() {
-  document.getElementById('entre').style.display='none';
-  document.getElementById('intro-leve').play()
+// function entre() {
+//   document.getElementById('entre').style.display='none';
+//   document.getElementById('intro-leve').play()
 
-  let introLeve = $('#intro-leve');
+//   let introLeve = $('#intro-leve');
 
-  introLeve.on('ended', function(){
-    $('#intro-leve').addClass("fade-Out"); 
-    document.getElementById('open').style.display='none';
-    document.getElementById("index-open-Video").play();
-  })
+//   introLeve.on('ended', function(){
+//     $('#intro-leve').addClass("fade-Out"); 
+//     document.getElementById('open').style.display='none';
+//     document.getElementById("index-open-Video").play();
+//   })
 
-}
+// }
+
+// $(document).ready(function(){
+
+// }
+$(window).load(function () {
+
+setTimeout(function () {
+  document.getElementById('index-open').style.display='none';
+  console.log('hi')
+}, 6000);
+
+})
 
 /// Slick Carousell
 
@@ -190,11 +202,6 @@ $(window).load(function () {
 // setTimeout(function () {
 //   document.getElementById('indexVideo').stop();
 // }, 90000);
-
-setTimeout(function () {
-  document.getElementById('open-logo').style.display='none';
-}, 6000);
-
 
 // setTimeout(function () {
 //   document.getElementById('open-end-logo').style.display='none';

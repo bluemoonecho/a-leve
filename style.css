@@ -246,11 +246,11 @@ color: white;
 
 .fade-Out {
 
-    animation: fadeOut ease 2s;
-    -webkit-animation: fadeOut ease 2s;
-    -moz-animation: fadeOut ease 2s;
-    -o-animation: fadeOut ease 2s;
-    -ms-animation: fadeOut ease 2s;
+    animation: fadeOut ease 8s;
+    -webkit-animation: fadeOut ease 8s;
+    -moz-animation: fadeOut ease 8s;
+    -o-animation: fadeOut ease 8s;
+    -ms-animation: fadeOut ease 8s;
   }
 @keyframes fadeOut {
     80% {
@@ -259,7 +259,6 @@ color: white;
 
       100% {
         opacity:0;
-        display: none;
       } 
 }
 @-moz-keyframes fadeOut {
@@ -271,7 +270,6 @@ color: white;
 
       100% {
         opacity:0;
-        display: none;
 
       }
 
@@ -283,7 +281,6 @@ color: white;
 
       100% {
         opacity:0;
-        display: none;
 
       }
 
@@ -295,7 +292,6 @@ color: white;
 
       100% {
         opacity:0;
-        display: none;
 
       }
 
@@ -307,7 +303,6 @@ color: white;
 
       100% {
         opacity:0;
-        display: none;
 
       }
     
@@ -2932,12 +2927,13 @@ height: 100%;
         color: #666666; 
         font-weight: 600 !important;
     }
-    #open{
-        /* background-color: rgb( 252,252, 252); */
-        background-color: white;
+    #index-open{
+        background-color: rgb( 252,252, 252);
+        /* background-color: white; */
         z-index: 1000;
         position: absolute;
         transition: opacity 1s ease;
+        
     }
 
     #intro-leve{
