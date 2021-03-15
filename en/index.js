@@ -20,17 +20,41 @@ $(window).load(function () {
 
 setTimeout(function () {
   document.getElementById('index-open').style.display='none';
-  console.log('hi')
 }, 6000);
 
 })
 
 
-function playVideo() {
-  document.getElementById('index-open-Video').play()
-  console.log("play video")
-}
-
+function hideDiv() {
+  console.log('oop');
+  document.getElementById('play-img-holder').style.display = 'none';
+  let video = document.getElementById('index-open-Video-EN')
+  video.play();
+  
+  };
+  
+  
+  function playVideo() {
+    let video = document.getElementById('index-open-Video-EN')
+  
+    let iconPlayPause = document.getElementById('play-icon')
+  
+  
+      if (video.paused) {
+        iconPlayPause.src = '../images/play.png'; 
+          video.play(); 
+          iconPlayPause.classList.add('faderPlay');
+          console.log('boom')   
+      } else if (video.play){
+        iconPlayPause.src = '../images/pause.png' 
+        iconPlayPause .classList.remove('faderPlay')   
+          video.pause(); 
+          console.log('paused')
+      } 
+  
+    console.log("play video")
+  }
+  
 
 /// Slick Carousell
 
@@ -166,45 +190,45 @@ function mute() {
   }
 
 
-$(window).load(function () {
+// $(window).load(function () {
 
-  var myVideo = document.getElementById('index-open-Video-EN');
-  if (typeof myVideo.loop == 'boolean') { // loop supported
-    myVideo.loop = true;
-  } else { // loop property not supported
-    myVideo.addEventListener('ended', function () {
-      this.currentTime = 0;
-      this.play();
-    }, false);
-  }
-  //...
+//   var myVideo = document.getElementById('index-open-Video-EN');
+//   if (typeof myVideo.loop == 'boolean') { // loop supported
+//     myVideo.loop = true;
+//   } else { // loop property not supported
+//     myVideo.addEventListener('ended', function () {
+//       this.currentTime = 0;
+//       this.play();
+//     }, false);
+//   }
+//   //...
 
-  myVideo.play();
-  // setTimeout(function () {
+//   myVideo.play();
+//   // setTimeout(function () {
  
-  // }, 9000);
+//   // }, 9000);
 
-  })
+//   })
 
  
 
 
 
-$(window).load(function () {
+// $(window).load(function () {
 
-  var myVideo = document.getElementById('indexVideo');
-  if (typeof myVideo.loop == 'boolean') { // loop supported
-    myVideo.loop = true;
-  } else { // loop property not supported
-    myVideo.addEventListener('ended', function () {
-      this.currentTime = 0;
-      this.play();
-    }, false);
-  }
-  //...
-  myVideo.play();
+//   var myVideo = document.getElementById('indexVideo');
+//   if (typeof myVideo.loop == 'boolean') { // loop supported
+//     myVideo.loop = true;
+//   } else { // loop property not supported
+//     myVideo.addEventListener('ended', function () {
+//       this.currentTime = 0;
+//       this.play();
+//     }, false);
+//   }
+//   //...
+//   myVideo.play();
   
-  })
+//   })
 
 // setTimeout(function () {
 //   document.getElementById('indexVideo').stop();
