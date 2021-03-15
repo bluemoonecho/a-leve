@@ -13,6 +13,11 @@
 
 // }
 
+setTimeout(function () {
+  document.getElementById('intro-leve').style.display='none';
+}, 7200);
+
+
 
 function playVideo() {
   let video = document.getElementById('index-open-Video')
@@ -34,23 +39,6 @@ function playVideo() {
 
   console.log("play video")
 }
-
-
-
-function pauseVideo() {
-  let vid = document.getElementById("index-open-Video");
-  vid.muted = !vid.muted;
-  // vid.muted = true;
-  let icon = document.getElementById("sound-icon");
-  if (vid.muted){
-    icon.src='images/semSOM.png'
-  }else {
-    icon.src='images/SOM.png'
-  }
-
-}
-
-
 
 
 /// Slick Carousell
@@ -229,11 +217,6 @@ $(window).load(function () {
 // setTimeout(function () {
 //   document.getElementById('indexVideo').stop();
 // }, 90000);
-
-setTimeout(function () {
-  document.getElementById('open-logo').style.display='none';
-}, 6000);
-
 
 // setTimeout(function () {
 //   document.getElementById('open-end-logo').style.display='none';
