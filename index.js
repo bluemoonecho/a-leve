@@ -12,34 +12,54 @@
 //   })
 
 // }
-
+$(window).load(function (){
 setTimeout(function () {
   document.getElementById('intro-leve').style.display='none';
 }, 7200);
 
+
+});
+
+function hideDiv() {
+console.log('oop');
+document.getElementById('play-img-holder').style.display = 'none';
+let video = document.getElementById('index-open-Video')
+video.play();
+
+};
 
 
 function playVideo() {
   let video = document.getElementById('index-open-Video')
 
   let iconPlayPause = document.getElementById('play-icon')
-  let hiding = document.getElementById('play-img')
+
 
     if (video.paused) {
       iconPlayPause.src = 'images/play.png'; 
         video.play(); 
         iconPlayPause.classList.add('faderPlay');
         console.log('boom')   
-    } else {
+    } else if (video.play){
       iconPlayPause.src = 'images/pause.png' 
       iconPlayPause .classList.remove('faderPlay')   
         video.pause(); 
         console.log('paused')
-    }
+    } 
 
   console.log("play video")
 }
 
+// $(window).load(function (){
+//   let video = document.getElementById('index-open-Video')
+//   let iconPlayPause = document.getElementById('play-icon')
+  
+//   iconPlayPause.classList.add('faderStart');
+//   if(video.play){
+//     iconPlayPause.classList.remove('faderStart');
+//   }
+
+// })
 
 /// Slick Carousell
 
