@@ -25,6 +25,13 @@ setTimeout(function () {
 
 })
 
+
+function playVideo() {
+  document.getElementById('index-open-Video').play()
+  console.log("play video")
+}
+
+
 /// Slick Carousell
 
 $(document).ready(function(){
@@ -155,7 +162,7 @@ function mute() {
     }else {
       icon.src='../images/SOM.png'
     }
-µ
+
   }
 
 
