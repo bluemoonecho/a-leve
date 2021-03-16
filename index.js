@@ -12,43 +12,95 @@
 //   })
 
 // }
+
 $(window).load(function (){
 setTimeout(function () {
   document.getElementById('intro-leve').style.display='none';
 }, 7200);
 
-
 });
 
-function hideDiv() {
-console.log('oop');
-document.getElementById('play-img-holder').style.display = 'none';
-let video = document.getElementById('index-open-Video')
-video.play();
 
-};
+$(window).load(function () {
+
+  setTimeout(function () {
+
+    let indexVideo = document.getElementById('index-open-Video')
+    indexVideo.muted = true
+    if (typeof indexVideo.loop == 'boolean') { // loop supported
+      indexVideo.loop = true;
+    } else { // loop property not supported
+      indexVideo.addEventListener('ended', function () {
+        this.currentTime = 0;
+        this.play();
+      }, false);
+    }
+
+indexVideo.play();
+
+console.log('working!')
+
+  }, 7200);
+
+  })
 
 
-function playVideo() {
-  let video = document.getElementById('index-open-Video')
+// $(window).load(function (){
 
-  let iconPlayPause = document.getElementById('play-icon')
+//   $("#trilha").play();
+//   $("#trilha").loop = true;
+//   console.log('som')
+
+// })
 
 
-    if (video.paused) {
-      iconPlayPause.src = 'images/play.png'; 
-        video.play(); 
-        iconPlayPause.classList.add('faderPlay');
-        console.log('boom')   
-    } else if (video.play){
-      iconPlayPause.src = 'images/pause.png' 
-      iconPlayPause .classList.remove('faderPlay')   
-        video.pause(); 
-        console.log('paused')
-    } 
 
-  console.log("play video")
+
+function mute() {
+  var vid = document.getElementById("index-open-Video");
+  vid.muted = !vid.muted;
+  // vid.muted = true;
+  var icon = document.getElementById("sound-icon");
+  if (vid.muted){
+    icon.src='images/semSOM.png'
+  }else {
+    icon.src='images/SOM.png'
+  }
+
 }
+
+
+
+
+// function hideDiv() {
+// console.log('oop');
+// document.getElementById('play-img-holder').style.display = 'none';
+// let video = document.getElementById('index-open-Video')
+// video.play();
+
+// };
+
+
+// function playVideo() {
+//   let video = document.getElementById('index-open-Video')
+
+//   let iconPlayPause = document.getElementById('play-icon')
+
+
+//     if (video.paused) {
+//       iconPlayPause.src = 'images/play.png'; 
+//         video.play(); 
+//         iconPlayPause.classList.add('faderPlay');
+//         console.log('boom')   
+//     } else if (video.play){
+//       iconPlayPause.src = 'images/pause.png' 
+//       iconPlayPause .classList.remove('faderPlay')   
+//         video.pause(); 
+//         console.log('paused')
+//     } 
+
+//   console.log("play video")
+// }
 
 // $(window).load(function (){
 //   let video = document.getElementById('index-open-Video')
@@ -179,60 +231,21 @@ function showSubMenu(){
 
 
 
+// $(window).load(function () {
 
-function mute() {
-    var vid = document.getElementById("index-open-Video");
-    vid.muted = !vid.muted;
-    // vid.muted = true;
-    var icon = document.getElementById("sound-icon");
-    if (vid.muted){
-      icon.src='images/semSOM.png'
-    }else {
-      icon.src='images/SOM.png'
-    }
-
-  }
-
-
-$(window).load(function () {
-
-  var myVideo = document.getElementById('index-open-Video');
-  if (typeof myVideo.loop == 'boolean') { // loop supported
-    myVideo.loop = true;
-  } else { // loop property not supported
-    myVideo.addEventListener('ended', function () {
-      this.currentTime = 0;
-      this.play();
-    }, false);
-  }
-  //...
-
-  // myVideo.play();
-  // setTimeout(function () {
- 
-  // }, 9000);
-
-  })
-
- 
-
-
-
-$(window).load(function () {
-
-  var myVideo = document.getElementById('indexVideo');
-  if (typeof myVideo.loop == 'boolean') { // loop supported
-    myVideo.loop = true;
-  } else { // loop property not supported
-    myVideo.addEventListener('ended', function () {
-      this.currentTime = 0;
-      this.play();
-    }, false);
-  }
-  //...
-  myVideo.play();
+//   var myVideo = document.getElementById('indexVideo');
+//   if (typeof myVideo.loop == 'boolean') { // loop supported
+//     myVideo.loop = true;
+//   } else { // loop property not supported
+//     myVideo.addEventListener('ended', function () {
+//       this.currentTime = 0;
+//       this.play();
+//     }, false);
+//   }
+//   //...
+//   myVideo.play();
   
-  })
+//   })
 
 // setTimeout(function () {
 //   document.getElementById('indexVideo').stop();

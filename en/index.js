@@ -26,7 +26,6 @@ setTimeout(function () {
 
 
 function hideDiv() {
-  console.log('oop');
   document.getElementById('play-img-holder').style.display = 'none';
   let video = document.getElementById('index-open-Video-EN')
   video.play();
