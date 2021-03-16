@@ -13,7 +13,7 @@
 
 // }
 
-$(window).load(function (){
+$(document).ready(function (){
 setTimeout(function () {
   document.getElementById('intro-leve').style.display='none';
 }, 6500);
