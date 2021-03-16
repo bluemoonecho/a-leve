@@ -16,7 +16,7 @@
 $(window).load(function (){
 setTimeout(function () {
   document.getElementById('intro-leve').style.display='none';
-}, 7200);
+}, 6500);
 
 });
 

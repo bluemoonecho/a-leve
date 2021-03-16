@@ -16,44 +16,69 @@
 // $(document).ready(function(){
 
 // }
+// $(window).load(function () {
+
+// setTimeout(function () {
+//   document.getElementById('index-open').style.display='none';
+// }, 6000);
+
+// })
+
+
+// function hideDiv() {
+//   document.getElementById('play-img-holder').style.display = 'none';
+//   let video = document.getElementById('index-open-Video-EN')
+//   video.play();
+  
+//   };
+  
+  
+//   function playVideo() {
+//     let video = document.getElementById('index-open-Video-EN')
+  
+//     let iconPlayPause = document.getElementById('play-icon')
+  
+  
+//       if (video.paused) {
+//         iconPlayPause.src = '../images/play.png'; 
+//           video.play(); 
+//           iconPlayPause.classList.add('faderPlay');
+//           console.log('boom')   
+//       } else if (video.play){
+//         iconPlayPause.src = '../images/pause.png' 
+//         iconPlayPause .classList.remove('faderPlay')   
+//           video.pause(); 
+//           console.log('paused')
+//       } 
+  
+//     console.log("play video")
+//   }
+  
+
 $(window).load(function () {
 
-setTimeout(function () {
-  document.getElementById('index-open').style.display='none';
-}, 6000);
+  setTimeout(function () {
 
-})
+    let indexVideo = document.getElementById('index-open-Video-EN')
+    indexVideo.muted = true
+    if (typeof indexVideo.loop == 'boolean') { // loop supported
+      indexVideo.loop = true;
+    } else { // loop property not supported
+      indexVideo.addEventListener('ended', function () {
+        this.currentTime = 0;
+        this.play();
+      }, false);
+    }
+
+indexVideo.play();
+
+console.log('working!')
+
+  }, 7200);
+
+  })
 
 
-function hideDiv() {
-  document.getElementById('play-img-holder').style.display = 'none';
-  let video = document.getElementById('index-open-Video-EN')
-  video.play();
-  
-  };
-  
-  
-  function playVideo() {
-    let video = document.getElementById('index-open-Video-EN')
-  
-    let iconPlayPause = document.getElementById('play-icon')
-  
-  
-      if (video.paused) {
-        iconPlayPause.src = '../images/play.png'; 
-          video.play(); 
-          iconPlayPause.classList.add('faderPlay');
-          console.log('boom')   
-      } else if (video.play){
-        iconPlayPause.src = '../images/pause.png' 
-        iconPlayPause .classList.remove('faderPlay')   
-          video.pause(); 
-          console.log('paused')
-      } 
-  
-    console.log("play video")
-  }
-  
 
 /// Slick Carousell
 
