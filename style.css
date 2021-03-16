@@ -531,8 +531,11 @@ color: #614be0
 }
 
 .sub-menu-Mobile{
+    margin-top: 40px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 0px;
     margin-bottom: -20px;
 }
 
@@ -2769,8 +2772,7 @@ height: 100%;
  
 
     #main-mobile{
-        max-width: 375px;
-        margin-right: -100px;
+    
         overflow-x: auto;
 
     }
@@ -2938,7 +2940,7 @@ height: 100%;
     }
 
     #display-mobile{
-        display: flex;
+        display: block;
     }
 
     #hideMobile{
