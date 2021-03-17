@@ -1,18 +1,3 @@
-
-// function entre() {
-//   document.getElementById('entre').style.display='none';
-//   document.getElementById('intro-leve').play()
-
-//   let introLeve = $('#intro-leve');
-
-//   introLeve.on('ended', function(){
-//     $('#intro-leve').addClass("fade-Out"); 
-//     document.getElementById('open').style.display='none';
-//     document.getElementById("index-open-Video").play();
-//   })
-
-// }
-
 $(document).ready(function (){
 setTimeout(function () {
   document.getElementById('intro-leve').style.display='none';
@@ -53,10 +38,8 @@ console.log('working!')
 
 // })
 
-
-
-
 function mute() {
+
   var vid = document.getElementById("index-open-Video");
   vid.muted = !vid.muted;
   // vid.muted = true;
@@ -68,50 +51,6 @@ function mute() {
   }
 
 }
-
-
-
-
-// function hideDiv() {
-// console.log('oop');
-// document.getElementById('play-img-holder').style.display = 'none';
-// let video = document.getElementById('index-open-Video')
-// video.play();
-
-// };
-
-
-// function playVideo() {
-//   let video = document.getElementById('index-open-Video')
-
-//   let iconPlayPause = document.getElementById('play-icon')
-
-
-//     if (video.paused) {
-//       iconPlayPause.src = 'images/play.png'; 
-//         video.play(); 
-//         iconPlayPause.classList.add('faderPlay');
-//         console.log('boom')   
-//     } else if (video.play){
-//       iconPlayPause.src = 'images/pause.png' 
-//       iconPlayPause .classList.remove('faderPlay')   
-//         video.pause(); 
-//         console.log('paused')
-//     } 
-
-//   console.log("play video")
-// }
-
-// $(window).load(function (){
-//   let video = document.getElementById('index-open-Video')
-//   let iconPlayPause = document.getElementById('play-icon')
-  
-//   iconPlayPause.classList.add('faderStart');
-//   if(video.play){
-//     iconPlayPause.classList.remove('faderStart');
-//   }
-
-// })
 
 /// Slick Carousell
 
@@ -126,9 +65,7 @@ $(document).ready(function(){
     // centerMode: true,
     // centerPadding: 0,
     variableWidth: true,
-    draggable: true
-
-
+    draggable: true,
   })
 
   $('.slick-show').slickLightbox({
@@ -230,6 +167,56 @@ function showSubMenu(){
   
 
 
+var vid = document.getElementById("sound");
+vid.muted = true;
+
+
+
+
+// play buttons
+
+
+// function hideDiv() {
+// console.log('oop');
+// document.getElementById('play-img-holder').style.display = 'none';
+// let video = document.getElementById('index-open-Video')
+// video.play();
+
+// };
+
+
+// function playVideo() {
+//   let video = document.getElementById('index-open-Video')
+
+//   let iconPlayPause = document.getElementById('play-icon')
+
+
+//     if (video.paused) {
+//       iconPlayPause.src = 'images/play.png'; 
+//         video.play(); 
+//         iconPlayPause.classList.add('faderPlay');
+//         console.log('boom')   
+//     } else if (video.play){
+//       iconPlayPause.src = 'images/pause.png' 
+//       iconPlayPause .classList.remove('faderPlay')   
+//         video.pause(); 
+//         console.log('paused')
+//     } 
+
+//   console.log("play video")
+// }
+
+// $(window).load(function (){
+//   let video = document.getElementById('index-open-Video')
+//   let iconPlayPause = document.getElementById('play-icon')
+  
+//   iconPlayPause.classList.add('faderStart');
+//   if(video.play){
+//     iconPlayPause.classList.remove('faderStart');
+//   }
+
+// })
+
 
 // $(window).load(function () {
 
@@ -264,10 +251,6 @@ function showSubMenu(){
 // setTimeout(function () {
 //   document.getElementById('intro-quote').style.display='none';
 // }, 14000);
-
-
-var vid = document.getElementById("sound");
-vid.muted = true;
 
 
 // var hovering = function(){
@@ -306,14 +289,6 @@ vid.muted = true;
 //     x.classList.add('addMargin')
 //   }
 // }
-
-
-
-
-// document.onscroll = function() {
- 
-// }
-
 
 
 // $('#vid').hide();
@@ -394,7 +369,6 @@ vid.muted = true;
 
 
 // function activateMobile(){
-    
 //   var x = document.getElementById("main-mobile");
 
 //   if (x.style.marginTop === "400px" ){
@@ -526,8 +500,6 @@ vid.muted = true;
 //   document.getElementById('intro-leve').play()
 // }, 3000);
 
-
-
 // $(document).ready(function(){
 
 // setTimeout(function () {
@@ -542,13 +514,23 @@ vid.muted = true;
 //   setTimeout(function () {
 //     document.getElementById("index-open-Video").play();
 
-//   }, 7200);
-  
+//   }, 7200);  
 //   })
-
-
 
 // Opening page timeout
 
+// function entre() {
+//   document.getElementById('entre').style.display='none';
+//   document.getElementById('intro-leve').play()
+
+//   let introLeve = $('#intro-leve');
+
+//   introLeve.on('ended', function(){
+//     $('#intro-leve').addClass("fade-Out"); 
+//     document.getElementById('open').style.display='none';
+//     document.getElementById("index-open-Video").play();
+//   })
+
+// }
 
 

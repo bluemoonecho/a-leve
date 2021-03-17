@@ -1,60 +1,4 @@
 
-// function entre() {
-//   document.getElementById('entre').style.display='none';
-//   document.getElementById('intro-leve').play()
-
-//   let introLeve = $('#intro-leve');
-
-//   introLeve.on('ended', function(){
-//     $('#intro-leve').addClass("fade-Out"); 
-//     document.getElementById('open').style.display='none';
-//     document.getElementById("index-open-Video").play();
-//   })
-
-// }
-
-// $(document).ready(function(){
-
-// }
-// $(window).load(function () {
-
-// setTimeout(function () {
-//   document.getElementById('index-open').style.display='none';
-// }, 6000);
-
-// })
-
-
-// function hideDiv() {
-//   document.getElementById('play-img-holder').style.display = 'none';
-//   let video = document.getElementById('index-open-Video-EN')
-//   video.play();
-  
-//   };
-  
-  
-//   function playVideo() {
-//     let video = document.getElementById('index-open-Video-EN')
-  
-//     let iconPlayPause = document.getElementById('play-icon')
-  
-  
-//       if (video.paused) {
-//         iconPlayPause.src = '../images/play.png'; 
-//           video.play(); 
-//           iconPlayPause.classList.add('faderPlay');
-//           console.log('boom')   
-//       } else if (video.play){
-//         iconPlayPause.src = '../images/pause.png' 
-//         iconPlayPause .classList.remove('faderPlay')   
-//           video.pause(); 
-//           console.log('paused')
-//       } 
-  
-//     console.log("play video")
-//   }
-  
-
 $(window).load(function () {
 
   setTimeout(function () {
@@ -72,7 +16,7 @@ $(window).load(function () {
 
 indexVideo.play();
 
-console.log('working!')
+// console.log('working!')
 
   }, 7200);
 
@@ -93,8 +37,7 @@ $(document).ready(function(){
     // centerMode: true,
     // centerPadding: 0,
     variableWidth: true,
-    draggable: true
-
+    draggable: true,
 
   })
 
@@ -507,3 +450,64 @@ vid.muted = true;
 
 // req.send();
 
+
+
+//////
+
+
+
+// function entre() {
+//   document.getElementById('entre').style.display='none';
+//   document.getElementById('intro-leve').play()
+
+//   let introLeve = $('#intro-leve');
+
+//   introLeve.on('ended', function(){
+//     $('#intro-leve').addClass("fade-Out"); 
+//     document.getElementById('open').style.display='none';
+//     document.getElementById("index-open-Video").play();
+//   })
+
+// }
+
+// $(document).ready(function(){
+
+// }
+// $(window).load(function () {
+
+// setTimeout(function () {
+//   document.getElementById('index-open').style.display='none';
+// }, 6000);
+
+// })
+
+
+// function hideDiv() {
+//   document.getElementById('play-img-holder').style.display = 'none';
+//   let video = document.getElementById('index-open-Video-EN')
+//   video.play();
+  
+//   };
+  
+  
+//   function playVideo() {
+//     let video = document.getElementById('index-open-Video-EN')
+  
+//     let iconPlayPause = document.getElementById('play-icon')
+  
+  
+//       if (video.paused) {
+//         iconPlayPause.src = '../images/play.png'; 
+//           video.play(); 
+//           iconPlayPause.classList.add('faderPlay');
+//           console.log('boom')   
+//       } else if (video.play){
+//         iconPlayPause.src = '../images/pause.png' 
+//         iconPlayPause .classList.remove('faderPlay')   
+//           video.pause(); 
+//           console.log('paused')
+//       } 
+  
+//     console.log("play video")
+//   }
+  
