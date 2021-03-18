@@ -119,7 +119,7 @@ background-color: transparent;
     -moz-transition: background-image 5s ease-out;
     -o-transition: background-image 5s ease-out;
     transition: background-image 5s ease-out;
-
+   
 }
 
 
@@ -246,7 +246,6 @@ color: white;
     margin: 100px auto;
     width: 500px;
 }
-
 
 
 .fade-Out {
@@ -389,12 +388,9 @@ color: #614be0
    position: absolute;
    top: -7px;
    left: -5px;
-   
    cursor: pointer;
-   
    opacity: 0; /* hide this */
    z-index: 2; /* and place it over the hamburger */
-   
    -webkit-touch-callout: none;
  }
  
@@ -466,26 +462,26 @@ color: #614be0
   * at the top left of the screen
   */
 
- #menu
+
+  #menu
  {
    /* display: inline; */
-   width: 200px;
-   margin: -120px -10px -200px  -70px;
+   width: 1px;
+   margin: -120px 0px -200px  -70px;
    /* margin: -120px -100px -200px  -400px; */
    /* top, right, bottom, left */
-   padding: 50px;
-   padding-top: 125px;
+   /* padding-left: 50px; */
+   
       list-style-type: none;
    -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
-   transform-origin: 0% 0%;
+   transform-origin: 0%, 0%;
    transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    overflow-y: scroll;
+}
+  
 
- }
-
- 
- 
  #menu li
  {
    padding: 10px 0;
@@ -500,8 +496,16 @@ color: #614be0
   */
  #menuToggle input:checked ~ ul
  {
-   transform: none;
+ 
+    transform: none;
+    width: 275px;
+    padding: 60px;
+    padding-top: 125px;
+    overflow-x:auto;
+   /* display: none; */
  }
+
+
 
  /* //////////////////////////////////////////SUB MENU */
 
@@ -2772,12 +2776,11 @@ height: 100%;
 /* //////MAIN QUEEERIESSS///////// */
 
 @media (max-width: 400px) {
- 
+
 
     #main-mobile{
     
-        /* overflow-x: auto; */
-        
+        overflow-x: auto;
 
     }
 
@@ -2803,22 +2806,22 @@ height: 100%;
     }
 
     .menu-verde{
-        width: 600px;
+        width: 400px;
         height: 100vh;
         background-image: url('images/backgroundcor/levecor.png'); 
         background-size: cover;
     }
 
     .menu-roxo{
-        width: 600px;
+        width: 400px;
         height: 100vh;
         background-image: url('images/backgroundcor/roxo.png'); 
         background-size: cover;
     }
 
     .menu-branco{
-        width: 600px;
-        height: 800px;
+        width: 400px;
+        height: 100vh;
         background-image: url('images/backgroundcor/branco.png');
         background-size: cover;
     }
@@ -2853,7 +2856,7 @@ height: 100%;
     #nav-Div{
         position: top;
     }
-  
+
 } 
 
 
@@ -2918,26 +2921,12 @@ height: 100%;
 
 @media (max-width: 767px) {
 
-
-
-    #menu
+    #menuToggle input:checked ~ ul
     {
-    /* display: inline; */
-    width: 100%;
-    height: 100vh;
-    margin: -120px 0px -200px  -60px;
-    /* margin: -120px -100px -200px  -400px; */
-    /* top, right, bottom, left */
-    padding: 50px;
-    padding-bottom: 0;
-    padding-top: 125px;
-        list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(-100%, 0);
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-
+    width: 400px;
+    overflow-x:auto;
+    transform: none;
+    /* display: none; */
     }
 
     #menuToggle{

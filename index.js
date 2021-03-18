@@ -30,13 +30,6 @@ console.log('working!')
   })
 
 
-// $(window).load(function (){
-
-//   $("#trilha").play();
-//   $("#trilha").loop = true;
-//   console.log('som')
-
-// })
 
 function mute() {
 
@@ -51,6 +44,26 @@ function mute() {
   }
 
 }
+
+
+/// MOBILE NAV :
+
+// function mobileNav(){
+//   let check = document.getElementById('check');
+//   let menu = document.getElementById('menu');
+//   if(menu.style.display='none'){
+//     menu.style.display='block'
+//   }
+
+//   if (menu.classList.contains('menuMobile')){
+//     menu.classList.remove('menuMobile');
+//   }else{
+//     menu.classList.add('menuMobile');
+//   }
+
+// }
+
+
 
 /// Slick Carousell
 
