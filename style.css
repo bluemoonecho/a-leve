@@ -466,21 +466,20 @@ color: #614be0
   #menu
  {
    /* display: inline; */
-   width: 1px;
-   margin: -120px 0px -200px  -70px;
+   width: 0px;
+   /* margin: -120px 0px -200px  -50; */
+   margin: -120px -20px -250px  -160px;
    /* margin: -120px -100px -200px  -400px; */
    /* top, right, bottom, left */
    /* padding-left: 50px; */
-   
-      list-style-type: none;
-   -webkit-font-smoothing: antialiased;
+    list-style-type: none;
+        -webkit-font-smoothing: antialiased;
    /* to stop flickering of text in safari */
-   transform-origin: 0%, 0%;
-   transform: translate(-100%, 0);
+    transform-origin: 0%, 0%;
+    transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    overflow-y: scroll;
-}
-  
+
+ }
 
  #menu li
  {
@@ -499,11 +498,28 @@ color: #614be0
  
     transform: none;
     width: 275px;
-    padding: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
     padding-top: 125px;
-    overflow-x:auto;
+    padding-bottom: 200px;
+    overflow-x: scroll;
+    height: 1000px;
+    margin: -120px -20px -250px  -70px;
+
+    /* position:relative; */
+}
+   
+@media (max-height: 600px){
+    
+    #menuToggle input:checked ~ ul{
+        overflow-x: scroll;
+        height: 300px;
+    }
+    
+}
+
    /* display: none; */
- }
+ 
 
 
 
@@ -654,7 +670,6 @@ p {
     z-index: 100;
     left: 0;
     bottom: 0;
-    overflow: auto
 }
 
 .icon{
@@ -2924,8 +2939,12 @@ height: 100%;
     #menuToggle input:checked ~ ul
     {
     width: 400px;
-    overflow-x:auto;
     transform: none;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 125px;
+    /* padding-bottom: 100px; */
+
     /* display: none; */
     }
 
