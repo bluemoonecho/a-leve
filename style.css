@@ -3454,6 +3454,10 @@ height: 100%;
 */
 @media (max-width: 767px) {
 
+    #main{
+        overflow-x:auto;
+    }
+
     #main-o-que-a-leve-ja-fez h1{
         font-size: 50px !important;
     }
