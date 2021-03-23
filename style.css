@@ -2409,6 +2409,18 @@ input:focus {
 
 }
 
+.right-Div-gil{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    z-index: 2;
+    margin: auto;   
+    margin-bottom: 150px;
+    overflow-x:auto;
+
+}
+
 .titulo-right{
     margin-top: 50px;
     margin-right: -60px;
@@ -2435,6 +2447,16 @@ input:focus {
 }
 
 .right-container{
+    display: flex;
+	flex-direction: row;
+    display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+    align-content: flex-start;
+    margin-bottom: 100px;
+}
+
+.right-container-gil{
     display: flex;
 	flex-direction: row;
     display: flex;
@@ -2793,7 +2815,7 @@ height: 100%;
 
     #main-mobile{
     
-        overflow-x: auto;
+    overflow-x: auto;
 
     }
 
@@ -3901,7 +3923,20 @@ height: 100%;
 @media (max-width: 767px){
 
 /* RIGHT\\\\\\\\\\\\\\\\ */
-    .right-Div{
+
+    .right-container-gil{
+        display: flex;
+        flex-direction: column-reverse;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: flex-start;
+        margin-bottom: 100px;
+        margin-top: -50px;
+        margin-left: 10px;
+    }
+
+    .right-Div-gil{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -3925,8 +3960,6 @@ height: 100%;
         margin-bottom: 50px;
 
     } 
-
-    
     
     .titulo-right.mobile{
         margin-top: 0px !important;
@@ -3937,6 +3970,11 @@ height: 100%;
         font-size: 21px;
         width: 300px;
         margin: auto;
+    }
+    .right-text-gil{
+        font-size: 21px;
+        width: 300px;
+        margin-left: 33px;
     }
 
     .mastercard-gil{
