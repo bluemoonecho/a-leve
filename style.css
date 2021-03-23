@@ -858,7 +858,6 @@ p {
     display: flex;
     flex-direction: row;
     margin-left: -5px;
-    z-index: 20;
 }
 .se-conecte-frase:first-of-type{
     margin-top: 35px;
@@ -1165,6 +1164,7 @@ font-weight: 600 !important;
 
 #sound-icon{
     width: 40px;
+    opacity: 0.7;
 }
 
 #sound{
