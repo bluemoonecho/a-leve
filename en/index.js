@@ -22,6 +22,12 @@ indexVideo.play();
 
   })
 
+  $(document).on("resize", function(){
+    $("#index-open-Video-EN").hide().show();
+    // or do this
+    // $("#myIframe").css("display","none").css("display","block");
+  });
+
 
 
 /// Slick Carousell
