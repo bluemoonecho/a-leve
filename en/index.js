@@ -18,7 +18,7 @@ indexVideo.play();
 
 // console.log('working!')
 
-  }, 7200);
+  }, 6000);
 
   })
 

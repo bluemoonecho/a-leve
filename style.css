@@ -1036,45 +1036,54 @@ font-weight: 600 !important;
 
 
 #seta-index{ 
-    position: fixed;
-    display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: flex-end;
-	align-items: center;
-	align-content: stretch;
-    margin-left: 93.5%;
-    top: 50vh;
-  }
+position: fixed;
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: flex-end;
+align-items: center;
+align-content: stretch;
+margin-left: 93.5%;
+top: 50vh;
+}
 
-  .arrow-image{
-    width: 60px;
+.arrow-image{
+width: 60px;
 }
 
 
-  #indexVideo{
-    position: static;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
+#indexVideo{
+position: static;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+}
 
-  #index-open-Video{
-    position: static;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
+#index-open-Video{
+position: static;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+}
 
-  #index-open-Video-EN{
-    position: static;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-  }
+.poster-video{
+position: absolute;
+left: 0;
+top: 0;
+width: 800px;
+height: 100vh;
+z-index: -1;
+}
+
+#index-open-Video-EN{
+position: static;
+right: 0;
+bottom: 0;
+width: 100%;
+height: 100%;
+}
 
 
 .intro-gif{

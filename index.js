@@ -25,8 +25,8 @@ $(window).load(function () {
 
     indexVideo.play();
 
-    console.log("working!");
-  }, 7200);
+    // console.log("working!");
+  }, 6000);
 });
 
 function mute() {
