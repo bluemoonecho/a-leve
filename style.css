@@ -2398,8 +2398,6 @@ input:focus {
 
 /* RIGHT gil  ////////////////////////////GILBERTO */
 
-
-
 .right-Div{
 
     display: flex;
@@ -2440,6 +2438,14 @@ input:focus {
 .right-text{
     font-size: 21px;
     width: 400px;
+    margin: auto;
+}
+.right-text-gil{
+    /* font-size: 21px;
+    margin-left: 33px; */
+    font-size: 21px;
+    width: 400px;
+    margin-top: -100px;
     margin: auto;
 }
 
@@ -2636,7 +2642,7 @@ video:focus {
   .left-text{
     font-size: 21px;
     width: 400px;
-    margin-top: -100px;
+    margin-top: -200px;
     margin: auto;
   }
 
@@ -2816,9 +2822,7 @@ height: 100%;
 
 
     #main-mobile{
-    
-    overflow-x: auto;
-
+    overflow-x: auto
     }
 
 }
@@ -3944,7 +3948,7 @@ height: 100%;
         align-content: flex-start;
         margin-bottom: 100px;
         margin-top: -50px;
-        margin-left: 10px;
+        margin-left: 5%;
     }
 
     .right-Div-gil{
